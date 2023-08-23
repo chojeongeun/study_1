@@ -219,3 +219,68 @@ a {
 		}
 	}
 }
+
+#box4 {
+	width: 100%;
+
+	//left, right 플롯
+	&::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	.left {
+		width: 50%;
+		height: 500px;
+		float: left;
+		background: #888;
+	}
+
+	.right {
+		width: 50%;
+		height: 500px;
+		float: left;
+		background: #222;
+
+		.inner {
+			width: 590px; //height굳이필요없음
+			padding: 50px;
+			h1 {
+				font: bold 22px/1 'arial';
+				color: #fff;
+				margin-bottom: 5px;
+			}
+			h2 {
+				font: 18px/1 'arial';
+				color: #aaa;
+				margin-bottom: 50px;
+			}
+
+			article {
+				margin-bottom: 30px;
+
+				h3 {
+					font: bold 16px/1 'arial';
+					color: #666;
+					margin-bottom: 10px;
+				}
+
+				p {
+					font: 12px/1.2 'arial';
+					color: #555;
+				}
+			}
+			.btn {
+				display: block;
+				width: 120px;
+				height: 30px;
+				border-radius: 15px;
+				background: #666;
+				font: 12px/30px 'arial';
+				color: #111;
+				text-align: center;
+			}
+		}
+	}
+}
