@@ -384,4 +384,85 @@ a {
   margin-right: 10px;
 }
 
+#box7 {
+  width: 100%;
+  padding: 180px 0px 150px;
+}
+#box7 .inner {
+  width: 1180px;
+  margin: 0px auto;
+  position: relative;
+}
+#box7 .inner h1 {
+  font: bold 22px/1 "arial";
+  color: #555;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#box7 .inner > p {
+  font: 16px/1.2 "arial";
+  color: #777;
+  margin-bottom: 40px;
+  text-align: center;
+}
+#box7 .inner > .btn {
+  display: block;
+  width: 200px;
+  height: 40px;
+  background: linear-gradient(45deg, #888, #555);
+  border-radius: 20px;
+  margin: 20px auto 100px;
+  text-align: center;
+  font: bold 12px/40px "arial";
+  color: #fff;
+  box-shadow: 10px 10px 20px rgbd(0, 0, 0, 0.2);
+}
+#box7 .inner ul {
+  width: 100%;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+}
+#box7 .inner ul li {
+  width: 100%;
+  padding: 30px;
+  border-bottom: 1px solid #bbb;
+  position: relative;
+}
+#box7 .inner ul li::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#box7 .inner ul li article {
+  margin-right: 170px;
+}
+#box7 .inner ul li article h2 {
+  font: bold 20px/1 "arial";
+  color: #555;
+  margin-bottom: 15px;
+}
+#box7 .inner ul li article p {
+  font: 16px/1.2 "arial";
+  color: #777;
+  margin-bottom: 20px;
+}
+#box7 .inner ul li article span {
+  font: bold 12px/1 "arial";
+  color: #444;
+}
+#box7 .inner ul li .btn {
+  display: block;
+  width: 150px;
+  height: 60px;
+  border: 1px solid #888;
+  font: 14px/60px "arial";
+  color: #666;
+  text-align: center;
+  float: right;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0px;
+}
+
 /*# sourceMappingURL=style.css.map */
