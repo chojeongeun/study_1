@@ -579,3 +579,48 @@ a {
 		}
 	}
 }
+
+#box9 {
+	width: 100%;
+	padding: 180px 0px 150px;
+
+	.inner {
+		width: 1180px;
+		margin: 0px auto;
+		position: relative;
+
+		h1 {
+			font: bold 22px/1 'arial';
+			color: #444;
+			margin-bottom: 80px;
+			text-align: center;
+		}
+		.wrap {
+			&::after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+
+			article {
+				width: calc(100% / 6);
+				float: left;
+				margin-bottom: 60px;
+				text-align: center;
+				padding: 0px 20px;
+
+				.ico {
+					i {
+						font-size: 40px;
+						color: #777;
+					}
+				}
+				p {
+					margin-top: 20px;
+					font: 16px/1 'arial';
+					color: #888;
+				}
+			}
+		}
+	}
+}
