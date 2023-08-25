@@ -138,6 +138,95 @@ a {
 	}
 }
 
+#header3 {
+	width: 100%;
+	background: #555;
+	.inner {
+		width: 1180px;
+		height: 180px;
+		margin: 0px auto;
+		position: relative;
+
+		h1 {
+			position: absolute;
+			top: 30px;
+			left: 50%;
+			transform: translateX(-50%);
+			a {
+				font: bold 28px/1 'arial';
+				color: #ddd;
+			}
+		}
+
+		#gnb {
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			width: 100%;
+			border-top: 1px solid #666;
+			li {
+				width: calc(100% / 5);
+				height: 60px;
+				float: left;
+				position: relative;
+				a {
+					display: block;
+					width: 100%;
+					height: 100%;
+					font: bold 14px/60px 'arial';
+					color: #ccc;
+					text-align: center;
+				}
+				&::after {
+					content: '';
+					display: block;
+					clear: both;
+					width: 1px;
+					height: 40%;
+					position: absolute;
+					top: 30%;
+					right: 0px;
+					background: #666;
+				}
+				&:last-child::after {
+					display: none;
+				}
+			}
+		}
+
+		#util1 {
+			position: absolute;
+			top: 40px;
+			left: 0px;
+			li {
+				float: left;
+				a {
+					display: inline-block;
+					padding: 10px 30px;
+					font: 13px/1 'arial';
+					color: #999;
+					letter-spacing: 1px;
+				}
+			}
+		}
+		#util2 {
+			position: absolute;
+			top: 40px;
+			right: 0px;
+			li {
+				float: left;
+				a {
+					display: inline-block;
+					padding: 10px 30px;
+					font: 13px/1 'arial';
+					color: #999;
+					letter-spacing: 1px;
+				}
+			}
+		}
+	}
+}
+
 #box {
 	width: 100%;
 	padding: 180px 0px 150px;
