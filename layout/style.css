@@ -568,4 +568,78 @@ a {
   color: #888;
 }
 
+#box10 {
+  width: 100%;
+  padding: 100px 0px;
+  background: #555;
+}
+#box10 .inner {
+  width: 1180px;
+  margin: 0px auto;
+  position: relative;
+}
+#box10 .inner h1 {
+  font: bold 22px/1 "arial";
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#box10 .inner h2 {
+  font: 16px/1 "arial";
+  color: #ddd;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#box10 .inner .btn {
+  display: block;
+  width: 180px;
+  height: 40px;
+  font: 12px/40px "arial";
+  color: #fff;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  text-align: center;
+  margin: 0px auto 80px;
+}
+#box10 .inner .wrap {
+  width: 100%;
+  height: 200px;
+}
+#box10 .inner .wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#box10 .inner .wrap article {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 0px 20px;
+  position: relative;
+}
+#box10 .inner .wrap article::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 80%;
+  background: #fff;
+  position: absolute;
+  top: 10%;
+  left: 0px;
+  opacity: 0.3;
+}
+#box10 .inner .wrap article:nth-of-type(1)::after {
+  display: none;
+}
+#box10 .inner .wrap article a i {
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 30px;
+  opacity: 0.7;
+}
+#box10 .inner .wrap article p {
+  font: bold 15px/1 "arial";
+  color: #fff;
+}
+
 /*# sourceMappingURL=style.css.map */
