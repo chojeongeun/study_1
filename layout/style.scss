@@ -14,6 +14,57 @@ a {
 	text-decoration: none;
 }
 
+#header {
+	width: 100%;
+	border: 1px solid #ddd;
+
+	.inner {
+		width: 1180px;
+		height: 120px;
+		margin: 0px auto;
+		position: relative;
+
+		h1 {
+			font: bold 28px/1 'arial';
+			color: #555;
+			position: absolute;
+			bottom: 20px;
+			left: 0px;
+		}
+
+		#gnb {
+			position: absolute;
+			bottom: 0px;
+			right: 0px;
+			> li {
+				float: left;
+				> a {
+					display: inline-block;
+					padding: 20px 30px;
+					font: bold 17px/1 'arial';
+					color: #666;
+				}
+			}
+		}
+
+		#util {
+			position: absolute;
+			top: 15px;
+			right: 0px;
+			> li {
+				float: left;
+				> a {
+					display: inline-block;
+					padding: 10px 30px;
+					font-size: 14px;
+					color: #999;
+					letter-spacing: 1px;
+				}
+			}
+		}
+	}
+}
+
 #box {
 	width: 100%;
 	padding: 180px 0px 150px;

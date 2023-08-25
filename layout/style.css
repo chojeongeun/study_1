@@ -14,6 +14,53 @@ a {
   text-decoration: none;
 }
 
+#header {
+  width: 100%;
+  border: 1px solid #ddd;
+}
+#header .inner {
+  width: 1180px;
+  height: 120px;
+  margin: 0px auto;
+  position: relative;
+}
+#header .inner h1 {
+  font: bold 28px/1 "arial";
+  color: #555;
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+}
+#header .inner #gnb {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+#header .inner #gnb > li {
+  float: left;
+}
+#header .inner #gnb > li > a {
+  display: inline-block;
+  padding: 20px 30px;
+  font: bold 17px/1 "arial";
+  color: #666;
+}
+#header .inner #util {
+  position: absolute;
+  top: 15px;
+  right: 0px;
+}
+#header .inner #util > li {
+  float: left;
+}
+#header .inner #util > li > a {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 14px;
+  color: #999;
+  letter-spacing: 1px;
+}
+
 #box {
   width: 100%;
   padding: 180px 0px 150px;
