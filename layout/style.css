@@ -642,4 +642,84 @@ a {
   color: #fff;
 }
 
+#box11 {
+  width: 100%;
+  padding: 180px 0px 150px;
+  background: #efefef;
+}
+#box11 .inner {
+  width: 1180px;
+  position: relative;
+  margin: 0px auto;
+}
+#box11 .inner h1 {
+  font: bold 24px/1.2 "arial";
+  color: #555;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#box11 .inner > p {
+  font: 14px/1 "arial";
+  color: #999;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+#box11 .inner .btn {
+  display: block;
+  width: 280px;
+  height: 40px;
+  font: bold 14px/40px "arial";
+  color: #eee;
+  background-color: #444;
+  text-align: center;
+  margin: 0 auto 100px;
+}
+#box11 .inner .wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#box11 .inner .wrap .left {
+  float: left;
+  width: 580px;
+  height: 350px;
+  background-color: #555;
+  margin-right: 50px;
+}
+#box11 .inner .wrap .right {
+  float: right;
+  width: 480px;
+  padding-top: 30px;
+}
+#box11 .inner .wrap .right article {
+  width: 100%;
+  margin-bottom: 50px;
+  position: relative;
+}
+#box11 .inner .wrap .right article .pic {
+  width: 80px;
+  height: 80px;
+  background: #bbb;
+  border-radius: 50%;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#box11 .inner .wrap .right article .txtBox {
+  margin-bottom: 20px;
+}
+#box11 .inner .wrap .right article .txtBox h2 {
+  font: bold 18px/1 "arial";
+  color: #555;
+  margin-bottom: 10px;
+  margin-left: 100px;
+}
+#box11 .inner .wrap .right article .txtBox > p {
+  font: 14px/1.2 "arial";
+  color: #777;
+  margin-left: 100px;
+}
+
 /*# sourceMappingURL=style.css.map */
