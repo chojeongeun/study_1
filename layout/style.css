@@ -218,7 +218,7 @@ a {
 
 #footer {
   width: 100%;
-  background: #555;
+  background: #333;
 }
 #footer .inner {
   width: 1180px;
@@ -266,6 +266,7 @@ a {
   clear: both;
 }
 #footer .inner .lower h1 {
+  display: inline-block;
   width: 30%;
   font: bold 30px/1 "arial";
   color: #999;
