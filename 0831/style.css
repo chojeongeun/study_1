@@ -16,5 +16,17 @@
   font-weight: bold;
   border: 3px solid black;
 }
+.container .item:nth-child(2) {
+  position: relative;
+  top: 100px;
+  left: 300px;
+  z-index: 2;
+}
+.container .item:nth-child(6) {
+  position: relative;
+  top: -350px;
+  left: 350px;
+  z-index: 1;
+}
 
 /*# sourceMappingURL=style.css.map */
