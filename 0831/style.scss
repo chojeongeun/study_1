@@ -18,12 +18,14 @@
 		border: 3px solid black;
 
 		&:nth-child(2) {
-			position: fixed;
-			top: 0;
+			position: sticky;
+			top: 50px;
 			left: 0;
 		}
 	}
 }
 
 // relative는 absolute랑 같이 자주 쓰임
-//fixed: 뷰포트. 화면 전체가 기준. 스크롤해도 고정됨
+//fixed: 뷰포트. 화면 전체가 기준. 스크롤했을때 2가 같이 내려감.
+//stiky:상단에 2가 닿을때부터 고정됨.
+//relative와 fixed가 합쳐진 느낌
