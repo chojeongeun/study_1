@@ -8,6 +8,7 @@
 	background-color: pink;
 	margin: 10px;
 	position: relative;
+	height: 200vh;
 	.item {
 		width: 100px;
 		height: 100px;
@@ -17,7 +18,7 @@
 		border: 3px solid black;
 
 		&:nth-child(2) {
-			position: absolute;
+			position: fixed;
 			top: 0;
 			left: 0;
 		}
@@ -25,3 +26,4 @@
 }
 
 // relative는 absolute랑 같이 자주 쓰임
+//fixed: 뷰포트. 화면 전체가 기준. 스크롤해도 고정됨
