@@ -7,6 +7,7 @@
 .container {
 	background-color: pink;
 	margin: 10px;
+	position: relative;
 	.item {
 		width: 100px;
 		height: 100px;
@@ -16,17 +17,11 @@
 		border: 3px solid black;
 
 		&:nth-child(2) {
-			position: relative; //다른 item에게 영향x. 덮어씌움
-			top: 100px;
-			left: 300px;
-			z-index: 2;
-		}
-
-		&:nth-child(6) {
-			position: relative;
-			top: -350px;
-			left: 350px;
-			z-index: 1;
+			position: absolute;
+			top: 0;
+			left: 0;
 		}
 	}
 }
+
+// relative는 absolute랑 같이 자주 쓰임
