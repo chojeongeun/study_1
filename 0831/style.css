@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: pink;
+  margin: 10px;
+}
+.container .item {
+  width: 100px;
+  height: 100px;
+  background: lightblue;
+  font-size: 30px;
+  font-weight: bold;
+  border: 3px solid black;
+}
+
+/*# sourceMappingURL=style.css.map */
