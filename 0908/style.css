@@ -1,0 +1,124 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content1 {
+  width: 100%;
+  padding: 50px 0px 80px;
+}
+.content1 .inner {
+  width: 1180px;
+  position: relative;
+  margin: 0px auto;
+}
+.content1 .inner .wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content1 .inner .wrap .left {
+  width: calc(50% - 10px);
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  margin-right: 20px;
+  padding: 30px;
+  background-image: url(https://www.nhreits.com/wp-content/themes/nhreits/assets/images/main/bg_reits_list01.svg);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 90%;
+  background-size: 250px;
+}
+.content1 .inner .wrap .left h1 {
+  font: bold 25px/1 "맑은고딕";
+  color: #111;
+  margin-bottom: 20px;
+}
+.content1 .inner .wrap .left p {
+  font: bold 16px/1 "맑은고딕";
+  color: #777;
+  margin-bottom: 20px;
+}
+.content1 .inner .wrap .left .btn {
+  display: block;
+  width: 150px;
+  height: 40px;
+  font: bold 16px/40px "맑은고딕";
+  color: #111;
+  border: 2px solid #111;
+  border-radius: 30px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.content1 .inner .wrap .left .range {
+  display: block;
+  width: 100%;
+  font: bold 16px/1 "arial";
+  color: #777;
+  margin-bottom: 20px;
+}
+.content1 .inner .wrap .left .price {
+  display: block;
+  width: 100%;
+  font: bold 16px/1 "arial";
+  color: #333;
+}
+.content1 .inner .wrap .right {
+  width: calc(50% - 10px);
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 30px;
+  background-image: url(https://www.nhreits.com/wp-content/themes/nhreits/assets/images/main/bg_reits_list01.svg);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 90%;
+  background-size: 250px;
+}
+.content1 .inner .wrap .right h1 {
+  font: bold 25px/1 "맑은고딕";
+  color: #111;
+  margin-bottom: 20px;
+}
+.content1 .inner .wrap .right p {
+  font: bold 16px/1 "맑은고딕";
+  color: #777;
+  margin-bottom: 20px;
+}
+.content1 .inner .wrap .right .btn {
+  display: block;
+  width: 150px;
+  height: 40px;
+  font: bold 16px/40px "맑은고딕";
+  color: #111;
+  border: 2px solid #111;
+  border-radius: 30px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.content1 .inner .wrap .right .range {
+  display: block;
+  width: 100%;
+  font: bold 16px/1 "arial";
+  color: #777;
+  margin-bottom: 20px;
+}
+.content1 .inner .wrap .right .price {
+  display: block;
+  width: 100%;
+  font: bold 16px/1 "arial";
+  color: #333;
+}
+
+/*# sourceMappingURL=style.css.map */
