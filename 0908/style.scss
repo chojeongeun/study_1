@@ -78,6 +78,34 @@ a {
 	}
 }
 
+@media screen and (max-width: 1180px) {
+	#header {
+		padding: 15px 5vw;
+
+		.inner {
+			width: 100%;
+
+			h1 {
+				img {
+					width: 130px;
+				}
+			}
+
+			.wrap {
+				#gnb {
+					display: none;
+				}
+				#util1 {
+					display: none;
+				}
+				#util2 {
+					display: flex;
+				}
+			}
+		}
+	}
+}
+
 #visual {
 	width: 100%;
 	height: 100vh;
