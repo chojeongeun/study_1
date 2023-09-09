@@ -15,6 +15,53 @@ a {
   text-decoration: none;
 }
 
+#header {
+  width: 100%;
+  padding: 20px 5vw 20px;
+  border-bottom: 1px solid #ddd;
+}
+#header .inner {
+  width: 1180px;
+  position: relative;
+  margin: 0px auto;
+}
+#header .inner .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .inner .wrap h1 a img {
+  display: flex;
+  align-items: center;
+}
+#header .inner .wrap #gnb {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+#header .inner .wrap #gnb li a {
+  font: bold 16px/1 "arial";
+  color: #444;
+}
+#header .inner .wrap #util1 {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+#header .inner .wrap #util1 li a {
+  font: bold 16px/1 "arial";
+  color: #444;
+}
+#header .inner .wrap #util2 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+#header .inner .wrap #util2 li a {
+  font: bold 20px/1 "arial";
+  color: #444;
+}
+
 .content1 {
   width: 100%;
   padding: 50px 5vw 80px;
