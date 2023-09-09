@@ -119,6 +119,21 @@ a {
   color: #fff;
 }
 
+@media screen and (max-width: 1180px) {
+  #visual .inner {
+    width: 100%;
+  }
+  #visual .inner .wrap {
+    padding: 0px 3vw;
+  }
+  #visual .inner .wrap h1 {
+    font: normal 30px/1.4 "arial";
+    margin-bottom: 15px;
+  }
+  #visual .inner .wrap p {
+    font: 20px/1 "arial";
+  }
+}
 .content1 {
   width: 100%;
   padding: 50px 5vw 80px;
