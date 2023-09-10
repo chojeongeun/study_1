@@ -201,12 +201,18 @@ a {
 					display: block;
 					width: 150px;
 					height: 40px;
-					font: bold 16px/40px '맑은고딕';
+					font: bold 15px/40px '맑은고딕';
 					color: #111;
 					border: 2px solid #111;
 					border-radius: 30px;
 					text-align: center;
 					margin-bottom: 70px;
+
+					&:hover {
+						color: #fff;
+						background: #333;
+						transition: 0.3s;
+					}
 				}
 
 				.range {
@@ -248,12 +254,17 @@ a {
 					display: block;
 					width: 150px;
 					height: 40px;
-					font: bold 16px/40px '맑은고딕';
+					font: bold 15px/40px '맑은고딕';
 					color: #111;
 					border: 2px solid #111;
 					border-radius: 30px;
 					text-align: center;
 					margin-bottom: 70px;
+					&:hover {
+						color: #fff;
+						background: #333;
+						transition: 0.3s;
+					}
 				}
 
 				.range {
@@ -325,6 +336,11 @@ a {
 					color: #333;
 					text-align: center;
 					border-radius: 30px;
+					&:hover {
+						color: #fff;
+						background: #333;
+						transition: 0.3s;
+					}
 				}
 			}
 			.swiper {
@@ -376,6 +392,7 @@ a {
 				height: 50px;
 				border: 1px solid #333;
 				border-radius: 50%;
+
 				&::after {
 					font-size: 20px;
 					color: #333;
@@ -389,6 +406,7 @@ a {
 				height: 50px;
 				border: 1px solid #333;
 				border-radius: 50%;
+
 				&::after {
 					font-size: 20px;
 					color: #333;

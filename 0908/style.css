@@ -174,12 +174,17 @@ a {
   display: block;
   width: 150px;
   height: 40px;
-  font: bold 16px/40px "맑은고딕";
+  font: bold 15px/40px "맑은고딕";
   color: #111;
   border: 2px solid #111;
   border-radius: 30px;
   text-align: center;
   margin-bottom: 70px;
+}
+.content1 .inner .wrap .left .btn:hover {
+  color: #fff;
+  background: #333;
+  transition: 0.3s;
 }
 .content1 .inner .wrap .left .range {
   display: block;
@@ -219,12 +224,17 @@ a {
   display: block;
   width: 150px;
   height: 40px;
-  font: bold 16px/40px "맑은고딕";
+  font: bold 15px/40px "맑은고딕";
   color: #111;
   border: 2px solid #111;
   border-radius: 30px;
   text-align: center;
   margin-bottom: 70px;
+}
+.content1 .inner .wrap .right .btn:hover {
+  color: #fff;
+  background: #333;
+  transition: 0.3s;
 }
 .content1 .inner .wrap .right .range {
   display: block;
@@ -290,6 +300,11 @@ a {
   color: #333;
   text-align: center;
   border-radius: 30px;
+}
+.news .inner .wrap .txtBox .btn:hover {
+  color: #fff;
+  background: #333;
+  transition: 0.3s;
 }
 .news .inner .wrap .swiper {
   width: 60%;
