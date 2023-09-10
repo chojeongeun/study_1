@@ -280,6 +280,7 @@ a {
 }
 .news .inner .wrap {
   display: flex;
+  justify-content: space-between;
   position: relative;
 }
 .news .inner .wrap .txtBox {
@@ -341,6 +342,10 @@ a {
   color: #555;
   margin-bottom: 50px;
 }
+.news .inner .wrap .swiper .swiper-wrapper .swiper-slide span {
+  font: 13px/1 "arial";
+  color: #555;
+}
 .news .inner .wrap .swiper-button-next {
   position: absolute;
   top: 350px;
@@ -368,6 +373,94 @@ a {
   color: #333;
 }
 
+@media screen and (max-width: 1180px) {
+  .news {
+    padding: 100px 3vw 70px;
+  }
+  .news .inner {
+    width: 100%;
+  }
+  .news .inner .wrap .txtBox {
+    padding: 20px;
+  }
+  .news .inner .wrap .txtBox h2 {
+    font: bold 20px/1.5 "arial";
+  }
+  .news .inner .wrap .txtBox .btn {
+    width: 130px;
+    height: 40px;
+    font: bold 15px/40px "arial";
+  }
+  .news .inner .wrap .swiper .swiper-wrapper {
+    margin-bottom: 30px;
+  }
+  .news .inner .wrap .swiper .swiper-wrapper .swiper-slide {
+    padding: 20px;
+  }
+  .news .inner .wrap .swiper .swiper-wrapper .swiper-slide a {
+    margin-bottom: 15px;
+  }
+  .news .inner .wrap .swiper .swiper-wrapper .swiper-slide h3 {
+    font: bold 16px/1 "arial";
+    margin-bottom: 20px;
+  }
+  .news .inner .wrap .swiper .swiper-wrapper .swiper-slide p {
+    margin-bottom: 30px;
+  }
+  .news .inner .wrap .swiper-button-next {
+    left: 100px;
+  }
+  .news .inner .wrap .swiper-button-prev {
+    left: 30px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .news .inner {
+    width: 100%;
+  }
+  .news .inner .wrap {
+    display: block;
+  }
+  .news .inner .wrap .txtBox {
+    width: 100%;
+    padding: 20px;
+  }
+  .news .inner .wrap .txtBox h2 {
+    font: bold 20px/1.3 "arial";
+  }
+  .news .inner .wrap .txtBox .btn {
+    width: 130px;
+    height: 40px;
+    font: bold 14px/40px "arial";
+  }
+  .news .inner .wrap .swiper {
+    width: 100%;
+  }
+  .news .inner .wrap .swiper .swiper-wrapper {
+    margin-bottom: 50px;
+  }
+  .news .inner .wrap .swiper .swiper-wrapper .swiper-slide a {
+    display: block;
+    font: bold 12px/30px "arial";
+    margin-bottom: 20px;
+  }
+  .news .inner .wrap .swiper .swiper-wrapper .swiper-slide h3 {
+    font: bold 16px/1 "arial";
+    margin-bottom: 30px;
+  }
+  .news .inner .wrap .swiper .swiper-wrapper .swiper-slide p {
+    font: 12px/1.3 "arial";
+  }
+  .news .inner .wrap .swiper .swiper-wrapper .swiper-slide span {
+    font: 12px/1 "arial";
+  }
+  .news .inner .wrap .swiper-button-next {
+    display: none;
+  }
+  .news .inner .wrap .swiper-button-prev {
+    display: none;
+  }
+}
 #footer {
   width: 100%;
   padding: 50px 5vw 80px;

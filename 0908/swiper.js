@@ -4,6 +4,7 @@ const swiper = new Swiper('.swiper', {
 	loop: true,
 	slidesPerView: 2,
 	spaceBetween: 20,
+	autoplay: true,
 
 	// Navigation arrows
 	navigation: {
