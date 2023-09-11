@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
+  width: 100%;
+  padding: 25px 5vw;
+}
+#header .inner {
+  width: 1180px;
+  position: relative;
+  margin: 0px auto;
+}
+#header .inner .upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#header .inner .upper .homepage {
+  font: bold 14px/1 "arial";
+  color: #777;
+}
+#header .inner .upper #util {
+  display: flex;
+}
+#header .inner .upper #util li {
+  position: relative;
+}
+#header .inner .upper #util li a {
+  display: inline-block;
+  padding: 5px 10px;
+  font: bold 14px/1 "arial";
+  color: #777;
+}
+#header .inner .lower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .inner .lower h1 img {
+  width: 200px;
+}
+#header .inner .lower #gnb {
+  display: flex;
+  justify-content: center;
+}
+#header .inner .lower #gnb li {
+  display: inline-block;
+  padding: 10px 25px;
+}
+#header .inner .lower #gnb li a {
+  font: bold 18px/1 "arial";
+  color: #333;
+}
+#header .inner .lower .search {
+  font-size: 18px;
+  color: #555;
+}
+
+/*# sourceMappingURL=style.css.map */
