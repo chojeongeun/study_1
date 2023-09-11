@@ -70,4 +70,121 @@ a {
   color: #555;
 }
 
+#content1 {
+  width: 100%;
+  padding: 50px 5vw 30px;
+}
+#content1 .inner {
+  width: 1180px;
+  position: relative;
+  margin: 0px auto;
+}
+#content1 .inner .wrap {
+  display: flex;
+  gap: 20px;
+}
+#content1 .inner .wrap .left {
+  width: 70%;
+}
+#content1 .inner .wrap .left .swiper {
+  width: 100%;
+  height: 450px;
+  border-radius: 15px;
+}
+#content1 .inner .wrap .left .swiper .swiper-wrapper .swiper-slide {
+  padding: 40px;
+}
+#content1 .inner .wrap .left .swiper .swiper-wrapper .swiper-slide h1 {
+  font: bold 30px/1.3 "arial";
+  color: #fff;
+  margin-bottom: 20px;
+}
+#content1 .inner .wrap .left .swiper .swiper-wrapper .swiper-slide p {
+  font: bold 15px/1.3 "arial";
+  color: #fff;
+}
+#content1 .inner .wrap .left .swiper .swiper-wrapper .swiper-slide.slide1 {
+  background-image: url(https://static31.samsungcard.com/wcms/oap/images/work/bg_hero_808x462_20230310_v1.png);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#content1 .inner .wrap .left .swiper .swiper-wrapper .swiper-slide.slide2 {
+  background-image: url(https://static31.samsungcard.com/wcms/oap/images/work/bg_hero_808x462_20230310_v2.png);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#content1 .inner .wrap .left .swiper .swiper-wrapper .swiper-slide.slide3 {
+  background-image: url(https://static31.samsungcard.com/wcms/oap/images/work/bg_hero_808x462_20230310_v3.png);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#content1 .inner .wrap .left .swiper .swiper-wrapper .swiper-slide.slide4 {
+  background-image: url(https://static31.samsungcard.com/wcms/oap/images/work/bg_hero_808x462_20230310_v4.png);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#content1 .inner .wrap .left .swiper .swiper-wrapper .swiper-slide.slide5 {
+  background-image: url(https://static31.samsungcard.com/wcms/oap/images/work/bg_hero_808x462_20230310_v5.png);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#content1 .inner .wrap .right {
+  width: 30%;
+}
+#content1 .inner .wrap .right article {
+  width: 100%;
+  height: 215px;
+  border-radius: 20px;
+}
+#content1 .inner .wrap .right article ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  border-radius: 10px;
+}
+#content1 .inner .wrap .right article ul .txtBox {
+  width: 60%;
+}
+#content1 .inner .wrap .right article ul .txtBox span {
+  width: 50px;
+  height: 25px;
+  display: block;
+  font: bold 12px/25px "arial";
+  color: #fff;
+  background: rgb(100, 100, 255);
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+#content1 .inner .wrap .right article ul .txtBox h1 {
+  font: bold 18px/1.3 "arial";
+  color: #333;
+  margin-bottom: 15px;
+}
+#content1 .inner .wrap .right article ul .txtBox p {
+  font: bold 15px/1.2 "arial";
+  color: #888;
+}
+#content1 .inner .wrap .right article ul .img {
+  width: 40%;
+  height: 100%;
+}
+#content1 .inner .wrap .right article ul .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+#content1 .inner .wrap .right article:nth-of-type(1) {
+  background: #fff3d0;
+  margin-bottom: 20px;
+}
+#content1 .inner .wrap .right article:nth-of-type(2) {
+  background: #e7e4ff;
+}
+
 /*# sourceMappingURL=style.css.map */
