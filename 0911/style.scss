@@ -14,6 +14,8 @@ a {
 	text-decoration: none;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
 #header {
 	width: 100%;
 	padding: 25px 5vw;
@@ -29,7 +31,7 @@ a {
 			align-items: center;
 			margin-bottom: 20px;
 			.homepage {
-				font: bold 14px/1 'arial';
+				font: bold 14px/1 'Noto Sans KR';
 				color: #777;
 			}
 			#util {
@@ -39,7 +41,7 @@ a {
 					a {
 						display: inline-block;
 						padding: 5px 10px;
-						font: bold 14px/1 'arial';
+						font: bold 14px/1 'Noto Sans KR';
 						color: #777;
 					}
 				}
@@ -64,7 +66,7 @@ a {
 					display: inline-block;
 					padding: 10px 25px;
 					a {
-						font: bold 18px/1 'arial';
+						font: bold 18px/1 'Noto Sans KR';
 						color: #333;
 					}
 				}
@@ -101,12 +103,12 @@ a {
 						.swiper-slide {
 							padding: 40px;
 							h1 {
-								font: bold 30px/1.3 'arial';
+								font: bold 30px/1.3 'Noto Sans KR';
 								color: #fff;
 								margin-bottom: 20px;
 							}
 							p {
-								font: bold 15px/1.3 'arial';
+								font: bold 15px/1.3 'Noto Sans KR';
 								color: #fff;
 							}
 							&.slide1 {
@@ -160,7 +162,7 @@ a {
 								width: 50px;
 								height: 25px;
 								display: block;
-								font: bold 12px/25px 'arial';
+								font: bold 12px/25px 'Noto Sans KR';
 								color: #fff;
 								background: rgb(100, 100, 255);
 								text-align: center;
@@ -168,12 +170,12 @@ a {
 								margin-bottom: 20px;
 							}
 							h1 {
-								font: bold 18px/1.3 'arial';
+								font: bold 18px/1.3 'Noto Sans KR';
 								color: #333;
 								margin-bottom: 15px;
 							}
 							p {
-								font: bold 15px/1.2 'arial';
+								font: bold 15px/1.2 'Noto Sans KR';
 								color: #888;
 							}
 						}
@@ -212,7 +214,7 @@ a {
 		border-radius: 20px;
 
 		h1 {
-			font: bold 15px/1 'arial';
+			font: bold 15px/1 'Noto Sans KR';
 			color: #111;
 			margin-bottom: 20px;
 		}
@@ -251,7 +253,7 @@ a {
 					margin-bottom: 20px;
 				}
 				span {
-					font: bold 14px/1 'arial';
+					font: bold 14px/1 'Noto Sans KR';
 					color: #333;
 				}
 			}
@@ -260,12 +262,12 @@ a {
 			display: block;
 			width: 200px;
 			height: 35px;
-			font: bold 13px/35px 'arial';
+			font: bold 13px/35px 'Noto Sans KR';
 			color: #fff;
 			background: orangered;
 			border-radius: 10px;
 			text-align: center;
-			margin: 20px auto;
+			margin: 0px auto;
 			transition: 0.5s;
 			&:hover {
 				background: rgb(255, 30, 0);
@@ -294,6 +296,150 @@ a {
 				a {
 					font: bold 18px/1 'arial';
 					color: #111;
+				}
+			}
+		}
+	}
+}
+
+#content3 {
+	width: 100%;
+	padding: 20px 5vw 30px;
+	.inner {
+		width: 1180px;
+		margin: 0px auto;
+	}
+	.wrap {
+		display: flex;
+		justify-content: space-between;
+		gap: 20px;
+		.left {
+			width: 50%;
+			h1 {
+				font: bold 15px/1 'Noto Sans KR';
+				color: #333;
+				margin-bottom: 20px;
+			}
+			ul {
+				width: 100%;
+				border: 1px solid #ddd;
+				border-radius: 20px;
+				li {
+					width: 100%;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					border-bottom: 1px solid #ddd;
+					padding: 20px;
+					&:last-child {
+						border-bottom: none;
+					}
+
+					.fa-credit-card,
+					.fa-calculator,
+					.fa-sack-dollar,
+					.fa-magnifying-glass-dollar {
+						width: 10%;
+						text-align: center;
+						font-size: 30px;
+					}
+					.fa-credit-card {
+						color: rgb(92, 92, 240);
+					}
+					.fa-calculator {
+						color: rgb(76, 169, 223);
+					}
+					.fa-sack-dollar {
+						color: rgb(255, 187, 0);
+					}
+					.fa-magnifying-glass-dollar {
+						color: rgb(143, 66, 143);
+					}
+					.txtBox {
+						width: 60%;
+
+						h2 {
+							font: bold 15px/1 'Noto Sans KR';
+							color: #333;
+							margin-bottom: 10px;
+						}
+						span {
+							font: 14px/1 'Noto Sans KR';
+							color: #555;
+						}
+					}
+					.arrow {
+						width: 20%;
+						text-align: right;
+
+						i {
+							font-size: 20px;
+							color: #333;
+						}
+					}
+				}
+			}
+		}
+		.right {
+			width: 50%;
+			h1 {
+				font: bold 15px/1 'Noto Sans KR';
+				color: #333;
+				margin-bottom: 20px;
+			}
+			ul {
+				width: 100%;
+				border: 1px solid #ddd;
+				border-radius: 20px;
+				li {
+					width: 100%;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					border-bottom: 1px solid #ddd;
+					padding: 20px;
+					&:last-child {
+						border-bottom: none;
+					}
+
+					.fa-car,
+					.fa-chart-pie,
+					.fa-receipt {
+						width: 10%;
+						text-align: center;
+						font-size: 30px;
+					}
+					.fa-car {
+						color: orange;
+					}
+					.fa-chart-pie {
+						color: green;
+					}
+					.fa-receipt {
+						color: rgb(94, 94, 243);
+					}
+					.txtBox {
+						width: 60%;
+
+						h2 {
+							font: bold 15px/1 'Noto Sans KR';
+							color: #333;
+							margin-bottom: 10px;
+						}
+						span {
+							font: 14px/1 'Noto Sans KR';
+							color: #555;
+						}
+					}
+					.arrow {
+						width: 20%;
+						text-align: right;
+
+						i {
+							font-size: 20px;
+							color: #333;
+						}
+					}
 				}
 			}
 		}

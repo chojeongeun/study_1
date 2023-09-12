@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +31,7 @@ a {
   margin-bottom: 20px;
 }
 #header .inner .upper .homepage {
-  font: bold 14px/1 "arial";
+  font: bold 14px/1 "Noto Sans KR";
   color: #777;
 }
 #header .inner .upper #util {
@@ -42,7 +43,7 @@ a {
 #header .inner .upper #util li a {
   display: inline-block;
   padding: 5px 10px;
-  font: bold 14px/1 "arial";
+  font: bold 14px/1 "Noto Sans KR";
   color: #777;
 }
 #header .inner .lower {
@@ -62,7 +63,7 @@ a {
   padding: 10px 25px;
 }
 #header .inner .lower #gnb li a {
-  font: bold 18px/1 "arial";
+  font: bold 18px/1 "Noto Sans KR";
   color: #333;
 }
 #header .inner .lower .search {
@@ -95,12 +96,12 @@ a {
   padding: 40px;
 }
 #content1 .inner .wrap .left .swiper .swiper-wrapper .swiper-slide h1 {
-  font: bold 30px/1.3 "arial";
+  font: bold 30px/1.3 "Noto Sans KR";
   color: #fff;
   margin-bottom: 20px;
 }
 #content1 .inner .wrap .left .swiper .swiper-wrapper .swiper-slide p {
-  font: bold 15px/1.3 "arial";
+  font: bold 15px/1.3 "Noto Sans KR";
   color: #fff;
 }
 #content1 .inner .wrap .left .swiper .swiper-wrapper .swiper-slide.slide1 {
@@ -154,7 +155,7 @@ a {
   width: 50px;
   height: 25px;
   display: block;
-  font: bold 12px/25px "arial";
+  font: bold 12px/25px "Noto Sans KR";
   color: #fff;
   background: rgb(100, 100, 255);
   text-align: center;
@@ -162,12 +163,12 @@ a {
   margin-bottom: 20px;
 }
 #content1 .inner .wrap .right article ul .txtBox h1 {
-  font: bold 18px/1.3 "arial";
+  font: bold 18px/1.3 "Noto Sans KR";
   color: #333;
   margin-bottom: 15px;
 }
 #content1 .inner .wrap .right article ul .txtBox p {
-  font: bold 15px/1.2 "arial";
+  font: bold 15px/1.2 "Noto Sans KR";
   color: #888;
 }
 #content1 .inner .wrap .right article ul .img {
@@ -200,7 +201,7 @@ a {
   border-radius: 20px;
 }
 #content2 .inner h1 {
-  font: bold 15px/1 "arial";
+  font: bold 15px/1 "Noto Sans KR";
   color: #111;
   margin-bottom: 20px;
 }
@@ -237,19 +238,19 @@ a {
   margin-bottom: 20px;
 }
 #content2 .inner .wrap article span {
-  font: bold 14px/1 "arial";
+  font: bold 14px/1 "Noto Sans KR";
   color: #333;
 }
 #content2 .inner .btn {
   display: block;
   width: 200px;
   height: 35px;
-  font: bold 13px/35px "arial";
+  font: bold 13px/35px "Noto Sans KR";
   color: #fff;
   background: orangered;
   border-radius: 10px;
   text-align: center;
-  margin: 20px auto;
+  margin: 0px auto;
   transition: 0.5s;
 }
 #content2 .inner .btn:hover {
@@ -280,6 +281,144 @@ a {
 #banner .inner .wrap h1 a {
   font: bold 18px/1 "arial";
   color: #111;
+}
+
+#content3 {
+  width: 100%;
+  padding: 20px 5vw 30px;
+}
+#content3 .inner {
+  width: 1180px;
+  margin: 0px auto;
+}
+#content3 .wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+#content3 .wrap .left {
+  width: 50%;
+}
+#content3 .wrap .left h1 {
+  font: bold 15px/1 "Noto Sans KR";
+  color: #333;
+  margin-bottom: 20px;
+}
+#content3 .wrap .left ul {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+#content3 .wrap .left ul li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+}
+#content3 .wrap .left ul li:last-child {
+  border-bottom: none;
+}
+#content3 .wrap .left ul li .fa-credit-card,
+#content3 .wrap .left ul li .fa-calculator,
+#content3 .wrap .left ul li .fa-sack-dollar,
+#content3 .wrap .left ul li .fa-magnifying-glass-dollar {
+  width: 10%;
+  text-align: center;
+  font-size: 30px;
+}
+#content3 .wrap .left ul li .fa-credit-card {
+  color: rgb(92, 92, 240);
+}
+#content3 .wrap .left ul li .fa-calculator {
+  color: rgb(76, 169, 223);
+}
+#content3 .wrap .left ul li .fa-sack-dollar {
+  color: rgb(255, 187, 0);
+}
+#content3 .wrap .left ul li .fa-magnifying-glass-dollar {
+  color: rgb(143, 66, 143);
+}
+#content3 .wrap .left ul li .txtBox {
+  width: 60%;
+}
+#content3 .wrap .left ul li .txtBox h2 {
+  font: bold 15px/1 "Noto Sans KR";
+  color: #333;
+  margin-bottom: 10px;
+}
+#content3 .wrap .left ul li .txtBox span {
+  font: 14px/1 "Noto Sans KR";
+  color: #555;
+}
+#content3 .wrap .left ul li .arrow {
+  width: 20%;
+  text-align: right;
+}
+#content3 .wrap .left ul li .arrow i {
+  font-size: 20px;
+  color: #333;
+}
+#content3 .wrap .right {
+  width: 50%;
+}
+#content3 .wrap .right h1 {
+  font: bold 15px/1 "Noto Sans KR";
+  color: #333;
+  margin-bottom: 20px;
+}
+#content3 .wrap .right ul {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+#content3 .wrap .right ul li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+}
+#content3 .wrap .right ul li:last-child {
+  border-bottom: none;
+}
+#content3 .wrap .right ul li .fa-car,
+#content3 .wrap .right ul li .fa-chart-pie,
+#content3 .wrap .right ul li .fa-receipt {
+  width: 10%;
+  text-align: center;
+  font-size: 30px;
+}
+#content3 .wrap .right ul li .fa-car {
+  color: orange;
+}
+#content3 .wrap .right ul li .fa-chart-pie {
+  color: green;
+}
+#content3 .wrap .right ul li .fa-receipt {
+  color: rgb(94, 94, 243);
+}
+#content3 .wrap .right ul li .txtBox {
+  width: 60%;
+}
+#content3 .wrap .right ul li .txtBox h2 {
+  font: bold 15px/1 "Noto Sans KR";
+  color: #333;
+  margin-bottom: 10px;
+}
+#content3 .wrap .right ul li .txtBox span {
+  font: 14px/1 "Noto Sans KR";
+  color: #555;
+}
+#content3 .wrap .right ul li .arrow {
+  width: 20%;
+  text-align: right;
+}
+#content3 .wrap .right ul li .arrow i {
+  font-size: 20px;
+  color: #333;
 }
 
 /*# sourceMappingURL=style.css.map */
