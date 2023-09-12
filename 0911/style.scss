@@ -199,3 +199,77 @@ a {
 		}
 	}
 }
+
+#content2 {
+	width: 100%;
+	padding: 20px 5vw 50px;
+	.inner {
+		width: 1180px;
+		position: relative;
+		margin: 0px auto;
+		border: 1px solid #ddd;
+		padding: 30px;
+		border-radius: 20px;
+
+		h1 {
+			font: bold 15px/1 'arial';
+			color: #111;
+			margin-bottom: 20px;
+		}
+
+		.wrap {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 30px;
+
+			.arrow {
+				padding: 30px;
+
+				i {
+					color: #777;
+					font-size: 23px;
+				}
+			}
+
+			article {
+				width: 100%;
+				height: 150px;
+				margin: 0px auto;
+				border: 1px solid #ddd;
+				border-radius: 10px;
+				margin-right: 15px;
+				text-align: center;
+				&:last-child {
+					margin-right: 0px;
+				}
+				.pic {
+					width: 100%;
+					text-align: center;
+					margin-top: 20px;
+					margin-bottom: 20px;
+				}
+				span {
+					font: bold 14px/1 'arial';
+					color: #333;
+				}
+			}
+		}
+		.btn {
+			display: block;
+			width: 200px;
+			height: 35px;
+			font: bold 13px/35px 'arial';
+			color: #fff;
+			background: orangered;
+			border-radius: 10px;
+			text-align: center;
+			margin: 20px auto;
+			transition: 0.5s;
+			&:hover {
+				background: rgb(255, 30, 0);
+			}
+		}
+	}
+}
