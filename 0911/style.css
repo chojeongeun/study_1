@@ -546,4 +546,67 @@ a {
   margin-bottom: 0px;
 }
 
+#footer {
+  width: 100%;
+  padding: 20px 5vw 30px;
+}
+#footer .inner {
+  width: 1180px;
+  position: relative;
+  margin: 0px auto;
+}
+#footer .inner .upper {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 15px;
+}
+#footer .inner .upper .left span {
+  font: 14px/1 "Noto Sans KR";
+  margin-right: 30px;
+}
+#footer .inner .upper .right {
+  display: flex;
+  gap: 20px;
+}
+#footer .inner .upper .right li a {
+  font-size: 20px;
+  color: royalblue;
+}
+#footer .inner .middle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+#footer .inner .middle #menubar #menu {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+#footer .inner .middle #menubar #menu li a {
+  font: 14px/1 "Noto Sans KR";
+  color: #666;
+}
+#footer .inner .middle #menubar #info {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+#footer .inner .middle #menubar #info li {
+  font: 14px/1 "Noto Sans KR";
+  color: #333;
+}
+#footer .inner .middle select {
+  width: 150px;
+  height: 30px;
+  border: 1px solid #999;
+  font: bold 13px/30px "Noto Sans KR";
+  padding-left: 10px;
+  color: #555;
+}
+#footer .inner .lower p {
+  font: 15px/1 "Noto Sans KR";
+  color: #888;
+}
+
 /*# sourceMappingURL=style.css.map */
