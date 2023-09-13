@@ -66,11 +66,42 @@ a {
   font: bold 18px/1 "Noto Sans KR";
   color: #333;
 }
-#header .inner .lower .search {
+#header .inner .lower .icon a {
+  margin-right: 10px;
+}
+#header .inner .lower .icon a i {
   font-size: 18px;
-  color: #555;
+  color: #333;
 }
 
+@media screen and (max-width: 1180px) {
+  #header {
+    padding: 20px 5vw;
+  }
+  #header .inner {
+    width: 100%;
+  }
+  #header .inner .lower #gnb {
+    display: none;
+  }
+}
+@media screen and (max-width: 639px) {
+  #header {
+    padding: 20px 5vw;
+  }
+  #header .inner .upper {
+    display: none;
+  }
+  #header .inner .lower h1 img {
+    width: 150px;
+  }
+  #header .inner .lower #gnb {
+    display: none;
+  }
+  #header .inner .lower .icon a i {
+    font-size: 14px;
+  }
+}
 #content1 {
   width: 100%;
   padding: 50px 5vw 30px;
@@ -563,7 +594,7 @@ a {
 }
 #footer .inner .upper .left span {
   font: 14px/1 "Noto Sans KR";
-  margin-right: 30px;
+  margin-right: 20px;
 }
 #footer .inner .upper .right {
   display: flex;
@@ -571,7 +602,7 @@ a {
 }
 #footer .inner .upper .right li a {
   font-size: 20px;
-  color: royalblue;
+  color: rgb(97, 97, 97);
 }
 #footer .inner .middle {
   display: flex;
