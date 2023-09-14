@@ -23,12 +23,14 @@ let computerNum = 0;
 let playButton = document.getElementById('play-button');
 let userInput = document.getElementById('user-input');
 let resultArea = document.getElementById('result-area');
+let resetButton = document.getElementById('reset-button');
 
 // addEventListener(이벤트이름, 이벤트 발생시 실행함수)
 //함수를 매개변수로 변수처럼 넘김
 //함수()형태로 보내면 실행되어버리므로 ()는 빼고 변수처럼 보내기
 //함수도 매개변수처럼 넘길수있다!
 playButton.addEventListener('click', play);
+resetButton.addEventListener('click', reset);
 
 function pickRandomNum() {
 	// 0~99 에서 + 1 을 함으로써 1~100 이 된다.
@@ -45,6 +47,14 @@ function play() {
 	} else {
 		resultArea.textContent = '맞췄습니다!!!';
 	}
+}
+
+function reset() {
+	//user input창이 깨끗하게 정리되고
+	userInput.value = '';
+	//새로운 번호가 생성되고
+	pickRandomNum();
+	resultArea.textContent = '결과값이 여기 나옵니다!';
 }
 
 pickRandomNum();
