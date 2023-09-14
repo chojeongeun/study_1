@@ -890,6 +890,7 @@ a {
 #footer .inner .upper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   border-bottom: 1px solid #bbb;
   padding-bottom: 15px;
 }
@@ -908,6 +909,7 @@ a {
 #footer .inner .middle {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 10px;
 }
 #footer .inner .middle #menubar #menu {
@@ -939,6 +941,42 @@ a {
 #footer .inner .lower p {
   font: 15px/1 "Noto Sans KR";
   color: #888;
+}
+
+@media screen and (max-width: 1180px) {
+  #footer .inner {
+    width: 100%;
+  }
+  #footer .inner .upper .left {
+    margin-bottom: 10px;
+  }
+  #footer .inner .upper .left span {
+    display: block;
+    font: 13px/1 "Noto Sans KR";
+    margin-bottom: 10px;
+  }
+  #footer .inner .upper .right li a {
+    font-size: 17px;
+  }
+  #footer .inner .middle #menubar #menu {
+    gap: 15px;
+  }
+  #footer .inner .middle #menubar #menu li a {
+    font: 13px/1 "Noto Sans KR";
+  }
+  #footer .inner .middle #menubar #info {
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  #footer .inner .middle #menubar #info li {
+    font: 13px/1 "Noto Sans KR";
+  }
+  #footer .inner .middle select {
+    margin-bottom: 15px;
+  }
+  #footer .inner .lower p {
+    font: 14px/1 "Noto Sans KR";
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

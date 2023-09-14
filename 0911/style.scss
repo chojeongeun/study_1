@@ -1027,6 +1027,7 @@ a {
 		.upper {
 			display: flex;
 			justify-content: space-between;
+			flex-wrap: wrap;
 			border-bottom: 1px solid #bbb;
 			padding-bottom: 15px;
 			.left {
@@ -1049,6 +1050,7 @@ a {
 		.middle {
 			display: flex;
 			justify-content: space-between;
+			flex-wrap: wrap;
 			margin-top: 10px;
 
 			#menubar {
@@ -1087,6 +1089,60 @@ a {
 			p {
 				font: 15px/1 'Noto Sans KR';
 				color: #888;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	#footer {
+		.inner {
+			width: 100%;
+
+			.upper {
+				.left {
+					margin-bottom: 10px;
+					span {
+						display: block;
+						font: 13px/1 'Noto Sans KR';
+						margin-bottom: 10px;
+					}
+				}
+				.right {
+					li {
+						a {
+							font-size: 17px;
+						}
+					}
+				}
+			}
+			.middle {
+				#menubar {
+					#menu {
+						gap: 15px;
+						li {
+							a {
+								font: 13px/1 'Noto Sans KR';
+							}
+						}
+					}
+					#info {
+						gap: 15px;
+						margin-bottom: 20px;
+						li {
+							font: 13px/1 'Noto Sans KR';
+						}
+					}
+				}
+
+				select {
+					margin-bottom: 15px;
+				}
+			}
+			.lower {
+				p {
+					font: 14px/1 'Noto Sans KR';
+				}
 			}
 		}
 	}
