@@ -409,6 +409,14 @@ a {
   color: #111;
 }
 
+@media screen and (max-width: 1180px) {
+  #banner .inner {
+    width: 100%;
+  }
+  #banner .inner .wrap h1 a {
+    font: bold 14px/1 "Noto sans KR";
+  }
+}
 #content3 {
   width: 100%;
   padding: 20px 5vw 30px;
