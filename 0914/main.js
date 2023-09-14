@@ -24,6 +24,9 @@ let playButton = document.getElementById('play-button');
 let userInput = document.getElementById('user-input');
 let resultArea = document.getElementById('result-area');
 let resetButton = document.getElementById('reset-button');
+let chances = 5;
+let gameOver = false;
+let chanceArea = document.getElementById('chance-area');
 
 // addEventListener(이벤트이름, 이벤트 발생시 실행함수)
 //함수를 매개변수로 변수처럼 넘김
@@ -40,12 +43,26 @@ function pickRandomNum() {
 
 function play() {
 	let userValue = userInput.value;
+
+	chances--;
+	// 정적인 값과 동적인 값을 같이 쓸때 사용
+	chanceArea.textContent = `남은 기회: ${chances}번`;
+	console.log('chance', chances);
+
 	if (userValue < computerNum) {
 		resultArea.textContent = 'UP!!!';
 	} else if (userValue > computerNum) {
 		resultArea.textContent = 'DOWN!!!';
 	} else {
 		resultArea.textContent = '맞췄습니다!!!';
+	}
+
+	if (chances < 1) {
+		gameOver = true;
+	}
+
+	if (gameOver == true) {
+		playButton.disabled = true;
 	}
 }
 
