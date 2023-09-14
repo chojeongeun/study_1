@@ -425,25 +425,25 @@ a {
   width: 1180px;
   margin: 0px auto;
 }
-#content3 .wrap {
+#content3 .inner .wrap {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
-#content3 .wrap .left {
+#content3 .inner .wrap .left {
   width: 50%;
 }
-#content3 .wrap .left h1 {
+#content3 .inner .wrap .left h1 {
   font: bold 15px/1 "Noto Sans KR";
   color: #333;
   margin-bottom: 20px;
 }
-#content3 .wrap .left ul {
+#content3 .inner .wrap .left ul {
   width: 100%;
   border: 1px solid #ddd;
   border-radius: 20px;
 }
-#content3 .wrap .left ul li {
+#content3 .inner .wrap .left ul li {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -451,63 +451,63 @@ a {
   border-bottom: 1px solid #ddd;
   padding: 20px;
 }
-#content3 .wrap .left ul li:last-child {
+#content3 .inner .wrap .left ul li:last-child {
   border-bottom: none;
 }
-#content3 .wrap .left ul li .fa-credit-card,
-#content3 .wrap .left ul li .fa-calculator,
-#content3 .wrap .left ul li .fa-sack-dollar,
-#content3 .wrap .left ul li .fa-magnifying-glass-dollar {
+#content3 .inner .wrap .left ul li .fa-credit-card,
+#content3 .inner .wrap .left ul li .fa-calculator,
+#content3 .inner .wrap .left ul li .fa-sack-dollar,
+#content3 .inner .wrap .left ul li .fa-magnifying-glass-dollar {
   width: 10%;
   text-align: center;
   font-size: 30px;
 }
-#content3 .wrap .left ul li .fa-credit-card {
+#content3 .inner .wrap .left ul li .fa-credit-card {
   color: rgb(92, 92, 240);
 }
-#content3 .wrap .left ul li .fa-calculator {
+#content3 .inner .wrap .left ul li .fa-calculator {
   color: rgb(76, 169, 223);
 }
-#content3 .wrap .left ul li .fa-sack-dollar {
+#content3 .inner .wrap .left ul li .fa-sack-dollar {
   color: rgb(255, 187, 0);
 }
-#content3 .wrap .left ul li .fa-magnifying-glass-dollar {
+#content3 .inner .wrap .left ul li .fa-magnifying-glass-dollar {
   color: rgb(143, 66, 143);
 }
-#content3 .wrap .left ul li .txtBox {
+#content3 .inner .wrap .left ul li .txtBox {
   width: 60%;
 }
-#content3 .wrap .left ul li .txtBox h2 {
+#content3 .inner .wrap .left ul li .txtBox h2 {
   font: bold 15px/1 "Noto Sans KR";
   color: #333;
   margin-bottom: 10px;
 }
-#content3 .wrap .left ul li .txtBox span {
+#content3 .inner .wrap .left ul li .txtBox span {
   font: 14px/1 "Noto Sans KR";
   color: #555;
 }
-#content3 .wrap .left ul li .arrow {
+#content3 .inner .wrap .left ul li .arrow {
   width: 20%;
   text-align: right;
 }
-#content3 .wrap .left ul li .arrow i {
+#content3 .inner .wrap .left ul li .arrow i {
   font-size: 20px;
   color: #333;
 }
-#content3 .wrap .right {
+#content3 .inner .wrap .right {
   width: 50%;
 }
-#content3 .wrap .right h1 {
+#content3 .inner .wrap .right h1 {
   font: bold 15px/1 "Noto Sans KR";
   color: #333;
   margin-bottom: 20px;
 }
-#content3 .wrap .right ul {
+#content3 .inner .wrap .right ul {
   width: 100%;
   border: 1px solid #ddd;
   border-radius: 20px;
 }
-#content3 .wrap .right ul li {
+#content3 .inner .wrap .right ul li {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -515,46 +515,145 @@ a {
   border-bottom: 1px solid #ddd;
   padding: 20px;
 }
-#content3 .wrap .right ul li:last-child {
+#content3 .inner .wrap .right ul li:last-child {
   border-bottom: none;
 }
-#content3 .wrap .right ul li .fa-car,
-#content3 .wrap .right ul li .fa-chart-pie,
-#content3 .wrap .right ul li .fa-receipt {
+#content3 .inner .wrap .right ul li .fa-car,
+#content3 .inner .wrap .right ul li .fa-chart-pie,
+#content3 .inner .wrap .right ul li .fa-receipt {
   width: 10%;
   text-align: center;
   font-size: 30px;
 }
-#content3 .wrap .right ul li .fa-car {
+#content3 .inner .wrap .right ul li .fa-car {
   color: orange;
 }
-#content3 .wrap .right ul li .fa-chart-pie {
+#content3 .inner .wrap .right ul li .fa-chart-pie {
   color: green;
 }
-#content3 .wrap .right ul li .fa-receipt {
+#content3 .inner .wrap .right ul li .fa-receipt {
   color: rgb(94, 94, 243);
 }
-#content3 .wrap .right ul li .txtBox {
+#content3 .inner .wrap .right ul li .txtBox {
   width: 60%;
 }
-#content3 .wrap .right ul li .txtBox h2 {
+#content3 .inner .wrap .right ul li .txtBox h2 {
   font: bold 15px/1 "Noto Sans KR";
   color: #333;
-  margin-bottom: 10px;
 }
-#content3 .wrap .right ul li .txtBox span {
+#content3 .inner .wrap .right ul li .txtBox span {
   font: 14px/1 "Noto Sans KR";
   color: #555;
 }
-#content3 .wrap .right ul li .arrow {
+#content3 .inner .wrap .right ul li .arrow {
   width: 20%;
   text-align: right;
 }
-#content3 .wrap .right ul li .arrow i {
+#content3 .inner .wrap .right ul li .arrow i {
   font-size: 20px;
   color: #333;
 }
 
+@media screen and (max-width: 1180px) {
+  #content3 .inner {
+    width: 100%;
+  }
+  #content3 .inner .wrap {
+    gap: 15px;
+  }
+  #content3 .inner .wrap .left h1 {
+    font: bold 14px/1 "Noto Sans KR";
+    margin-bottom: 15px;
+  }
+  #content3 .inner .wrap .left ul li .fa-credit-card,
+  #content3 .inner .wrap .left ul li .fa-calculator,
+  #content3 .inner .wrap .left ul li .fa-sack-dollar,
+  #content3 .inner .wrap .left ul li .fa-magnifying-glass-dollar {
+    font-size: 25px;
+    margin-right: 30px;
+  }
+  #content3 .inner .wrap .left ul li .txtBox h2 {
+    font: bold 14px/1 "Noto Sans KR";
+  }
+  #content3 .inner .wrap .left ul li .txtBox span {
+    font: 13px/1 "Noto Sans KR";
+  }
+  #content3 .inner .wrap .left ul li .arrow i {
+    font-size: 15px;
+  }
+  #content3 .inner .wrap .right h1 {
+    font: bold 14px/1 "Noto Sans KR";
+    margin-bottom: 15px;
+  }
+  #content3 .inner .wrap .right ul li .fa-car,
+  #content3 .inner .wrap .right ul li .fa-chart-pie,
+  #content3 .inner .wrap .right ul li .fa-receipt {
+    font-size: 25px;
+    margin-right: 30px;
+  }
+  #content3 .inner .wrap .right ul li .txtBox h2 {
+    font: bold 14px/1 "Noto Sans KR";
+  }
+  #content3 .inner .wrap .right ul li .txtBox span {
+    font: 13px/1 "Noto Sans KR";
+  }
+  #content3 .inner .wrap .right ul li .arrow i {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 639px) {
+  #content3 .inner .wrap {
+    display: block;
+  }
+  #content3 .inner .wrap .left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #content3 .inner .wrap .left ul li .fa-credit-card,
+  #content3 .inner .wrap .left ul li .fa-calculator,
+  #content3 .inner .wrap .left ul li .fa-sack-dollar,
+  #content3 .inner .wrap .left ul li .fa-magnifying-glass-dollar {
+    margin-right: 20px;
+  }
+  #content3 .inner .wrap .left ul li .txtBox {
+    width: 70%;
+  }
+  #content3 .inner .wrap .left ul li .txtBox h2 {
+    font: bold 13px/1.2 "Noto Sans KR";
+  }
+  #content3 .inner .wrap .left ul li .txtBox span {
+    font: 12px/1.2 "Noto Sans KR";
+  }
+  #content3 .inner .wrap .left ul li .arrow {
+    width: 10%;
+  }
+  #content3 .inner .wrap .left ul li .arrow i {
+    font-size: 13px;
+  }
+  #content3 .inner .wrap .right {
+    width: 100%;
+  }
+  #content3 .inner .wrap .right ul li .fa-car,
+  #content3 .inner .wrap .right ul li .fa-chart-pie,
+  #content3 .inner .wrap .right ul li .fa-receipt {
+    margin-right: 20px;
+  }
+  #content3 .inner .wrap .right ul li .txtBox {
+    width: 70%;
+  }
+  #content3 .inner .wrap .right ul li .txtBox h2 {
+    font: bold 13px/1.2 "Noto Sans KR";
+  }
+  #content3 .inner .wrap .right ul li .txtBox span {
+    font: 12px/1.2 "Noto Sans KR";
+  }
+  #content3 .inner .wrap .right ul li .arrow {
+    width: 10%;
+  }
+  #content3 .inner .wrap .right ul li .arrow i {
+    font-size: 13px;
+  }
+}
 #content4 {
   width: 100%;
   padding: 20px 5vw 50px;
