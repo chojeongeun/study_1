@@ -794,7 +794,6 @@ a {
 			height: 500px;
 			display: flex;
 			justify-content: space-between;
-			// align-items: center;
 			gap: 20px;
 			.left {
 				width: 70%;
@@ -816,7 +815,7 @@ a {
 				}
 				.leftWrap {
 					display: flex;
-					justify-content: center;
+					justify-content: space-between;
 					gap: 10px;
 					article {
 						width: 100%;
@@ -896,6 +895,121 @@ a {
 					}
 					&:last-child {
 						margin-bottom: 0px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	#content4 {
+		padding: 20px 5vw 30px;
+		.inner {
+			width: 100%;
+			.wrap {
+				width: 100%;
+				height: auto;
+				flex-wrap: wrap;
+				.left {
+					width: 100%;
+					.btn {
+						margin-top: 30px;
+						margin-bottom: 30px;
+					}
+
+					.leftWrap {
+						article {
+							h3 {
+								font: bold 15px/1.2 'Noto Sans KR';
+								margin-bottom: 15px;
+							}
+							span {
+								font: 14px/1 'Noto Sans KR';
+								margin-bottom: 15px;
+							}
+						}
+					}
+				}
+				.right {
+					width: 100%;
+					display: flex;
+					justify-content: space-between;
+					flex-wrap: wrap;
+					gap: 20px;
+					article {
+						height: auto;
+						.txtBox {
+							padding: 20px;
+							span {
+								width: 70px;
+								font: bold 11px/25px 'Noto Sans KR';
+							}
+							h3 {
+								font: bold 18px/1.3 'Noto Sans KR';
+							}
+							p {
+								font: 14px/1.3 'Noto Sans KR';
+							}
+						}
+						.pic {
+							width: 150px;
+							height: 150px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 639px) {
+	#content4 {
+		.inner {
+			.wrap {
+				.left {
+					.btn {
+						margin-top: 20px;
+						margin-bottom: 20px;
+					}
+
+					.leftWrap {
+						display: block;
+						article {
+							background: #fff;
+							.pic {
+								height: 300px;
+								img {
+									object-fit: contain;
+								}
+							}
+						}
+					}
+				}
+				.right {
+					width: 100%;
+					display: flex;
+					justify-content: space-between;
+					gap: 20px;
+					article {
+						height: auto;
+						.txtBox {
+							padding: 20px;
+							span {
+								width: 70px;
+								font: bold 11px/25px 'Noto Sans KR';
+							}
+							h3 {
+								font: bold 18px/1.3 'Noto Sans KR';
+							}
+							p {
+								font: 14px/1.3 'Noto Sans KR';
+							}
+						}
+						.pic {
+							width: 150px;
+							height: 150px;
+						}
 					}
 				}
 			}
