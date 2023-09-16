@@ -27,6 +27,7 @@ let resetButton = document.getElementById('reset-button');
 let chances = 5;
 let gameOver = false;
 let chanceArea = document.getElementById('chance-area');
+let history = [];
 
 // addEventListener(이벤트이름, 이벤트 발생시 실행함수)
 //함수를 매개변수로 변수처럼 넘김
@@ -44,6 +45,10 @@ function pickRandomNum() {
 function play() {
 	let userValue = userInput.value;
 
+	if (userValue < 1 || userValue > 100) {
+		resultArea.textContent = '1과 100사이 숫자를 입력해주세요';
+		return;
+	}
 	chances--;
 	// 정적인 값과 동적인 값을 같이 쓸때 사용
 	chanceArea.textContent = `남은 기회: ${chances}번`;
@@ -56,6 +61,9 @@ function play() {
 	} else {
 		resultArea.textContent = '맞췄습니다!!!';
 	}
+
+	history.push(userValue);
+	console.log(history);
 
 	if (chances < 1) {
 		gameOver = true;
