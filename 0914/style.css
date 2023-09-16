@@ -1,49 +1,75 @@
-#game {
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: url(./img/pic2.jpg);
+  background-position-x: 100%;
+  background-repeat: no-repeat;
+}
+body #game {
   width: 400px;
-  background: #efefef;
-  margin: 100px auto;
+  background: #f0f0f0;
+  margin: 20px auto;
   text-align: center;
   padding: 40px;
   border-radius: 30px;
 }
-#game h1 {
-  font: bold 26px/1 "arial";
+body #game h1 {
+  font: bold 26px/1 "Noto Sans KR";
   color: #111;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
-#game .pic {
-  width: 300px;
-  height: 300px;
+body #game .pic {
+  width: 250px;
+  height: 250px;
   margin: 0px auto 20px;
 }
-#game .pic img {
+body #game .pic img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   opacity: 0.9;
 }
-#game #result-area {
-  font: 13px/1 "arial";
+body #game #result-area {
+  font: 12px/1 "Noto Sans KR";
   color: #888;
   margin-bottom: 10px;
 }
-#game #user-input {
+body #game #user-input {
   border: 1px solid #888;
   height: 20px;
-  padding-left: 5px;
+  padding: 2px 5px;
 }
-#game #play-button {
+body #game #play-button {
   margin-bottom: 10px;
   border: 1px solid #888;
   height: 23px;
+  padding: 3px;
 }
-#game #reset-button {
+body #game #reset-button {
   display: block;
   margin: 0px auto 20px;
-  border: 1px solid #888;
+  border: none;
+  padding: 3px;
+  background: coral;
+  border-radius: 10px;
 }
-#game #chance-area {
-  font: bold 13px/1 "arial";
+body #game #chance-area {
+  font: bold 13px/1 "Noto Sans KR";
   color: coral;
 }
 

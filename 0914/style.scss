@@ -1,54 +1,82 @@
-#game {
-	width: 400px;
-	background: #efefef;
-	margin: 100px auto;
-	text-align: center;
-	padding: 40px;
-	border-radius: 30px;
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
 
-	h1 {
-		font: bold 26px/1 'arial';
-		color: #111;
-		margin-bottom: 20px;
-	}
+ol,
+ul,
+li {
+	list-style: none;
+}
 
-	.pic {
-		width: 300px;
-		height: 300px;
-		margin: 0px auto 20px;
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			opacity: 0.9;
+a {
+	text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+body {
+	background-image: url(./img/pic2.jpg);
+	background-position-x: 100%;
+	background-repeat: no-repeat;
+
+	#game {
+		width: 400px;
+		background: #f0f0f0;
+		margin: 20px auto;
+		text-align: center;
+		padding: 40px;
+		border-radius: 30px;
+
+		h1 {
+			font: bold 26px/1 'Noto Sans KR';
+			color: #111;
+			margin-bottom: 40px;
 		}
-	}
 
-	#result-area {
-		font: 13px/1 'arial';
-		color: #888;
-		margin-bottom: 10px;
-	}
+		.pic {
+			width: 250px;
+			height: 250px;
+			margin: 0px auto 20px;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				opacity: 0.9;
+			}
+		}
 
-	#user-input {
-		border: 1px solid #888;
-		height: 20px;
-		padding-left: 5px;
-	}
+		#result-area {
+			font: 12px/1 'Noto Sans KR';
+			color: #888;
+			margin-bottom: 10px;
+		}
 
-	#play-button {
-		margin-bottom: 10px;
-		border: 1px solid #888;
-		height: 23px;
-	}
+		#user-input {
+			border: 1px solid #888;
+			height: 20px;
+			padding: 2px 5px;
+		}
 
-	#reset-button {
-		display: block;
-		margin: 0px auto 20px;
-		border: 1px solid #888;
-	}
-	#chance-area {
-		font: bold 13px/1 'arial';
-		color: coral;
+		#play-button {
+			margin-bottom: 10px;
+			border: 1px solid #888;
+			height: 23px;
+			padding: 3px;
+		}
+
+		#reset-button {
+			display: block;
+			margin: 0px auto 20px;
+			border: none;
+			padding: 3px;
+			background: coral;
+			border-radius: 10px;
+		}
+		#chance-area {
+			font: bold 13px/1 'Noto Sans KR';
+			color: coral;
+		}
 	}
 }
