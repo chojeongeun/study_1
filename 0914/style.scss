@@ -1,0 +1,54 @@
+#game {
+	width: 400px;
+	background: #efefef;
+	margin: 100px auto;
+	text-align: center;
+	padding: 40px;
+	border-radius: 30px;
+
+	h1 {
+		font: bold 26px/1 'arial';
+		color: #111;
+		margin-bottom: 20px;
+	}
+
+	.pic {
+		width: 300px;
+		height: 300px;
+		margin: 0px auto 20px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			opacity: 0.9;
+		}
+	}
+
+	#result-area {
+		font: 13px/1 'arial';
+		color: #888;
+		margin-bottom: 10px;
+	}
+
+	#user-input {
+		border: 1px solid #888;
+		height: 20px;
+		padding-left: 5px;
+	}
+
+	#play-button {
+		margin-bottom: 10px;
+		border: 1px solid #888;
+		height: 23px;
+	}
+
+	#reset-button {
+		display: block;
+		margin: 0px auto 20px;
+		border: 1px solid #888;
+	}
+	#chance-area {
+		font: bold 13px/1 'arial';
+		color: coral;
+	}
+}
