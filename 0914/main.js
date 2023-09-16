@@ -49,6 +49,12 @@ function play() {
 		resultArea.textContent = '1과 100사이 숫자를 입력해주세요';
 		return;
 	}
+
+	if (history.includes(userValue)) {
+		resultArea.textContent = '이미 입력한 숫자입니다. 다른 숫자를 입력해주세요.';
+		return;
+	}
+
 	chances--;
 	// 정적인 값과 동적인 값을 같이 쓸때 사용
 	chanceArea.textContent = `남은 기회: ${chances}번`;
