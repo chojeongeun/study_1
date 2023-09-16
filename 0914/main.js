@@ -35,6 +35,9 @@ let history = [];
 //함수도 매개변수처럼 넘길수있다!
 playButton.addEventListener('click', play);
 resetButton.addEventListener('click', reset);
+userInput.addEventListener('focus', function () {
+	userInput.value = '';
+});
 
 function pickRandomNum() {
 	// 0~99 에서 + 1 을 함으로써 1~100 이 된다.
@@ -66,6 +69,7 @@ function play() {
 		resultArea.textContent = 'DOWN!!!';
 	} else {
 		resultArea.textContent = '맞췄습니다!!!';
+		gameOver = true;
 	}
 
 	history.push(userValue);
