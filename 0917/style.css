@@ -1,0 +1,53 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: url(./img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .container {
+  background-color: #fff;
+  min-height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+body .container .task-area {
+  border: 1px solid lightgray;
+}
+body .container .task-tabs {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  position: relative;
+}
+body .container .task-tabs #under-line {
+  height: 4px;
+  background: pink;
+  position: absolute;
+  width: 80px;
+  left: 0px;
+  top: 52px;
+  padding: 0px;
+}
+body .container .task-tabs div {
+  padding: 1em;
+}
+body .container div .task {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+/*# sourceMappingURL=style.css.map */
