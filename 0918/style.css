@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
+  width: 100%;
+  padding: 20px 5vw 30px;
+  border: 1px solid #ddd;
+}
+#header .inner {
+  width: 1180px;
+  position: relative;
+  margin: 0px auto;
+}
+#header .inner .upper {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 20px;
+}
+#header .inner .upper li {
+  float: left;
+  margin-left: 15px;
+}
+#header .inner .upper li a {
+  color: rgb(95, 133, 37);
+  font-size: 18px;
+}
+#header .inner .lower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .inner .lower h1 a {
+  font: bold 28px/1 "arial";
+  color: rgb(136, 188, 59);
+}
+#header .inner .lower #gnb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .inner .lower #gnb li a {
+  display: inline-block;
+  padding: 10px 20px;
+  font: 14px/1 "arial";
+  color: #555;
+}
+#header .inner .lower #search {
+  display: flex;
+  align-items: center;
+}
+#header .inner .lower #search input {
+  width: 200px;
+  height: 23px;
+  border: 1px solid rgb(136, 188, 59);
+  border-radius: 5px;
+  margin-right: 10px;
+}
+#header .inner .lower #search li a {
+  font-size: 18px;
+  color: rgb(136, 188, 59);
+}
+
+/*# sourceMappingURL=style.css.map */
