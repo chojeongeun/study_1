@@ -16,6 +16,7 @@ a {
 
 #header {
 	width: 100%;
+	height: 130px;
 	padding: 20px 5vw 30px;
 	border: 1px solid #ddd;
 
@@ -82,6 +83,36 @@ a {
 					}
 				}
 			}
+		}
+	}
+}
+
+#visual {
+	width: 100%;
+	height: calc(100vh - 130px);
+
+	.swiper {
+		width: 100%;
+		height: 100%;
+		.swiper-wrapper {
+			.swiper-slide {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				&.slide1 {
+					background-color: pink;
+				}
+				&.slide2 {
+					background-color: lightblue;
+				}
+				&.slide3 {
+					background-color: lightgreen;
+				}
+			}
+		}
+		.swiper-button-prev,
+		.swiper-button-next {
+			color: #888;
 		}
 	}
 }
