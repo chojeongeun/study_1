@@ -168,4 +168,66 @@ body {
   color: rgb(49, 65, 212);
 }
 
+#footer {
+  width: 100%;
+  background: #dcdcdc;
+}
+#footer .inner {
+  width: 1180px;
+  margin: 0px auto;
+}
+#footer .inner #menu {
+  padding: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+#footer .inner #menu li a {
+  font: 13px/1 "arial";
+  color: #777;
+}
+#footer .inner #lower {
+  padding: 20px 0vw 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer .inner #lower h1 {
+  font: bold 24px/1 "arial";
+  color: #888;
+  width: 15%;
+}
+#footer .inner #lower .txtBox {
+  width: 75%;
+}
+#footer .inner #lower .txtBox h2 {
+  font: bold 15px/1 "arial";
+  color: #333;
+  margin-bottom: 10px;
+}
+#footer .inner #lower .txtBox #Info li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font: 14px/1 "arial";
+  color: #333;
+}
+#footer .inner #lower .txtBox #Info li span {
+  margin-right: 5px;
+  font: 14px/1 "arial";
+  color: #888;
+}
+#footer .inner #lower .txtBox p {
+  font: 13px/1 "arial";
+  color: #888;
+}
+#footer .inner #lower select {
+  width: 10%;
+  border: 1px solid #aaa;
+  height: 25px;
+  padding: 3px;
+}
+
 /*# sourceMappingURL=style.css.map */

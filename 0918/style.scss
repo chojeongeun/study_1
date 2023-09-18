@@ -189,3 +189,72 @@ body {
 		}
 	}
 }
+
+#footer {
+	width: 100%;
+	background: #dcdcdc;
+	.inner {
+		width: 1180px;
+		margin: 0px auto;
+		#menu {
+			padding: 20px;
+			display: flex;
+			justify-content: start;
+			align-items: center;
+			gap: 20px;
+			margin-bottom: 20px;
+
+			li {
+				a {
+					font: 13px/1 'arial';
+					color: #777;
+				}
+			}
+		}
+
+		#lower {
+			padding: 20px 0vw 50px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			h1 {
+				font: bold 24px/1 'arial';
+				color: #888;
+				width: 15%;
+			}
+			.txtBox {
+				width: 75%;
+				h2 {
+					font: bold 15px/1 'arial';
+					color: #333;
+					margin-bottom: 10px;
+				}
+				#Info {
+					li {
+						display: inline-block;
+						margin-right: 20px;
+						margin-bottom: 20px;
+						font: 14px/1 'arial';
+						color: #333;
+						span {
+							margin-right: 5px;
+							font: 14px/1 'arial';
+							color: #888;
+						}
+					}
+				}
+
+				p {
+					font: 13px/1 'arial';
+					color: #888;
+				}
+			}
+			select {
+				width: 10%;
+				border: 1px solid #aaa;
+				height: 25px;
+				padding: 3px;
+			}
+		}
+	}
+}
