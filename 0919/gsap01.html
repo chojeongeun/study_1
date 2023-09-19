@@ -249,7 +249,7 @@
       rotation: 360
     })
 
-    //02 : trigger(여러개 속성 쓸수있어서 객체형태로. 언제 시작할건지?) 
+    //02 : trigger(여러개 속성 쓸수있어서 객체형태로. 언제 시작할건지? 시작되는 기준점을 뜻함) 
     //2번째 박스에 왔을때 움직이게 하기
     gsap.to(box2, {
       duration: 2,
@@ -258,6 +258,34 @@
       borderRadius: 100,
       scrollTrigger: {
         trigger: box2,
+      }
+    });
+
+    //03 : toggleActions - 움직임을 컨트롤 (onEnter, onLeave, onEnterBack, onLeaveBack) - 4단계
+    //play, pause, resume, reset, restart, complete, reverse, none 요소 설정 가능
+    gsap.to(box3, {
+      duration: 2,
+      x: 500,//transform,translate의 x축을 말하는거임
+      rotation: 360,
+      borderRadius: 100,
+      scrollTrigger: {
+        trigger: box3,
+        toggleActions: "play pause reverse none"
+      }
+    });
+
+    //04 : start, end - 언제 시작하고, 언제 끝나는지 설정
+    gsap.to(box4, {
+      duration: 2,
+      x: 500,
+      rotation: 360,
+      borderRadius: 100,
+      scrollTrigger: {
+        trigger: box4,
+        start: 'top 50%',
+        end: 'bottom 20%',
+        toggleActions: "play pause reverse none",
+        markers: true,
       }
     });
   </script>
