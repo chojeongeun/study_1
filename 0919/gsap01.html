@@ -285,7 +285,39 @@
         start: 'top 50%',
         end: 'bottom 20%',
         toggleActions: "play pause reverse none",
+        markers: false,
+      }
+    });
+
+    //05 : scrub : 스크롤을 문지르면서 컨트롤
+    //scrub 사용시 toggleActions 사용할 필요x
+    gsap.to(box5, {
+      duration: 2,
+      x: 500,
+      rotation: 360,
+      borderRadius: 100,
+      scrollTrigger: {
+        trigger: box5,
+        start: 'top 50%',
+        end: 'bottom 20%',
+        scrub: true, //true, 1, 2...
+        markers: false,
+      }
+    });
+
+    //06 : pin
+    gsap.to(box6, {
+      duration: 2,
+      x: 500,
+      rotation: 360,
+      borderRadius: 100,
+      scrollTrigger: {
+        trigger: box6,
+        start: 'top 50%',
+        end: 'bottom 200px',
+        scrub: true,
         markers: true,
+        pin: true,
       }
     });
   </script>
