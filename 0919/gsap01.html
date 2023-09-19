@@ -240,6 +240,14 @@
     const box8 = document.querySelector('#section8 .parallax__item__img')
     const box9 = document.querySelector('#section9 .parallax__item__img')
 
+    //01
+    //(움직이고싶은대상,{움직이고싶은 애니메이션 속성})
+    gsap.to(box1, {
+      x: 500, //x축으로 500px만큼 가고싶다
+      duration: 1, //1초동안 움직임
+      borderRadius: 100,
+      rotation: 360
+    })
   </script>
 </body>
 
