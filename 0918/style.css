@@ -79,6 +79,9 @@ body {
 }
 
 @media screen and (max-width: 1180px) {
+  #header {
+    height: 120px;
+  }
   #header .inner {
     width: 100%;
   }
@@ -140,6 +143,19 @@ body {
   color: #888;
 }
 
+@media screen and (max-width: 1180px) {
+  #visual {
+    height: calc(100vh - 120px);
+  }
+  #visual .swiper {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 639px) {
+  #visual {
+    height: calc(100vh - 100px);
+  }
+}
 #content1 {
   width: 100%;
   padding: 20px 0vw;

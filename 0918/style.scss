@@ -93,7 +93,7 @@ body {
 
 @media screen and (max-width: 1180px) {
 	#header {
-		// height: 130px;
+		height: 120px;
 		// padding: 20px 5vw 30px;
 
 		.inner {
@@ -169,6 +169,22 @@ body {
 		.swiper-button-next {
 			color: #888;
 		}
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	#visual {
+		height: calc(100vh - 120px);
+
+		.swiper {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 639px) {
+	#visual {
+		height: calc(100vh - 100px);
 	}
 }
 
