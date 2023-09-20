@@ -78,6 +78,41 @@ body {
   color: rgb(136, 188, 59);
 }
 
+@media screen and (max-width: 1180px) {
+  #header .inner {
+    width: 100%;
+  }
+  #header .inner .lower #gnb {
+    display: none;
+  }
+  #header .inner .lower #search input {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 639px) {
+  #header {
+    height: 100px;
+  }
+  #header .inner {
+    width: 100%;
+  }
+  #header .inner .upper {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+  }
+  #header .inner .lower {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+  }
+  #header .inner .lower #gnb {
+    display: none;
+  }
+  #header .inner .lower #search {
+    display: none;
+  }
+}
 #visual {
   width: 100%;
   height: calc(100vh - 130px);

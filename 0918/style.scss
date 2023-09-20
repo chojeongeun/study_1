@@ -91,6 +91,57 @@ body {
 	}
 }
 
+@media screen and (max-width: 1180px) {
+	#header {
+		// height: 130px;
+		// padding: 20px 5vw 30px;
+
+		.inner {
+			width: 100%;
+
+			.lower {
+				#gnb {
+					display: none;
+				}
+
+				#search {
+					input {
+						width: 180px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 639px) {
+	#header {
+		height: 100px;
+		.inner {
+			width: 100%;
+
+			.upper {
+				position: absolute;
+				top: 30px;
+				right: 0px;
+			}
+
+			.lower {
+				position: absolute;
+				top: 20px;
+				left: 0px;
+				#gnb {
+					display: none;
+				}
+
+				#search {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
 #visual {
 	width: 100%;
 	height: calc(100vh - 130px);
