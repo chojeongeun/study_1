@@ -474,7 +474,7 @@ body {
 }
 #footer {
   width: 100%;
-  background: #dcdcdc;
+  background: #eaeaea;
 }
 #footer .inner {
   width: 1180px;
@@ -501,7 +501,7 @@ body {
 #footer .inner #lower h1 {
   font: bold 24px/1 "arial";
   color: #888;
-  width: 15%;
+  width: 10%;
 }
 #footer .inner #lower .txtBox {
   width: 75%;
@@ -516,7 +516,7 @@ body {
   margin-right: 20px;
   margin-bottom: 20px;
   font: 14px/1 "arial";
-  color: #333;
+  color: #444;
 }
 #footer .inner #lower .txtBox #Info li span {
   margin-right: 5px;
@@ -528,10 +528,12 @@ body {
   color: #888;
 }
 #footer .inner #lower select {
-  width: 10%;
-  border: 1px solid #aaa;
-  height: 25px;
-  padding: 3px;
+  width: 15%;
+  border: none;
+  height: 40px;
+  padding: 3px 0px 3px 20px;
+  border-radius: 30px;
+  color: #888;
 }
 
 /*# sourceMappingURL=style.css.map */
