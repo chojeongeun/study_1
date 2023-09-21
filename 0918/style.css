@@ -433,6 +433,33 @@ body {
     width: 100%;
   }
 }
+@media screen and (max-width: 639px) {
+  #content3 {
+    padding: 30px 0vw;
+  }
+  #content3 .inner .wrap .left {
+    flex-wrap: wrap;
+  }
+  #content3 .inner .wrap .left article {
+    width: 100%;
+  }
+  #content3 .inner .wrap .left article .txtBox h3 {
+    font: bold 18px/1 "arial";
+  }
+  #content3 .inner .wrap .right {
+    flex-wrap: wrap;
+  }
+  #content3 .inner .wrap .right article {
+    width: 100%;
+  }
+  #content3 .inner .wrap .right article p {
+    font: bold 17px/1.4 "arial";
+  }
+  #content3 .inner .wrap .right article .pic {
+    width: 50px;
+    height: 50px;
+  }
+}
 #footer {
   width: 100%;
   background: #dcdcdc;
