@@ -417,6 +417,22 @@ body {
   background: #5e56a1;
 }
 
+@media screen and (max-width: 1180px) {
+  #content3 .inner {
+    width: 100%;
+  }
+  #content3 .inner .wrap {
+    padding: 20px 10vw;
+    flex-wrap: wrap;
+  }
+  #content3 .inner .wrap .left {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  #content3 .inner .wrap .right {
+    width: 100%;
+  }
+}
 #footer {
   width: 100%;
   background: #dcdcdc;
