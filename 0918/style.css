@@ -496,13 +496,13 @@ body {
 #footer {
   width: 100%;
   background: #eaeaea;
+  padding: 20px 0vw 50px;
 }
 #footer .inner {
   width: 1180px;
   margin: 0px auto;
 }
 #footer .inner #menu {
-  padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
