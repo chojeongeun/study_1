@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +49,7 @@ body {
   align-items: center;
 }
 #header .inner .lower h1 a {
-  font: bold 28px/1 "arial";
+  font: bold 28px/1 "Noto Sans KR";
   color: rgb(136, 188, 59);
 }
 #header .inner .lower #gnb {
@@ -59,7 +60,7 @@ body {
 #header .inner .lower #gnb li a {
   display: inline-block;
   padding: 10px 20px;
-  font: 14px/1 "arial";
+  font: 14px/1 "Noto Sans KR";
   color: #555;
 }
 #header .inner .lower #search {
@@ -180,7 +181,7 @@ body {
   margin-bottom: 20px;
 }
 #content1 .inner .wrap .left h1 {
-  font: normal 25px/1.5 "arial";
+  font: normal 25px/1.5 "Noto Sans KR";
   color: #333;
   margin-bottom: 30px;
 }
@@ -188,7 +189,7 @@ body {
   color: #86c852;
 }
 #content1 .inner .wrap .left .btn {
-  font: bold 14px/1 "arial";
+  font: bold 14px/1 "Noto Sans KR";
   color: #666;
 }
 #content1 .inner .wrap .right {
@@ -214,7 +215,7 @@ body {
   cursor: pointer;
 }
 #content1 .inner .wrap .right article p {
-  font: 15px/1 "arial";
+  font: 15px/1 "Noto Sans KR";
   color: #555;
 }
 #content1 .inner .wrap .right article:hover i {
@@ -271,7 +272,7 @@ body {
   margin: 0px auto;
 }
 #content2 .inner h1 {
-  font: bold 20px/1 "arial";
+  font: bold 20px/1 "Noto Sans KR";
   color: #333;
   margin-bottom: 50px;
 }
@@ -299,20 +300,20 @@ body {
   border-radius: 20px;
 }
 #content2 .inner .wrap article h2 {
-  font: bold 16px/1.3 "arial";
+  font: bold 16px/1.3 "Noto Sans KR";
   color: #555;
   text-align: center;
   margin-bottom: 15px;
 }
 #content2 .inner .wrap article p {
-  font: 14px/1 "arial";
+  font: 14px/1 "Noto Sans KR";
   color: #888;
   margin-bottom: 15px;
   text-align: center;
 }
 #content2 .inner .wrap article span {
   display: block;
-  font: 13px/1 "arial";
+  font: 13px/1 "Noto Sans KR";
   color: #888;
   text-align: center;
 }
@@ -350,12 +351,12 @@ body {
   padding-top: 20px;
 }
 #banner .inner h1 {
-  font: bold 20px/1.2 "arial";
+  font: bold 20px/1.2 "Noto Sans KR";
   color: #fff;
   margin-bottom: 20px;
 }
 #banner .inner a {
-  font: 15px/1 "arial";
+  font: 15px/1 "Noto Sans KR";
   color: #fff;
 }
 
@@ -365,10 +366,10 @@ body {
     padding: 20px;
   }
   #banner .inner h1 {
-    font: bold 18px/1.2 "arial";
+    font: bold 18px/1.2 "Noto Sans KR";
   }
   #banner .inner a {
-    font: 13px/1 "arial";
+    font: 13px/1 "Noto Sans KR";
   }
 }
 #content3 {
@@ -403,17 +404,17 @@ body {
 }
 #content3 .inner .wrap .left article .txtBox span {
   display: block;
-  font: bold 15px/1 "arial";
+  font: bold 15px/1 "Noto Sans KR";
   color: #444;
   margin-bottom: 20px;
 }
 #content3 .inner .wrap .left article .txtBox h3 {
-  font: bold 20px/1 "arial";
+  font: bold 20px/1 "Noto Sans KR";
   color: #333;
   margin-bottom: 20px;
 }
 #content3 .inner .wrap .left article .txtBox p {
-  font: 13px/1.6 "arial";
+  font: 13px/1.6 "Noto Sans KR";
   color: #888;
   margin-bottom: 20px;
 }
@@ -443,7 +444,7 @@ body {
 #content3 .inner .wrap .right article p {
   width: 100%;
   text-align: left;
-  font: bold 23px/1.4 "arial";
+  font: bold 23px/1.4 "Noto Sans KR";
   color: #fff;
   margin-bottom: 30px;
 }
@@ -490,7 +491,7 @@ body {
     width: 100%;
   }
   #content3 .inner .wrap .left article .txtBox h3 {
-    font: bold 18px/1 "arial";
+    font: bold 18px/1 "Noto Sans KR";
   }
   #content3 .inner .wrap .right {
     flex-wrap: wrap;
@@ -499,7 +500,7 @@ body {
     width: 100%;
   }
   #content3 .inner .wrap .right article p {
-    font: bold 17px/1.4 "arial";
+    font: bold 17px/1.4 "Noto Sans KR";
   }
   #content3 .inner .wrap .right article .pic {
     width: 50px;
@@ -524,7 +525,7 @@ body {
   margin-bottom: 20px;
 }
 #footer .inner #menu li a {
-  font: 13px/1 "arial";
+  font: 13px/1 "Noto Sans KR";
   color: #777;
 }
 #footer .inner #lower {
@@ -534,7 +535,7 @@ body {
   align-items: center;
 }
 #footer .inner #lower h1 {
-  font: bold 24px/1 "arial";
+  font: bold 24px/1 "Noto Sans KR";
   color: #888;
   width: 10%;
 }
@@ -542,7 +543,7 @@ body {
   width: 75%;
 }
 #footer .inner #lower .txtBox h2 {
-  font: bold 15px/1 "arial";
+  font: bold 15px/1 "Noto Sans KR";
   color: #333;
   margin-bottom: 10px;
 }
@@ -550,16 +551,16 @@ body {
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 20px;
-  font: 14px/1 "arial";
+  font: 14px/1 "Noto Sans KR";
   color: #444;
 }
 #footer .inner #lower .txtBox #Info li span {
   margin-right: 5px;
-  font: 14px/1 "arial";
+  font: 14px/1 "Noto Sans KR";
   color: #888;
 }
 #footer .inner #lower .txtBox p {
-  font: 13px/1 "arial";
+  font: 13px/1 "Noto Sans KR";
   color: #888;
 }
 #footer .inner #lower select {
@@ -590,19 +591,19 @@ body {
     width: 100%;
   }
   #footer .inner #lower .txtBox h2 {
-    font: bold 13px/1 "arial";
+    font: bold 13px/1 "Noto Sans KR";
     margin-bottom: 20px;
   }
   #footer .inner #lower .txtBox #Info li {
     display: inline-block;
     margin-right: 15px;
-    font: 13px/1 "arial";
+    font: 13px/1 "Noto Sans KR";
   }
   #footer .inner #lower .txtBox #Info li span {
-    font: 13px/1 "arial";
+    font: 13px/1 "Noto Sans KR";
   }
   #footer .inner #lower .txtBox p {
-    font: 12px/1 "arial";
+    font: 12px/1 "Noto Sans KR";
     margin-bottom: 30px;
   }
   #footer .inner #lower select {

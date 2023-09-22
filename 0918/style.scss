@@ -18,6 +18,8 @@ body {
 	background: #fafafa;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
 #header {
 	width: 100%;
 	height: 130px;
@@ -50,7 +52,7 @@ body {
 
 			h1 {
 				a {
-					font: bold 28px/1 'arial';
+					font: bold 28px/1 'Noto Sans KR';
 					color: rgb(136, 188, 59);
 				}
 			}
@@ -64,7 +66,7 @@ body {
 					a {
 						display: inline-block;
 						padding: 10px 20px;
-						font: 14px/1 'arial';
+						font: 14px/1 'Noto Sans KR';
 						color: #555;
 					}
 				}
@@ -210,7 +212,7 @@ body {
 					margin-bottom: 20px;
 				}
 				h1 {
-					font: normal 25px/1.5 'arial';
+					font: normal 25px/1.5 'Noto Sans KR';
 					color: #333;
 					margin-bottom: 30px;
 				}
@@ -218,7 +220,7 @@ body {
 					color: #86c852;
 				}
 				.btn {
-					font: bold 14px/1 'arial';
+					font: bold 14px/1 'Noto Sans KR';
 					color: #666;
 				}
 			}
@@ -245,7 +247,7 @@ body {
 						cursor: pointer;
 					}
 					p {
-						font: 15px/1 'arial';
+						font: 15px/1 'Noto Sans KR';
 						color: #555;
 					}
 					&:hover {
@@ -323,7 +325,7 @@ body {
 		margin: 0px auto;
 
 		h1 {
-			font: bold 20px/1 'arial';
+			font: bold 20px/1 'Noto Sans KR';
 			color: #333;
 			margin-bottom: 50px;
 		}
@@ -352,20 +354,20 @@ body {
 					}
 				}
 				h2 {
-					font: bold 16px/1.3 'arial';
+					font: bold 16px/1.3 'Noto Sans KR';
 					color: #555;
 					text-align: center;
 					margin-bottom: 15px;
 				}
 				p {
-					font: 14px/1 'arial';
+					font: 14px/1 'Noto Sans KR';
 					color: #888;
 					margin-bottom: 15px;
 					text-align: center;
 				}
 				span {
 					display: block;
-					font: 13px/1 'arial';
+					font: 13px/1 'Noto Sans KR';
 					color: #888;
 					text-align: center;
 				}
@@ -411,13 +413,13 @@ body {
 		padding-top: 20px;
 
 		h1 {
-			font: bold 20px/1.2 'arial';
+			font: bold 20px/1.2 'Noto Sans KR';
 			color: #fff;
 			margin-bottom: 20px;
 		}
 
 		a {
-			font: 15px/1 'arial';
+			font: 15px/1 'Noto Sans KR';
 			color: #fff;
 		}
 	}
@@ -430,11 +432,11 @@ body {
 			padding: 20px;
 
 			h1 {
-				font: bold 18px/1.2 'arial';
+				font: bold 18px/1.2 'Noto Sans KR';
 			}
 
 			a {
-				font: 13px/1 'arial';
+				font: 13px/1 'Noto Sans KR';
 			}
 		}
 	}
@@ -467,17 +469,17 @@ body {
 						width: 100%;
 						span {
 							display: block;
-							font: bold 15px/1 'arial';
+							font: bold 15px/1 'Noto Sans KR';
 							color: #444;
 							margin-bottom: 20px;
 						}
 						h3 {
-							font: bold 20px/1 'arial';
+							font: bold 20px/1 'Noto Sans KR';
 							color: #333;
 							margin-bottom: 20px;
 						}
 						p {
-							font: 13px/1.6 'arial';
+							font: 13px/1.6 'Noto Sans KR';
 							color: #888;
 							margin-bottom: 20px;
 						}
@@ -511,7 +513,7 @@ body {
 					p {
 						width: 100%;
 						text-align: left;
-						font: bold 23px/1.4 'arial';
+						font: bold 23px/1.4 'Noto Sans KR';
 						color: #fff;
 						margin-bottom: 30px;
 					}
@@ -565,7 +567,7 @@ body {
 						width: 100%;
 						.txtBox {
 							h3 {
-								font: bold 18px/1 'arial';
+								font: bold 18px/1 'Noto Sans KR';
 							}
 						}
 					}
@@ -575,7 +577,7 @@ body {
 					article {
 						width: 100%;
 						p {
-							font: bold 17px/1.4 'arial';
+							font: bold 17px/1.4 'Noto Sans KR';
 						}
 						.pic {
 							width: 50px;
@@ -605,7 +607,7 @@ body {
 
 			li {
 				a {
-					font: 13px/1 'arial';
+					font: 13px/1 'Noto Sans KR';
 					color: #777;
 				}
 			}
@@ -617,14 +619,14 @@ body {
 			justify-content: space-between;
 			align-items: center;
 			h1 {
-				font: bold 24px/1 'arial';
+				font: bold 24px/1 'Noto Sans KR';
 				color: #888;
 				width: 10%;
 			}
 			.txtBox {
 				width: 75%;
 				h2 {
-					font: bold 15px/1 'arial';
+					font: bold 15px/1 'Noto Sans KR';
 					color: #333;
 					margin-bottom: 10px;
 				}
@@ -633,18 +635,18 @@ body {
 						display: inline-block;
 						margin-right: 20px;
 						margin-bottom: 20px;
-						font: 14px/1 'arial';
+						font: 14px/1 'Noto Sans KR';
 						color: #444;
 						span {
 							margin-right: 5px;
-							font: 14px/1 'arial';
+							font: 14px/1 'Noto Sans KR';
 							color: #888;
 						}
 					}
 				}
 
 				p {
-					font: 13px/1 'arial';
+					font: 13px/1 'Noto Sans KR';
 					color: #888;
 				}
 			}
@@ -677,22 +679,22 @@ body {
 				.txtBox {
 					width: 100%;
 					h2 {
-						font: bold 13px/1 'arial';
+						font: bold 13px/1 'Noto Sans KR';
 						margin-bottom: 20px;
 					}
 					#Info {
 						li {
 							display: inline-block;
 							margin-right: 15px;
-							font: 13px/1 'arial';
+							font: 13px/1 'Noto Sans KR';
 							span {
-								font: 13px/1 'arial';
+								font: 13px/1 'Noto Sans KR';
 							}
 						}
 					}
 
 					p {
-						font: 12px/1 'arial';
+						font: 12px/1 'Noto Sans KR';
 						margin-bottom: 30px;
 					}
 				}
