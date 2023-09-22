@@ -190,7 +190,7 @@ body {
 
 #content1 {
 	width: 100%;
-	padding: 20px 0vw;
+	padding: 50px 0vw;
 	.inner {
 		width: 1180px;
 		margin: 0px auto;
@@ -200,7 +200,8 @@ body {
 			justify-content: space-between;
 			align-content: center;
 			flex-wrap: wrap;
-			border-radius: 20px;
+			border-radius: 40px 0px 40px 0px;
+			box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 			background: #fff;
 			.left {
 				i {
@@ -209,9 +210,12 @@ body {
 					margin-bottom: 20px;
 				}
 				h1 {
-					font: bold 25px/1.2 'arial';
-					color: rgb(77, 149, 159);
+					font: normal 25px/1.5 'arial';
+					color: #333;
 					margin-bottom: 30px;
+				}
+				.service {
+					color: #86c852;
 				}
 				.btn {
 					font: bold 14px/1 'arial';
@@ -234,9 +238,9 @@ body {
 						justify-content: center;
 						align-items: center;
 						font-size: 35px;
-						color: rgb(105, 104, 203);
+						color: #86c852;
 						border: 1px solid #ddd;
-						border-radius: 15px;
+						border-radius: 20px 0px 20px 0px;
 						margin: 20px auto;
 						cursor: pointer;
 					}
@@ -246,11 +250,11 @@ body {
 					}
 					&:hover {
 						i {
-							border: 1px solid rgb(105, 104, 203);
+							border: 2px solid #86c852;
 						}
 						p {
 							font-weight: bold;
-							color: rgb(49, 65, 212);
+							color: #86c852;
 						}
 					}
 				}
@@ -261,11 +265,10 @@ body {
 
 @media screen and (max-width: 1180px) {
 	#content1 {
+		padding: 50px 5vw;
 		.inner {
 			width: 100%;
 			.wrap {
-				padding: 20px;
-
 				.left {
 					margin-bottom: 30px;
 				}
@@ -290,6 +293,15 @@ body {
 		.inner {
 			.wrap {
 				.left {
+					i {
+						font-size: 20px;
+					}
+					h1 {
+						font-size: 18px;
+					}
+					.btn {
+						font-size: 13px;
+					}
 				}
 				.right {
 					article {
@@ -584,7 +596,6 @@ body {
 		width: 1180px;
 		margin: 0px auto;
 		#menu {
-			// padding: 20px;
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: start;

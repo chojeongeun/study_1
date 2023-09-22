@@ -158,7 +158,7 @@ body {
 }
 #content1 {
   width: 100%;
-  padding: 20px 0vw;
+  padding: 50px 0vw;
 }
 #content1 .inner {
   width: 1180px;
@@ -170,7 +170,8 @@ body {
   justify-content: space-between;
   align-content: center;
   flex-wrap: wrap;
-  border-radius: 20px;
+  border-radius: 40px 0px 40px 0px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background: #fff;
 }
 #content1 .inner .wrap .left i {
@@ -179,9 +180,12 @@ body {
   margin-bottom: 20px;
 }
 #content1 .inner .wrap .left h1 {
-  font: bold 25px/1.2 "arial";
-  color: rgb(77, 149, 159);
+  font: normal 25px/1.5 "arial";
+  color: #333;
   margin-bottom: 30px;
+}
+#content1 .inner .wrap .left .service {
+  color: #86c852;
 }
 #content1 .inner .wrap .left .btn {
   font: bold 14px/1 "arial";
@@ -203,9 +207,9 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 35px;
-  color: rgb(105, 104, 203);
+  color: #86c852;
   border: 1px solid #ddd;
-  border-radius: 15px;
+  border-radius: 20px 0px 20px 0px;
   margin: 20px auto;
   cursor: pointer;
 }
@@ -214,19 +218,19 @@ body {
   color: #555;
 }
 #content1 .inner .wrap .right article:hover i {
-  border: 1px solid rgb(105, 104, 203);
+  border: 2px solid #86c852;
 }
 #content1 .inner .wrap .right article:hover p {
   font-weight: bold;
-  color: rgb(49, 65, 212);
+  color: #86c852;
 }
 
 @media screen and (max-width: 1180px) {
+  #content1 {
+    padding: 50px 5vw;
+  }
   #content1 .inner {
     width: 100%;
-  }
-  #content1 .inner .wrap {
-    padding: 20px;
   }
   #content1 .inner .wrap .left {
     margin-bottom: 30px;
@@ -243,6 +247,15 @@ body {
   }
 }
 @media screen and (max-width: 639px) {
+  #content1 .inner .wrap .left i {
+    font-size: 20px;
+  }
+  #content1 .inner .wrap .left h1 {
+    font-size: 18px;
+  }
+  #content1 .inner .wrap .left .btn {
+    font-size: 13px;
+  }
   #content1 .inner .wrap .right article {
     width: 130px;
     height: 130px;
