@@ -304,6 +304,27 @@ body {
   text-align: center;
 }
 
+@media screen and (max-width: 1180px) {
+  #content2 {
+    padding: 20px 5vw 30px;
+  }
+  #content2 .inner {
+    width: 100%;
+  }
+  #content2 .inner h1 {
+    margin-bottom: 40px;
+  }
+  #content2 .inner .wrap {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-content: center;
+  }
+  #content2 .inner .wrap article {
+    height: 350px;
+  }
+}
 #banner {
   width: 100%;
   padding: 20px 0vw 30px;
