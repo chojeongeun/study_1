@@ -338,6 +338,30 @@
       anticipatePin: 1,
       markers: true,
     });
+
+    //03: 이미지 랜덤으로 나오기
+    const ani3 = gsap.timeline();
+    ani3.from("#section3 .parallax__item__img", {
+      autoAlpha: 0,
+      y: -100,
+      ease: 'back.out(4)',//이질감효과
+      // stagger: 0.1, //자식들 값이 하나씩 달라짐
+      stagger: {
+        amount: 2, //빠르기
+        from: 'random', //'center','left','right'효과도 있음
+      }
+    })
+
+    ScrollTrigger.create({
+      animation: ani3,
+      trigger: "#section3",
+      start: "top top",
+      end: "+=3000",
+      scrub: true,
+      pin: true,
+      anticipatePin: 1,
+      markers: true,
+    });
   </script>
 </body>
 
