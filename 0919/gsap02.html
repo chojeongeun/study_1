@@ -417,6 +417,27 @@
       markers: false
     });
 
+    // 07 : 텍스트 제자리 애니메이션
+    const ani7 = gsap.timeline();
+    ani7.from("#section7 .t1", { autoAlpha: 0, duration: 1, y: 50 }, "+=1")
+      .from("#section7 .t2", { autoAlpha: 0, duration: 1, y: 50 }, "+=1")
+      .from("#section7 .t3", { autoAlpha: 0, duration: 1, y: 50 }, "+=1")
+      .from("#section7 .t4", { autoAlpha: 0, duration: 1, y: 50 }, "+=1")
+      .from("#section7 .t5", { autoAlpha: 0, duration: 1, y: 50 }, "+=1")
+      .from("#section7 .t6", { autoAlpha: 0, duration: 1, y: 50 }, "+=1")
+      .from("#section7 .t7", { autoAlpha: 0, duration: 1, y: 50 }, "+=1")
+
+    ScrollTrigger.create({
+      animation: ani7,
+      trigger: "#section7",
+      start: "top top",
+      end: "+=6000",
+      scrub: true,
+      pin: true,
+      markers: false,
+      anticipatePin: 1
+    });
+
 
   </script>
 </body>
