@@ -382,6 +382,24 @@
       markers: false,
       anticipatePin: 1
     });
+
+    // 05 : 텍스트 애니메이션
+    const ani5 = gsap.timeline();
+    ani5.to("#section5 .t1", { xPercent: 300 }, "text")
+      .to("#section5 .t2", { xPercent: -300 }, "text")
+      .to("#section5 .t3", { xPercent: 300 }, "text")
+      .to("#section5 .t4", { xPercent: -300 }, "text")
+
+    ScrollTrigger.create({
+      animation: ani5,
+      trigger: "#section5",
+      start: "top top",
+      end: "+=3000",
+      scrub: true,
+      pin: true,
+      markers: true,
+      anticipatePin: 1
+    });
   </script>
 </body>
 
