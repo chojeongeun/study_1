@@ -456,6 +456,22 @@
       anticipatePin: 1
     });
 
+    //09 : 이미지 확대하기
+    const ani9 = gsap.timeline();
+    ani9.to("#section9 .parallax__item__img", { scale: 13 })
+      .to("#section9 .parallax__item__img", { autoAlpha: 0 })
+
+    ScrollTrigger.create({
+      animation: ani9,
+      trigger: "#section9",
+      start: "top top",
+      end: "+=4000",
+      scrub: true,
+      pin: true,
+      markers: false,
+      anticipatePin: 1
+    });
+
 
   </script>
 </body>
