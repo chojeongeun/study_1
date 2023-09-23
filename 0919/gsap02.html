@@ -348,7 +348,7 @@
       // stagger: 0.1, //자식들 값이 하나씩 달라짐
       stagger: {
         amount: 2, //빠르기
-        from: 'random', //'center','left','right'효과도 있음
+        from: 'random', //'center','left'효과도 있음
       }
     })
 
@@ -361,6 +361,26 @@
       pin: true,
       anticipatePin: 1,
       markers: true,
+    });
+
+    // 04 : 이미지 축소하기
+    const ani4 = gsap.timeline();
+    ani4.from("#section4 .parallax__item__img", {
+      autoAlpha: 0,
+      scale: 5,
+      width: "100vw",
+      height: "100vh"
+    })
+
+    ScrollTrigger.create({
+      animation: ani4,
+      trigger: "#section4",
+      start: "top top",
+      end: "+=3000",
+      scrub: true,
+      pin: true,
+      markers: false,
+      anticipatePin: 1
     });
   </script>
 </body>
