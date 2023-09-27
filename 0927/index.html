@@ -9,22 +9,19 @@
 </head>
 
 <body>
-  <h2 id="hello">안녕하세요</h2>
-  <h2 id="hi">올때메로나</h2>
+  <!-- 버튼클릭시 alert박스 보이기 
+      UI만드는법
+        1.미리 디자인 해놓고 숨김
+        2.원할때 JS를 이용해서 보여줌-->
+  <div class="alert-box" id="alert">
+    Alert 박스</div>
+
+  <button onClick="document.getElementById('alert').style.display='block';">버튼</button>
 
 
   <script>
-    // [js로 html조작하는 방법]
-    // document.getElementById('???').??? = '???';
-    // 바꾸고 싶은 HTML요소의 id적고 뭘 바꿀지 뒤에 적기
-    // 웹문서에서 ID가 hello인 HTML요소 가져와서 내부 글자를 안녕으로 바꿔줘
-    document.getElementById('hello').innerHTML = '안녕';
-    document.getElementById('hello').style.color = 'red';
-    document.getElementById('hi').innerHTML = '올때바밤바';
-    document.getElementById('hi').style.fontSize = '30px';
 
-    //프로그래밍은 컴퓨터에게 일시키는것
-    //정확히 구체적으로 명령해야 알아들음
+
   </script>
 </body>
 
