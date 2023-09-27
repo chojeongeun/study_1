@@ -10,41 +10,27 @@
 
 <body>
   <div class="alert-box" id="alert">
-    <p>Alert 박스</p>
+    <p id="title">Alert 박스</p>
     <button onClick="알림창열기('none')">닫기</button>
   </div>
 
-  <button onClick="알림창열기('block')">버튼</button>
+  <!-- 파라미터1: 제목 변경, 2: 글자 변경 -->
+  <button onClick="알림창열기('아이디를 입력하세요')">버튼1</button>
+  <button onClick="알림창열기('비밀번호를 입력하세요')">버튼2</button>
+
 
   <script>
-    //파라미터: 코드 양이 줄어듦
-    function 알림창열기(구멍) {
-      document.getElementById('alert').style.display = 구멍;
+    function 알림창열기(글씨) {
+      document.getElementById('title').innerHTML = 글씨;
+      document.getElementById('alert').style.display = 'block';
+
     }
 
+    //버튼1 누르면 기존 alert box띄워주는데 띄우기전에 내부글자를 아이디 입력하기로 변경
+    //버튼2 누르면 기존 alert box띄워주는데 띄우기전에 내부글자를 비번 입력하기로 변경
 
-    //파라미터의 장점: 함수 하나로 다양한 기능 실행 가능
-    //비슷한 함수는 파라미터로 사용 가능
-    /*
-        function plus() {
-          2 + 1
-        }
-        function plus() {
-          2 + 2
-        }
-        function plus() {
-          2 + 3
-        }
-    
-        plus();
-        */
 
-    function plus(구멍) {
-      2 + 구멍
-    }
-    plus(1); // 2+1
-    plus(2); // 2+2
-    plus(3); // 2+3
+
   </script>
 
 </body>
