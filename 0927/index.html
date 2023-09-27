@@ -9,42 +9,44 @@
 </head>
 
 <body>
-
   <div class="alert-box" id="alert">
     <p>Alert 박스</p>
-    <button onClick="close()">닫기</button>
+    <button onClick="알림창열기('none')">닫기</button>
   </div>
 
-  <button onClick="open()">버튼</button>
-
+  <button onClick="알림창열기('block')">버튼</button>
 
   <script>
-    //function: 긴 코드를 깔끔하게 한 단어로 축약 가능
-    //function함수이름(){축약할 긴 코드}
-
-    function open() {
-      document.getElementById('alert').style.display = 'block';
+    //파라미터: 코드 양이 줄어듦
+    function 알림창열기(구멍) {
+      document.getElementById('alert').style.display = 구멍;
     }
 
-    function close() {
-      document.getElementById('alert').style.display = 'none';
+
+    //파라미터의 장점: 함수 하나로 다양한 기능 실행 가능
+    //비슷한 함수는 파라미터로 사용 가능
+    /*
+        function plus() {
+          2 + 1
+        }
+        function plus() {
+          2 + 2
+        }
+        function plus() {
+          2 + 3
+        }
+    
+        plus();
+        */
+
+    function plus(구멍) {
+      2 + 구멍
     }
-
-    //초보때 자주 겪는 흔한 버그
-    // - 변경할 HTML요소는 위에, JS로 조작은 밑에서(정석)
-    // - 브라우저가 html읽을때 위에서부터 차례로 읽기 때문에
-    // - HTML먼저 읽어야 JS로 조작이 가능하다.
-    // - 변경할 HTML이 있으면 그 하단에 JS 코딩해야된다.
-
-    //초보때 자주 겪는 에러 메시지 1
-    // - innerHTML of null: innerHTML의 왼쪽에 있는것이 에러
-    // - 위치나 셀렉터의 정확도를 검토하기
-
-    //초보때 자주 겪는 에러메시지 2
-    // - is not a function(함수가 아닌데요) = 대부분 함수명 오타
-
-
+    plus(1); // 2+1
+    plus(2); // 2+2
+    plus(3); // 2+3
   </script>
+
 </body>
 
 </html>
