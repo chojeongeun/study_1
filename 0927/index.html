@@ -11,23 +11,30 @@
 <body>
   <div class="alert-box" id="alert">
     <p id="title">Alert 박스</p>
-    <button onClick="알림창열기('none')">닫기</button>
+    <button id="close">닫기</button>
   </div>
 
-  <!-- 파라미터1: 제목 변경, 2: 글자 변경 -->
   <button onClick="알림창열기('아이디를 입력하세요')">버튼1</button>
   <button onClick="알림창열기('비밀번호를 입력하세요')">버튼2</button>
 
 
   <script>
+
+    document.getElementById('close').addEventListener('click', function () {
+      document.getElementById('alert').style.display = 'none'
+    })
+
+    //event : click,keydown,scroll,mouseover..등등
+
+
+
+
     function 알림창열기(글씨) {
       document.getElementById('title').innerHTML = 글씨;
       document.getElementById('alert').style.display = 'block';
 
     }
 
-    //버튼1 누르면 기존 alert box띄워주는데 띄우기전에 내부글자를 아이디 입력하기로 변경
-    //버튼2 누르면 기존 alert box띄워주는데 띄우기전에 내부글자를 비번 입력하기로 변경
 
 
 
