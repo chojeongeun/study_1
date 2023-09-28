@@ -6,40 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="alert-box" id="alert">
-    <p id="title">Alert 박스</p>
-    <button id="close">닫기</button>
-  </div>
 
-  <button onClick="알림창열기('아이디를 입력하세요')">버튼1</button>
-  <button onClick="알림창열기('비밀번호를 입력하세요')">버튼2</button>
-
-
+  <h4 id="test">안녕하세요</h4>
   <script>
-
-    document.getElementById('close').addEventListener('click', function () {
-      document.getElementById('alert').style.display = 'none'
-    })
-
-    //event : click,keydown,scroll,mouseover..등등
-
-
-
-
-    function 알림창열기(글씨) {
-      document.getElementById('title').innerHTML = 글씨;
-      document.getElementById('alert').style.display = 'block';
-
-    }
-
-
-
-
+    // jQuery로 HTML 변경하는법
+    //$('css셀렉터')
+    $('#test').html('안녕');
+    //HTML출력: 괄호 안을 비워두면 됨
+    // $('#test').html();
   </script>
+
 
 </body>
 
 </html>
+
+<!-- 제이쿼리 -->
