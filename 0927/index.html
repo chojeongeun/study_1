@@ -14,13 +14,30 @@
 
   <h4 id="test">안녕하세요</h4>
   <script>
-    // jQuery로 HTML 기타 변경
-    //$('#test').attr(이걸,이렇게)
-    $('#test').attr('src', 'abc.jpg')
+    //숙제 : h4 글자에 css class로 넣어서 적용하기
+    $('#test').attr('class', 'yellow-bg')
   </script>
 
 
+  <div class="alert-box" id="alert">
+    <p id="title">Alert 박스</p>
+    <button id="close">닫기</button>
+  </div>
 
+  <button onClick="알림창열기('아이디를 입력하세요')">버튼1</button>
+  <button onClick="알림창열기('비밀번호를 입력하세요')">버튼2</button>
+
+
+  <script>
+    document.getElementById('close').addEventListener('click', function () {
+      document.getElementById('alert').style.display = 'none'
+    })
+
+    function 알림창열기(글씨) {
+      document.getElementById('title').innerHTML = 글씨;
+      document.getElementById('alert').style.display = 'block';
+    }
+  </script>
 </body>
 
 </html>
