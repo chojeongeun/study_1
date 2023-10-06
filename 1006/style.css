@@ -33,6 +33,10 @@ a {
   background: #333;
   text-align: center;
 }
+#tab ul li.on {
+  background: #fff;
+  color: #333;
+}
 #tab section {
   width: 100%;
 }
@@ -44,6 +48,10 @@ a {
   align-items: center;
   font: bold 30px/1 "arial";
   color: #555;
+  display: none;
+}
+#tab section article.on {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
