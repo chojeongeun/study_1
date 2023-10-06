@@ -32,6 +32,7 @@ a {
   color: #999;
   background: #333;
   text-align: center;
+  cursor: pointer;
 }
 #tab ul li.on {
   background: #fff;
