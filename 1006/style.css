@@ -22,33 +22,32 @@ a {
 #tab ul {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 #tab ul li {
   width: 33.3333333333%;
   height: 40px;
   font: bold 14px/40px "arial";
-  color: #999;
+  color: #fff;
   background: #333;
   text-align: center;
   cursor: pointer;
 }
 #tab ul li.on {
-  background: #fff;
   color: #333;
+  background: #fff;
 }
 #tab section {
   width: 100%;
 }
 #tab section article {
   width: 100%;
-  height: 300px;
+  height: 270px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font: bold 30px/1 "arial";
-  color: #555;
+  font: 20px/1 "arial";
   display: none;
 }
 #tab section article.on {
