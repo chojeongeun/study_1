@@ -51,5 +51,22 @@ a {
 #slider #panel li:nth-of-type(5) {
   background: orange;
 }
+#slider .btn {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
+#slider .btn li {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#slider .btn li.on {
+  width: 80px;
+  background: #333;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -51,4 +51,24 @@ a {
 			}
 		}
 	}
+
+	.btn {
+		position: absolute;
+		left: 30px;
+		bottom: 30px;
+
+		li {
+			width: 20px;
+			height: 20px;
+			background: #fff;
+			float: left;
+			margin-right: 10px;
+			cursor: pointer;
+
+			&.on {
+				width: 80px;
+				background: #333;
+			}
+		}
+	}
 }
