@@ -15,11 +15,12 @@ a {
 }
 
 #slider {
-	width: 400px;
-	height: 200px;
+	width: 600px;
+	height: 400px;
 	border: 1px solid #333;
 	margin: 100px auto;
 	position: relative;
+	overflow: hidden;
 
 	#panel {
 		position: absolute;
