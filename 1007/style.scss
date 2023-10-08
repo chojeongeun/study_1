@@ -15,24 +15,24 @@ a {
 }
 
 #slider {
-	width: 100%;
-	height: 100vh;
-	// border: 1px solid #333;
-	// margin: 100px auto;
+	width: 400px;
+	height: 200px;
+	border: 1px solid #333;
+	margin: 100px auto;
 	position: relative;
 	overflow: hidden;
 
 	#panel {
 		position: absolute;
-		width: calc(100% * 5);
+		width: calc(100% * 9);
 		height: 100%;
 		li {
-			width: calc(100% / 5);
+			width: calc(100% / 9);
 			height: 100%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			font: 50px/1 'arial';
+			font: 30px/1 'arial';
 			color: #fff;
 			float: left;
 			&:nth-of-type(1) {
@@ -49,6 +49,18 @@ a {
 			}
 			&:nth-of-type(5) {
 				background: orange;
+			}
+			&:nth-of-type(6) {
+				background: lightblue;
+			}
+			&:nth-of-type(7) {
+				background: lightcoral;
+			}
+			&:nth-of-type(8) {
+				background: lightseagreen;
+			}
+			&:nth-of-type(9) {
+				background: blueviolet;
 			}
 		}
 	}
