@@ -1,5 +1,5 @@
 const slider = document.querySelector('#slider');
-const panel = slider.querySelector('.panel');
+const panel = slider.querySelector('#panel');
 const btns = slider.querySelectorAll('.btn li');
 
 btns.forEach((btn, idx) => {
