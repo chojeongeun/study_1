@@ -8,54 +8,89 @@
 </head>
 
 <body>
-  <!-- 
-  변수: 어떤 정보에 이름을 붙여서 저장하고 싶을때 사용한다.
-  name = 'mike'; //name변수에는 mike값이 들어있음
-  age = 30; //age변수에는 30이라는 값이 들어있음
-  ; = 한줄이 끝났다. 생략가능하지만 적어주는게 좋음
-
-  문자는 항상 '', ""로 감싸야됨 - x: 에러 발생
-  예약어 사용 x
-
-  alert(): 경고창 띄우는 함수
-  console.log : 로그 띄우는 함수
-  -->
 
   <script>
-    name = 'Mike';
-    age = '30';
-    alert(name); //Mike
-    console.log(age);
-    //이렇게 변수를 선언하는건 위험하다
-    //왜? - 변수명이 유일하다는 보장이 없으므로 (큰 프로젝트라면 다른 개발자가 name을 사용하면 마지막 내용으로 덮어씌우게 됨)
-    //이를 방지하기 위해서 let, const 등장
+    // [문자형]
+    const name = 'Mike'; //문자열 String;
 
-    /*
-    let name = 'mike';
-    let name = 'google';
-    중복 사용 불가
+    //문자열은 세가지 방식으로 나타낼 수 있음
+    const name1 = "Mike";
+    const name2 = 'Mike';
+    const name3 = `Mike`;
 
-    let은 한번 선언 후에 다시 사용 가능하다.
-    이럴때에는 의도적으로 let을 생략하고 선언하기
-    let grade = 'F';
-    grade = 'A+';
-    console.log(grade);
-    */
+    //작은 따옴표를 사용해야된다면 큰 따옴표로 묶기
+    const message = "I'm a boy.";
+    //작은 따옴표만 사용하고 싶을때 - 역슬러시를 앞에 사용하면 특수문자로 인식함
+    const message2 = 'I\'m a boy.';
+    console.log(message2);
+    //``은 문자열 내부에 변수를 표현해줄때 사용하면 편리함
+    const message3 = `My name is ${name}.`;
+    console.log(message3);
+    //표현식을 넣는것도 가능함
+    const message4 = `나는 ${30 + 1}살 입니다.`;
+    console.log(message4);
 
-    /*
-    const : 절대로 바뀌지 않는 상수
-    파이, 최댓값, 생일, 대문자로 사용하는게 좋음 (상수인걸 알리기 위해)
-    */
 
-    /*
-    - 총정리: 자바스크립트에서 변수 선언시 변하지 않는 값은 const, 변할수있는 값은 let으로 선언하기
-    - tip: 모든 변수를 const로 선언한 뒤 나중에 변경 가능성 있는 변수는 let으로 변경하기
-    - 첫째, 변수는 문자와 숫자, $와 _만 사용 가능
-    - 둘째, 첫글자는 숫자가 될 수 없음
-    - 셋째, 예약어는 사용 x
-    - 넷째, 가급적 상수는 대문자로 알리기
-    - 다섯째, 변수명은 읽기 쉽고 이해할 수 있게 선언
-    */
+    // [숫자형]
+    const age = 30; //숫자형 Number
+    const PI = 3.14;
+
+    //숫자형은 사칙연산 가능
+    console.log(1 + 2); //더하기
+    console.log(10 - 3); //빼기
+    console.log(3 * 2); //곱하기
+    console.log(6 / 3); //나누기
+    console.log(6 % 4); //나머지
+    //만약 숫자를 0으로 나누면 인피티니(무한대)가 나옴
+    const x = 1 / 0;
+    console.log(x);
+
+    const y = name / 2;
+    console.log(y);//NaN = not a number 숫자가 아님(항상 염두해야됨)
+
+    // [Boolean]
+
+    const a = true; //참
+    const b = false; //거짓
+
+    const name5 = 'Mike';
+    const age5 = 30;
+
+    console.log(name == 'Mike'); //true
+    console.log(age5 > 40); //false
+
+
+    //null(존재하지 않는 값)과 undefined(값이 할당되지않음)
+    let abc;
+    console.log(abc);//undefined - 변수 선언만 하고 아무것도 할당하지않을때
+
+    //만약 변수에 null을 할당한다면 유저는 존재하지않는다라고 이해하기
+    let user = null;
+
+    // typeof 연산자 : 변수에 자료형을 알아낼때 사용
+    const MyName = 'Mike';
+
+    console.log(typeof 3); //number
+    console.log(typeof MyName); //string
+    console.log(typeof true); //boolean
+    console.log(typeof 'xxx'); //string
+    console.log(typeof null); //object
+    console.log(typeof undefined); //undefined
+
+    //직접 작성시 사용할 일이 거의없지만, 다른 개발자가 쓴 변수의 타입을 알아야하거나 api 통신에 따라 받아온 데이터를 타입에 따라 다른 형식으로 처리해야할때 많이 사용함
+    //typeof null; //'object'  객체형
+    //null != 객체
+
+    //문자형+문자형 = 문자형
+    const address = '서울'
+    const c = '내가 사는 곳은 ';
+    const d = '입니다.'
+    console.log(c + address + d);
+
+    //숫자형+문자형 = 문자형
+
+
+
   </script>
 </body>
 
