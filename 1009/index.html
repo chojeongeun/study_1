@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 
+  변수: 어떤 정보에 이름을 붙여서 저장하고 싶을때 사용한다.
+  name = 'mike'; //name변수에는 mike값이 들어있음
+  age = 30; //age변수에는 30이라는 값이 들어있음
+  ; = 한줄이 끝났다. 생략가능하지만 적어주는게 좋음
+
+  문자는 항상 '', ""로 감싸야됨 - x: 에러 발생
+  예약어 사용 x
+
+  alert(): 경고창 띄우는 함수
+  console.log : 로그 띄우는 함수
+  -->
+
+  <script>
+    name = 'Mike';
+    age = '30';
+    alert(name); //Mike
+    console.log(age);
+    //이렇게 변수를 선언하는건 위험하다
+    //왜? - 변수명이 유일하다는 보장이 없으므로 (큰 프로젝트라면 다른 개발자가 name을 사용하면 마지막 내용으로 덮어씌우게 됨)
+    //이를 방지하기 위해서 let, const 등장
+
+    /*
+    let name = 'mike';
+    let name = 'google';
+    중복 사용 불가
+
+    let은 한번 선언 후에 다시 사용 가능하다.
+    이럴때에는 의도적으로 let을 생략하고 선언하기
+    let grade = 'F';
+    grade = 'A+';
+    console.log(grade);
+    */
+
+    /*
+    const : 절대로 바뀌지 않는 상수
+    파이, 최댓값, 생일, 대문자로 사용하는게 좋음 (상수인걸 알리기 위해)
+    */
+
+    /*
+    - 총정리: 자바스크립트에서 변수 선언시 변하지 않는 값은 const, 변할수있는 값은 let으로 선언하기
+    - tip: 모든 변수를 const로 선언한 뒤 나중에 변경 가능성 있는 변수는 let으로 변경하기
+    - 첫째, 변수는 문자와 숫자, $와 _만 사용 가능
+    - 둘째, 첫글자는 숫자가 될 수 없음
+    - 셋째, 예약어는 사용 x
+    - 넷째, 가급적 상수는 대문자로 알리기
+    - 다섯째, 변수명은 읽기 쉽고 이해할 수 있게 선언
+    */
+  </script>
+</body>
+
+</html>
