@@ -10,57 +10,57 @@
 <body>
 
   <script>
-    // 조건문
-    /*
-    if(age>19){
-    console.log('환영합니다.')
-    }
-    age가 19보다 크면 중괄호의 코드가 실행된다.
-    코드가 한줄이라면 생략 가능. 하지만 써주는게 통일성,가독성이 좋음
-    if() 괄호 안의 값은 항상 boolean형으로 반환된 뒤 판단된다(true/false)
+    // 논리연산자
+    // ||(OR) &&(AND) !(NOT)
 
-    else절: if문의 조건이 false일때 실행됨
-    */
+    // || : 여러개 중 하나라도 true면 true. 즉, 모든 값이 false일때만 false를 반환
+    // 첫번째 true를 발견하는 즉시 평가를 멈춤
 
-    /*
+    // && : 모든 값이 true면 true. 즉, 하나라도 false면 false를 반환
+    // 첫번째 false를 발견하는 즉시 평가를 멈춤
+
+    // ! : true면 false. false면 true.
+
+    //OR
+    //이름이 TOM이거나, 성인이면 통과
+    const name = 'Mike';
     const age = 30;
 
-    if (age > 19) {
-      console.log('환영합니다.');
-    }
-    if (age <= 19) {
-      console.log('안녕히가세요.')
+    if (name === 'Tom' || age > 19) {
+      console.log('통과')
     }
 
-    console.log('---------------')
-     */
-
-    /*
-    위와 동일함 (else 사용)
-    const age = 30;
-
-
-    if (age > 19) {
-      console.log('환영합니다.');
+    // AND
+    //이름이 Mike이고, 성인이면 통과
+    if (name === 'Mike' && age > 19) {
+      console.log('통과')
     } else {
-      console.log('안녕히가세요.')
+      console.log('돌아가.')
     }
-    console.log('--------------');
-    */
 
-    //if, else, else if
-    // 추가 요구사항: 19살이면 수능 잘치세요 라는 문구를 보여주세요.
-    //age === 19;
-    const age = 19;
+    //NOT
+    //나이를 입력받아 성인 아니면 돌아가기
+    const age2 = prompt('나이가..?')
+    const isAdult = age2 > 19;
+    if (!isAdult) {
+      console.log('돌아가..')
+    }
 
-    if (age > 19) {
-      console.log('환영합니다.');
-    } else if (age === 19) {
-      console.log('수능 잘치세요.')
+    //우선순위
+    //남자이고, 이름이 Mike이거나 성인이면 통과
+    // and가 or보다 우선순위가 높음
+
+    const gender = 'F';
+    const name1 = 'Jane';
+    const isAdult1 = true;
+
+    // if (gender === 'M' && name1 === 'Mike' || isAdult1) {
+    if (gender === 'M' && (name1 === 'Mike' || isAdult1)) {
+      console.log('통과')
     } else {
-      console.log('안녕히 가세요.')
+      console.log('돌아가.')
     }
-    console.log('--------------');
+
 
   </script>
 </body>
