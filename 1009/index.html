@@ -10,75 +10,39 @@
 <body>
 
   <script>
-    //형변환
-    //String() => 문자형으로 변환
-    //Number() => 숫자형으로 변환 
-    // - Number('문자') // NaN
-    //Boolean() => 불린형으로 변환
-    // - 0,'',null,undefined,NaN => false
+    // 나머지가 쓰이는 곳
+    // 2로 나눈 나머지가 1,0인지에 따라 홀수와 짝수를 구분할때 쓰임
+    // 홀수: x % 2 = 1
+    // 짝수: y % 2 = 0
 
-    //형변환 필요한 이유:
-    //문자형+문자형= 이어서 보여줌
-    //'Hello'+'world'='Hello world'
-    // 숫자형+숫자형 = 숫자형
-    // 100 + 200 = 300
-    //만약 자료형이 다르면? '100' + 200 = ?
+    // 어떤 값이 들어와도 5를 넘기면 안될때
+    // x % 5 = 0~4 사이의 값만 반환
 
-    //prompt로 입력받은 값은 => 무조건 문자형
-    const mathScore = prompt('수학 몇점?'); // '90'
-    const engScore = prompt('영어 몇점?'); // '80'
-    //숫자형이 아니더라도 나누기는 숫자형으로 자동형변환 가능
-    // '6'/'2'=3
-    const result = (mathScore + engScore) / 2; // '9080' / 2 = 4540
-    console.log(result); //4540
-    //명시적 형변환
+    // 거듭제곱 **
+    const x = 2 ** 3;
+    console.log(x);
 
-    console.log(
-      String(3),
-      String(true),
-      String(false),
-      String(null),
-      String(undefined),
-    );
-    // '3' 'true' 'false' 'null' 'undefined'
+    // 우선순위
+    // * / > + -
 
-    //Number(): 괄호안에 타입을 숫자형으로 바꿔줌
-    console.log(
-      Number('1234'), //1234
-      Number('1234abcd'), //1234 NaN
-      Number(true), // 1
-      Number(false), // 0
-    )
+    // 연산자 줄여서 쓰기
+    let num = 10;
+    // num = num + 5;
+    num += 5;
+    // num *= 5;
+    // num -= 5;
+    // num %= 5;
 
-    //Boolean() : false의 케이스만 기억하기
-    //숫자 0은 false
-    //''
-    //null
-    //undefined
-    //NaN
+    console.log(num);
 
-    console.log(
-      Boolean(1),
-      Boolean(123),
-      Boolean('JS'),
-    )
-    //true
 
-    console.log(
-      Boolean(0),
-      Boolean(""),
-      Boolean(null),
-      Boolean(undefined),
-      Boolean(NaN),
-    )
-    //false
+    // 증가 연산자, 감소 연산자 : 값을 1만큼 증가 or 감소
+    // 위치에 따라 값이 다름
+    let num1 = 10;
+    // let result = num1++; //10 - 증가 시키기 전의 값을 result에 넣음
+    let result = ++num1 //11 - 증가시킨 값을 result에 넣음
+    console.log(result);
 
-    //주의사항
-    Number(null) //0
-    Number(undefined) //NaN
-
-    Number('') //false 
-    Number(' ') //true
 
 
 
