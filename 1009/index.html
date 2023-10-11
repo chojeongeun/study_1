@@ -10,40 +10,48 @@
 <body>
 
   <script>
-    // 함수(function)
-    // 팝업, 결제 같이 자주 여러번 사용하면 하나로 만든 다음 재활용 하는게 좋음 - 중복 코드도 줄어들고 유지보수도 쉬어짐
 
-    /*
-    함수, 함수명, 매개변수(인수)
+    let msg = 'Hello';  // 전역변수 (global varable)
+    console.log('함수 호출 전');
+    console.log(msg);
+
     function sayHello(name) {
-      console.log(`Hello,${name}`);
+      if (name) {
+        msg += `, ${name}`;
+      }
+      console.log('함수내부')
+      // 지역변수 (local varable)
+      console.log(msg);
+    }
+    sayHello('Mike');
+    console.log('함수 호출 후')
+    console.log(msg);
+
+    //전역변수와 지역변수
+    //함수 내부에서 let으로 전역변수와 동일한 이름 txt으로 선언할수있고 서로 간섭하지 않음
+    let txt = 'welcome';//전역변수
+    console.log(txt)
+    function sayHello(name) {
+      let txt = 'Hello'//지역변수
+      console.log(txt + ' ' + name);
     }
 
     sayHello('Mike');
-    */
-
-    //함수 작성
-    //매개변수가 없는 함수
-    function showErr() {
-      alert('에러가 발생했습니다. 다시 시도해주세요.');
-    }
-    showErr();
+    console.log(txt);
 
 
-    //매개변수가 있는 함수
+    //매개변수로 받은 값은 복사된후 함수의 지역변수가 됨
+    //전체 서비스에서 공통으로 바라봐야되는 변수를 제외하고는 지역변수를 쓰는 습관 들이기
+    //전역변수 많아지면 관리가 힘들어지기 때문
+    let name = 'Mike';
     function sayHello(name) {
-      console.log(name);//undefined
-      let msg = `Hello, `;
-      if (name) {//if undefined는 false여서 console로 넘어감
-        msg = `Hello,${name}`;
-      }
-      console.log(msg);
+      console.log(name)
     }
-    // sayHello('Mike');
-    // sayHello('Tom');
-    // sayHello('Jane');
 
     sayHello();
+    sayHello('Jane');
+
+
 
   </script>
 
