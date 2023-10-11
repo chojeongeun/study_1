@@ -10,56 +10,40 @@
 <body>
 
   <script>
-    // switch - if,else문으로 작성가능하지만, 케이스가 다양한 경우 보다 간결하게 적을수있음
+    // 함수(function)
+    // 팝업, 결제 같이 자주 여러번 사용하면 하나로 만든 다음 재활용 하는게 좋음 - 중복 코드도 줄어들고 유지보수도 쉬어짐
 
     /*
-    switch(평가){
-      case A:
-        // A일때 코드
-      case B:
-        // B일때 코드
-      ...
-    }
-    */
-
-    /*
-    위와 동일한 코드
-    if(평가 == A){
-      //A일때 코드
-    }else if (평가==B){
-      // B일때 코드
-    }
-    */
-
-    /*
-    사과: 100원
-    바나나: 200원
-    키위: 300원
-    멜론: 500원
-    수박: 500원
-    사고 싶은 과일을 물어보고 가격 알려주기
-    */
-
-    let fruit = prompt('무슨 과일을 사고 싶나요?');
-
-    switch (fruit) {
-      case '사과':
-        console.log('100원 입니다.');
-        break;
-      case '바나나':
-        console.log('200원 입니다.');
-        break;
-      case '키위':
-        console.log('300원 입니다.');
-        break;
-      case '멜론':
-      case '수박':
-        console.log('500원 입니다.');
-        break;
-      default:
-        console.log('그런 과일은 없습니다.')
+    함수, 함수명, 매개변수(인수)
+    function sayHello(name) {
+      console.log(`Hello,${name}`);
     }
 
+    sayHello('Mike');
+    */
+
+    //함수 작성
+    //매개변수가 없는 함수
+    function showErr() {
+      alert('에러가 발생했습니다. 다시 시도해주세요.');
+    }
+    showErr();
+
+
+    //매개변수가 있는 함수
+    function sayHello(name) {
+      console.log(name);//undefined
+      let msg = `Hello, `;
+      if (name) {//if undefined는 false여서 console로 넘어감
+        msg = `Hello,${name}`;
+      }
+      console.log(msg);
+    }
+    // sayHello('Mike');
+    // sayHello('Tom');
+    // sayHello('Jane');
+
+    sayHello();
 
   </script>
 
