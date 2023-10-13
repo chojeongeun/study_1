@@ -10,23 +10,90 @@
 <body>
 
   <script>
-    // 함수 선언문 vs 함수 표현식
-    // 함수 선언문 : 어디서든 호출 가능
-    showError();
-
-    function showError() {
-      console.log('error')
+    /*
+    // 객체(object):키, 값
+    const superman = {
+      name: 'clark',
+      age: 33,
     }
-    // 함수 표현식: 코드에 도달하면 생성
+    // 접근
+    superman.name; //'clark'
+    superman['age']; //33
 
-    // 화살표함수
-    const sayHello = (name) => {
-      const msg = `Hello, ${name}`;
-      console.log(msg)
+    //추가
+    superman.gender = 'male';
+    superman['hairColor'] = 'black';
+
+    // 삭제
+    delete superman.hairColor;
+
+    // 단축 프로퍼티
+    const name = 'mary';
+    const age = 30;
+    const superwoman = {
+      name, //name:name
+      age, //age:age
+      gender: 'female',
     }
 
-    const add = (num1, num2) => {
-      num1 + num2
+    // 프로퍼티 존재 여부 확인 - 존재하지않으면 undefined
+    superman.birthDay; // undefined
+    'birthDay' in superman; //false
+    'age' in superman; //true
+    */
+
+    // for...in반복문
+
+    // 객체
+    const superman = {
+      name: 'clark',
+      age: 30,
+    }
+    superman.hairColor = 'black';
+    superman['hobby'] = 'football';
+    delete superman.age;
+    console.log(superman)
+
+    function makeObject(name, age) {
+      return {
+        name, //name:name - 축약 가능
+        age, //age:age - 축약 가능
+        hobby: 'football'
+      }
+    }
+    const Mike = makeObject('Mike', 30);
+    console.log(Mike)
+
+    console.log('age' in Mike); //true
+    console.log('birthday' in Mike); //false
+
+    // 객체 in
+    function isAdult(user) {
+      if (!('age' in user) || //user에 age가 없거나
+        user.age < 20) { // 20살 미만이거나
+        return false;
+      } else {
+        return true;
+      }
+    }
+
+    const Sam = {
+      name: 'Sam',
+      age: 30,
+    };
+    const Jane = {
+      name: 'Jane'
+    }
+    console.log(isAdult(Jane))
+
+
+    // 객체 for ... in
+    const Tom = {
+      name: 'Tom',
+      age: 30
+    };
+    for (x in Mike) {
+      console.log(x)
     }
 
 
