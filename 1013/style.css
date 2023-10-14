@@ -37,12 +37,19 @@ body {
 }
 .calculator form .clear {
   background: #ed4848;
+  grid-column: span 3;
 }
 .calculator form .operator {
   background: orange;
 }
 .calculator form .dot {
   background: green;
+}
+.calculator form input[type=text] {
+  grid-column: span 4;
+}
+.calculator form .result {
+  grid-column: span 2;
 }
 
 /*# sourceMappingURL=style.css.map */

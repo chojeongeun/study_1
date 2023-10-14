@@ -36,12 +36,19 @@ body {
 		}
 		.clear {
 			background: #ed4848;
+			grid-column: span 3;
 		}
 		.operator {
 			background: orange;
 		}
 		.dot {
 			background: green;
+		}
+		input[type='text'] {
+			grid-column: span 4;
+		}
+		.result {
+			grid-column: span 2;
 		}
 	}
 }
