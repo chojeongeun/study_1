@@ -16,6 +16,10 @@ a {
 
 body {
 	background: #1f1f1f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 
 .calculator {
@@ -33,6 +37,9 @@ body {
 			border: 2px solid #333;
 			cursor: pointer;
 			font-size: 19px;
+			&:hover {
+				box-shadow: 1px 1px 2px #333;
+			}
 		}
 		.clear {
 			background: #ed4848;
