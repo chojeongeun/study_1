@@ -13,3 +13,25 @@ li {
 a {
 	text-decoration: none;
 }
+
+body {
+	background: #1f1f1f;
+}
+
+.calculator {
+	width: 287px;
+	border: 1px solid #333;
+	background: #ccc;
+	padding: 5px;
+	form {
+		display: grid;
+		grid-template-columns: repeat(4, 65px);
+		grid-auto-rows: 65px;
+		grid-gap: 5px;
+
+		input {
+			border: 2px solid #333;
+			cursor: pointer;
+		}
+	}
+}
