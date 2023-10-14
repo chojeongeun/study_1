@@ -33,6 +33,16 @@ body {
 .calculator form input {
   border: 2px solid #333;
   cursor: pointer;
+  font-size: 19px;
+}
+.calculator form .clear {
+  background: #ed4848;
+}
+.calculator form .operator {
+  background: orange;
+}
+.calculator form .dot {
+  background: green;
 }
 
 /*# sourceMappingURL=style.css.map */
