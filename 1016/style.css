@@ -43,14 +43,14 @@ woff확장자
   color: white;
   font-family: abster;
 }
-.container .nav ul li {
+.container .header .nav ul li {
   display: inline-block;
   margin: 0 10px;
 }
-.container .nav ul li a {
+.container .header .nav ul li a {
   color: white;
 }
-.container .nav ul li a:hover {
+.container .header .nav ul li a:hover {
   color: #1fdfdf;
 }
 
