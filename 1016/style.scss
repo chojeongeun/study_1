@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: 0;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*
+폰트파일을 참조할수있는 방법
+폰트페이스-적용할 폰트패밀리규칙 생성
+src-url로 폰트 지정
+woff확장자
+
+*/
+@font-face {
+	font-family: abster;
+	src: url(font/abster-webfont.woff) format('woff');
+}
+
+.container {
+	width: 100%;
+	height: 100vh; //%문제점- html태그와 body에 100%에 지정해야되지만 뷰포트 단위의 vh로 지정하면
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/room.jpg);
+
+	.header {
+		width: 80%;
+		height: 80px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		h1 {
+			a {
+				color: white;
+				font-family: abster;
+			}
+		}
+	}
+
+	.nav {
+		ul {
+			li {
+				display: inline-block;
+				margin: 0 10px;
+				a {
+					color: white;
+					&:hover {
+						color: #1fdfdf;
+					}
+				}
+			}
+		}
+	}
+}
