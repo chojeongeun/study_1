@@ -56,6 +56,10 @@ form {
 			font: bold 15px/1 'arial';
 			cursor: pointer;
 		}
+		input:focus {
+			border-color: #a2b4ee;
+			box-shadow: 0 0 10px #7592ef;
+		}
 		#checkbox-input {
 			width: 15px;
 			height: 15px;
