@@ -65,5 +65,12 @@ form div #checkbox-input {
   height: 15px;
   margin-bottom: 50px;
 }
+form div input[type=submit] {
+  transition: 0.5s;
+}
+form div input[type=submit]:hover {
+  background: #fff;
+  color: blue;
+}
 
 /*# sourceMappingURL=style.css.map */

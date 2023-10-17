@@ -65,5 +65,12 @@ form {
 			height: 15px;
 			margin-bottom: 50px;
 		}
+		input[type='submit'] {
+			transition: 0.5s;
+			&:hover {
+				background: #fff;
+				color: blue;
+			}
+		}
 	}
 }
