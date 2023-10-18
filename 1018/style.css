@@ -62,26 +62,48 @@ a {
 .intro_bg .header .nav li a {
   color: #fff;
 }
-
-.intro_text {
+.intro_bg .intro_text {
   width: 100%;
   text-align: center;
   margin: 231px auto 231px auto;
 }
-
-h1 {
+.intro_bg .intro_text h1 {
   font-size: 48px;
   font-weight: 100;
 }
-
-.contents1 {
+.intro_bg .intro_text .contents1 {
   font-size: 20px;
   font-weight: lighter;
 }
-
-h1,
-h4 {
+.intro_bg .intro_text h1,
+.intro_bg .intro_text h4 {
   color: #fff;
+}
+
+.amount {
+  position: relative;
+  top: -66px;
+  display: flex;
+  width: 1180px;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+.amount li {
+  flex: 1;
+  height: 132px;
+}
+.amount li:last-child div {
+  border: none;
+}
+.amount li > div {
+  text-align: center;
+  height: 57px;
+  margin-top: 37px;
+  border-right: 1px solid #e1e1e1;
+}
+.amount li .result {
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
