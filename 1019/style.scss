@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+#header {
+	width: 100%;
+	border: 1px solid #ddd;
+
+	.wrap {
+		width: 1180px;
+		height: 100px;
+		margin: 0px auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		h1 {
+			a {
+				font: bold 28px/1 'arial';
+				color: #111;
+			}
+		}
+
+		#gnb {
+			display: flex;
+			li {
+				a {
+					font: bold 16px/1 'arial';
+					color: #222;
+					margin-right: 40px;
+				}
+			}
+		}
+
+		a {
+			font: bold 14px/1 'arial';
+			color: #555;
+		}
+	}
+}

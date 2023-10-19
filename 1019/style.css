@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
+  width: 100%;
+  border: 1px solid #ddd;
+}
+#header .wrap {
+  width: 1180px;
+  height: 100px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .wrap h1 a {
+  font: bold 28px/1 "arial";
+  color: #111;
+}
+#header .wrap #gnb {
+  display: flex;
+}
+#header .wrap #gnb li a {
+  font: bold 16px/1 "arial";
+  color: #222;
+  margin-right: 40px;
+}
+#header .wrap a {
+  font: bold 14px/1 "arial";
+  color: #555;
+}
+
+/*# sourceMappingURL=style.css.map */
