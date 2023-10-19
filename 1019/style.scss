@@ -16,7 +16,6 @@ a {
 
 #header {
 	width: 100%;
-	border: 1px solid #ddd;
 
 	.wrap {
 		width: 1180px;
@@ -87,6 +86,22 @@ a {
 				color: #333;
 				font-size: 20px;
 			}
+		}
+	}
+}
+
+#visual {
+	width: 100%;
+	height: calc(100vh - 100px);
+	background: url(img/bg.jpg);
+	.wrap {
+		width: 1180px;
+		h1 {
+			position: absolute;
+			left: 30px;
+			bottom: 150px;
+			font: bold 40px/1.5 'arial';
+			color: #fff;
 		}
 	}
 }
