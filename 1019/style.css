@@ -38,9 +38,15 @@ a {
   color: #222;
   margin-right: 40px;
 }
-#header .wrap a {
+#header .wrap #gnb li a:hover {
+  color: #0004ff;
+}
+#header .wrap .recruit {
   font: bold 14px/1 "arial";
   color: #555;
+}
+#header .wrap .recruit:hover {
+  color: #0004ff;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -40,13 +40,19 @@ a {
 					font: bold 16px/1 'arial';
 					color: #222;
 					margin-right: 40px;
+					&:hover {
+						color: #0004ff;
+					}
 				}
 			}
 		}
 
-		a {
+		.recruit {
 			font: bold 14px/1 'arial';
 			color: #555;
+			&:hover {
+				color: #0004ff;
+			}
 		}
 	}
 }
