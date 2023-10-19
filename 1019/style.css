@@ -48,5 +48,30 @@ a {
 #header .wrap .recruit:hover {
   color: #0004ff;
 }
+#header .wrap .btn {
+  display: none;
+}
+
+@media screen and (max-width: 1180px) {
+  #header .wrap {
+    width: 100%;
+    height: 85px;
+    padding: 20px;
+  }
+  #header .wrap h1 a {
+    font: bold 26px/1 "arial";
+  }
+  #header .wrap #gnb {
+    display: none;
+  }
+  #header .wrap .recruit {
+    display: none;
+  }
+  #header .wrap .btn {
+    display: block;
+    color: #333;
+    font-size: 20px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
