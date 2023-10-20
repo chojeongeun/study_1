@@ -88,4 +88,57 @@ a {
   color: #fff;
 }
 
+#content1 {
+  width: 100%;
+}
+#content1 .wrap {
+  width: 1180px;
+  padding: 50px 0px 80px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+}
+#content1 .wrap article {
+  width: calc(33.3333333333% - 40px);
+  margin-right: 20px;
+}
+#content1 .wrap article:last-child {
+  margin-right: 0px;
+}
+#content1 .wrap article h1 {
+  font: bold 23px/1 "arial";
+  color: #333;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+#content1 .wrap article .media,
+#content1 .wrap article .work,
+#content1 .wrap article .culture {
+  border-radius: 20px;
+  display: block;
+  overflow: hidden;
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.09);
+}
+#content1 .wrap article .pic {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+}
+#content1 .wrap article .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#content1 .wrap article h2 {
+  padding: 15px;
+  font: bold 20px/1 "arial";
+  color: #333;
+  margin-bottom: 20px;
+}
+#content1 .wrap article p {
+  padding: 15px;
+  font: bold 13px/1.6 "arial";
+  color: gray;
+}
+
 /*# sourceMappingURL=style.css.map */
