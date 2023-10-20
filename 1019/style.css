@@ -148,4 +148,33 @@ a {
   color: gray;
 }
 
+@media screen and (max-width: 1180px) {
+  #content1 .wrap {
+    width: 100%;
+    padding: 50px 5vw;
+  }
+  #content1 .wrap article {
+    width: calc(33.3333333333% - 30px);
+    margin-right: 15px;
+  }
+  #content1 .wrap article h1 {
+    font: bold 20px/1 "arial";
+    margin-bottom: 17px;
+    margin-top: 17px;
+  }
+  #content1 .wrap article .pic {
+    height: 200px;
+    margin-bottom: 15px;
+  }
+  #content1 .wrap article h2 {
+    padding: 10px;
+    font: bold 15px/1 "arial";
+    margin-bottom: 15px;
+  }
+  #content1 .wrap article p {
+    padding: 10px;
+    font: bold 11px/1.6 "arial";
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
