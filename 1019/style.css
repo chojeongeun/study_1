@@ -176,5 +176,19 @@ a {
     font: bold 11px/1.6 "arial";
   }
 }
+@media screen and (max-width: 639px) {
+  #content1 .wrap {
+    padding: 30px 20vw;
+    display: block;
+  }
+  #content1 .wrap article {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  #content1 .wrap article .pic {
+    height: 150px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
