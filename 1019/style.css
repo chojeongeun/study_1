@@ -281,5 +281,23 @@ a {
     font: 11px/1 "arial";
   }
 }
+@media screen and (max-width: 639px) {
+  #content2 {
+    padding: 40px 20vw;
+  }
+  #content2 .wrap h1 {
+    margin-bottom: 30px;
+  }
+  #content2 .wrap article {
+    display: block;
+    margin-bottom: 10px;
+  }
+  #content2 .wrap article .pic {
+    width: 100%;
+    height: 200px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
