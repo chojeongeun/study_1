@@ -247,4 +247,39 @@ a {
   color: rgb(180, 177, 177);
 }
 
+@media screen and (max-width: 1180px) {
+  #content2 {
+    padding: 50px 0px;
+  }
+  #content2 .wrap {
+    width: 100%;
+  }
+  #content2 .wrap h1 {
+    margin-bottom: 35px;
+  }
+  #content2 .wrap article {
+    width: 100%;
+    padding: 10px;
+  }
+  #content2 .wrap article .pic {
+    width: 150px;
+    height: 150px;
+    margin-right: 15px;
+  }
+  #content2 .wrap article .txtBox {
+    padding: 10px;
+  }
+  #content2 .wrap article .txtBox h2 {
+    font: bold 17px/1 "arial";
+    margin-bottom: 20px;
+  }
+  #content2 .wrap article .txtBox p {
+    font: 14px/1 "arial";
+    margin-bottom: 20px;
+  }
+  #content2 .wrap article .txtBox span {
+    font: 11px/1 "arial";
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -236,7 +236,6 @@ a {
 		}
 		article {
 			width: 800px;
-			// border: 1px solid red;
 			display: flex;
 			justify-content: flex-start;
 			margin: 0px auto 50px;
@@ -277,6 +276,45 @@ a {
 				span {
 					font: 13px/1 'arial';
 					color: rgb(180, 177, 177);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	#content2 {
+		padding: 50px 0px;
+
+		.wrap {
+			width: 100%;
+
+			h1 {
+				margin-bottom: 35px;
+			}
+			article {
+				width: 100%;
+
+				padding: 10px;
+
+				.pic {
+					width: 150px;
+					height: 150px;
+					margin-right: 15px;
+				}
+				.txtBox {
+					padding: 10px;
+					h2 {
+						font: bold 17px/1 'arial';
+						margin-bottom: 20px;
+					}
+					p {
+						font: 14px/1 'arial';
+						margin-bottom: 20px;
+					}
+					span {
+						font: 11px/1 'arial';
+					}
 				}
 			}
 		}
