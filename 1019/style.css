@@ -208,6 +208,16 @@ a {
   display: flex;
   justify-content: flex-start;
   margin: 0px auto 50px;
+  padding: 20px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+#content2 .wrap article:hover {
+  background: #f8f8f8;
+}
+#content2 .wrap article:hover .pic {
+  transform: scale(1.05);
+  transition: transform 0.5s;
 }
 #content2 .wrap article .pic {
   width: 200px;

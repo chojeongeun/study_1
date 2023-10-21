@@ -240,6 +240,17 @@ a {
 			display: flex;
 			justify-content: flex-start;
 			margin: 0px auto 50px;
+			padding: 20px;
+			transition: 0.5s;
+			overflow: hidden;
+
+			&:hover {
+				background: #f8f8f8;
+				.pic {
+					transform: scale(1.05);
+					transition: transform 0.5s;
+				}
+			}
 
 			.pic {
 				width: 200px;
