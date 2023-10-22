@@ -374,3 +374,24 @@ a {
 		}
 	}
 }
+
+@media screen and (max-width: 1180px) {
+	#banner {
+		padding: 60px 0px;
+		.wrap {
+			width: 100%;
+
+			h1 {
+				font: bold 25px/1 'arial';
+			}
+
+			h2 {
+				font: 15px/1.5 'arial';
+			}
+
+			p {
+				font: 12px/1.5 'arial';
+			}
+		}
+	}
+}

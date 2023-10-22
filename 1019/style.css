@@ -326,4 +326,22 @@ a {
   color: #fff;
 }
 
+@media screen and (max-width: 1180px) {
+  #banner {
+    padding: 60px 0px;
+  }
+  #banner .wrap {
+    width: 100%;
+  }
+  #banner .wrap h1 {
+    font: bold 25px/1 "arial";
+  }
+  #banner .wrap h2 {
+    font: 15px/1.5 "arial";
+  }
+  #banner .wrap p {
+    font: 12px/1.5 "arial";
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
