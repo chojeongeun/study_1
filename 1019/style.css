@@ -343,5 +343,49 @@ a {
     font: 12px/1.5 "arial";
   }
 }
+#footer {
+  width: 100%;
+  padding: 50px 0px 80px;
+  background: #efefef;
+}
+#footer .wrap {
+  width: 1180px;
+  margin: 0px auto;
+}
+#footer .wrap h1 {
+  font: bold 30px/1.5 "arial";
+  color: #111;
+  margin-bottom: 20px;
+}
+#footer .wrap .footer_txt {
+  display: flex;
+  justify-content: space-between;
+}
+#footer .wrap .footer_txt #menu {
+  display: flex;
+  justify-content: flex-end;
+}
+#footer .wrap .footer_txt #menu li {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+#footer .wrap .footer_txt #menu li a {
+  font: 14px/1 "arial";
+  color: #555;
+}
+#footer .wrap .footer_txt #gnb {
+  display: flex;
+  justify-content: flex-end;
+}
+#footer .wrap .footer_txt #gnb li {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font: 13px/1 "arial";
+  color: #555;
+}
+#footer .wrap p {
+  font: 14px/1 "arial";
+  color: #888;
+}
 
 /*# sourceMappingURL=style.css.map */
