@@ -7,16 +7,22 @@ div {
   align-items: center;
   transition: all 1s ease-in-out;
 }
-div:hover {
-  background-color: skyblue;
-}
 div:hover img {
   width: 300px;
   transform: rotateY(360deg);
 }
 div img {
   width: 100px;
-  transition: all 1s cubic-bezier(0.23, 0.6, 0.67, 0.35);
+  animation: moving-logo 1s infinite;
+}
+
+@keyframes moving-logo {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(3) rotateX(360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
