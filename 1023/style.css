@@ -13,15 +13,24 @@ div:hover img {
 }
 div img {
   width: 100px;
-  animation: moving-logo 1s infinite;
+  animation: moving-logo 3s infinite alternate;
 }
 
 @keyframes moving-logo {
-  from {
+  0% {
     transform: scale(1);
   }
-  to {
+  25% {
     transform: scale(3) rotateX(360deg);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  75% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
