@@ -1,0 +1,11 @@
+:root {
+	--main-color: rgba(98, 220, 147);
+	--sub-color: rgb(80, 28, 164);
+}
+
+div {
+	width: 100px;
+	height: 100px;
+	background: var(--main-color);
+	border: 5px solid var(--sub-color);
+}
