@@ -1,13 +1,21 @@
-:root {
-  --main-color: rgba(98, 220, 147);
-  --sub-color: rgb(80, 28, 164);
-}
-
 div {
+  width: 300px;
+  height: 300px;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease-in-out;
+}
+div:hover {
+  background-color: skyblue;
+}
+div:hover img {
+  width: 300px;
+}
+div img {
   width: 100px;
-  height: 100px;
-  background: var(--main-color);
-  border: 5px solid var(--sub-color);
+  transition: all 1s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */

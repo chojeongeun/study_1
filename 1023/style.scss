@@ -1,11 +1,22 @@
-:root {
-	--main-color: rgba(98, 220, 147);
-	--sub-color: rgb(80, 28, 164);
-}
-
 div {
-	width: 100px;
-	height: 100px;
-	background: var(--main-color);
-	border: 5px solid var(--sub-color);
+	width: 300px;
+	height: 300px;
+	border: 1px solid gray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 1s ease-in-out;
+
+	&:hover {
+		background-color: skyblue;
+
+		img {
+			width: 300px;
+		}
+	}
+
+	img {
+		width: 100px;
+		transition: all 1s ease-in-out;
+	}
 }
