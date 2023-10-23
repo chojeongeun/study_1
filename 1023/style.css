@@ -12,6 +12,7 @@ div:hover {
 }
 div:hover img {
   width: 300px;
+  transform: rotateY(360deg);
 }
 div img {
   width: 100px;
