@@ -412,5 +412,14 @@ a {
     font: 12px/1 "arial";
   }
 }
+@media screen and (max-width: 639px) {
+  #footer .wrap .footer_txt #menu {
+    margin-bottom: 40px;
+  }
+  #footer .wrap .footer_txt #gnb {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

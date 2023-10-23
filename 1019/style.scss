@@ -473,3 +473,20 @@ a {
 		}
 	}
 }
+
+@media screen and (max-width: 639px) {
+	#footer {
+		.wrap {
+			.footer_txt {
+				#menu {
+					margin-bottom: 40px;
+				}
+
+				#gnb {
+					display: block;
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+}
