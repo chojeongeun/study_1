@@ -388,4 +388,29 @@ a {
   color: #888;
 }
 
+@media screen and (max-width: 1180px) {
+  #footer {
+    padding: 35px 5vw 50px;
+  }
+  #footer .wrap {
+    width: 100%;
+  }
+  #footer .wrap .footer_txt {
+    display: block;
+  }
+  #footer .wrap .footer_txt #menu {
+    display: block;
+    margin-bottom: 50px;
+  }
+  #footer .wrap .footer_txt #menu li {
+    margin-bottom: 15px;
+  }
+  #footer .wrap .footer_txt #gnb {
+    justify-content: flex-start;
+  }
+  #footer .wrap p {
+    font: 12px/1 "arial";
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
