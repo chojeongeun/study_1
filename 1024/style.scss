@@ -154,4 +154,18 @@ main {
 			}
 		}
 	}
+
+	.write-btn {
+		position: fixed;
+		background-color: #fe6f0f;
+		bottom: 120px;
+		right: 20px;
+		color: #fff;
+		padding: 10px 15px 10px 15px;
+		border-radius: 20px;
+		font-weight: bold;
+		font-size: 15px;
+		cursor: pointer;
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	}
 }
