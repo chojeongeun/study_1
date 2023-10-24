@@ -70,6 +70,7 @@ footer {
   padding-bottom: 30px;
   border-top: 1px solid #eaeaea;
   padding-top: 20px;
+  background-color: #fff;
 }
 footer .footer-block {
   display: flex;
@@ -91,5 +92,7 @@ footer .footer-block .footer-icons .footer-icons__desc {
   font-weight: bold;
   transform: scale(0.8);
 }
+
+/* 메인 */
 
 /*# sourceMappingURL=style.css.map */
