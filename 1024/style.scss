@@ -9,6 +9,25 @@ body {
 		'Segoe UI Symbol', sans-serif;
 }
 
+.media-info-msg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 1;
+	background-color: salmon;
+}
+
+@media screen and (max-width: 380px) {
+	.media-info-msg {
+		opacity: 0;
+	}
+}
+
 /* 헤더바 */
 header {
 	border-bottom: 1px solid #ededef;
