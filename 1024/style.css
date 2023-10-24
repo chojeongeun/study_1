@@ -10,7 +10,7 @@ body {
 }
 
 .media-info-msg {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -165,6 +165,10 @@ main .write-btn {
   font-size: 15px;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.2s ease-in-out;
+}
+main .write-btn:hover {
+  background-color: rgba(254, 111, 15, 0.8);
 }
 
 /*# sourceMappingURL=style.css.map */
