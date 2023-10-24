@@ -113,12 +113,14 @@ footer {
 			margin: 0 10px 0 10px;
 			cursor: pointer;
 
-			.footer-icons__img {
-				width: 30px;
-
-				&:hover {
+			&:hover {
+				.footer-icons__img {
 					animation: 2s icons-moving;
 				}
+			}
+
+			.footer-icons__img {
+				width: 30px;
 			}
 
 			.footer-icons__desc {

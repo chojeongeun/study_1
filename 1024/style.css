@@ -103,11 +103,11 @@ footer .footer-block .footer-icons {
   margin: 0 10px 0 10px;
   cursor: pointer;
 }
+footer .footer-block .footer-icons:hover .footer-icons__img {
+  animation: 2s icons-moving;
+}
 footer .footer-block .footer-icons .footer-icons__img {
   width: 30px;
-}
-footer .footer-block .footer-icons .footer-icons__img:hover {
-  animation: 2s icons-moving;
 }
 footer .footer-block .footer-icons .footer-icons__desc {
   font-weight: bold;
