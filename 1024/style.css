@@ -1,0 +1,61 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 헤더바 */
+header {
+  border-bottom: 1px solid #ededef;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  /* 인풋바 */
+  /* 메뉴바 */
+}
+header .info-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+  align-items: center;
+}
+header .info-bar .info-ber__time {
+  font-size: 12px;
+  font-weight: bold;
+}
+header .info-bar .info-ber__icons img {
+  width: 15px;
+}
+header .menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+header .menu-bar .menu-bar__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding-left: 10px;
+}
+header .menu-bar .menu-bar__location .menu-bar__location-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+}
+header .menu-bar .menu-bar__location .menu-bar__location-icon img {
+  width: 15px;
+}
+header .menu-bar .menu-bar__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .menu-bar .menu-bar__icons img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

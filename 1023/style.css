@@ -1,37 +1,3 @@
-div {
-  width: 300px;
-  height: 300px;
-  border: 1px solid gray;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 1s ease-in-out;
-}
-div:hover img {
-  width: 300px;
-  transform: rotateY(360deg);
-}
-div img {
-  width: 100px;
-  animation: moving-logo 3s infinite alternate;
-}
 
-@keyframes moving-logo {
-  0% {
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(3) rotateX(360deg);
-  }
-  50% {
-    transform: scale(0.5);
-  }
-  75% {
-    transform: translateX(-100px);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 
 /*# sourceMappingURL=style.css.map */
