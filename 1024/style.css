@@ -106,6 +106,9 @@ footer .footer-block .footer-icons {
 footer .footer-block .footer-icons .footer-icons__img {
   width: 30px;
 }
+footer .footer-block .footer-icons .footer-icons__img:hover {
+  animation: 2s icons-moving;
+}
 footer .footer-block .footer-icons .footer-icons__desc {
   font-weight: bold;
   transform: scale(0.8);
@@ -169,6 +172,21 @@ main .write-btn {
 }
 main .write-btn:hover {
   background-color: rgba(254, 111, 15, 0.8);
+}
+
+@keyframes icons-moving {
+  0% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  70% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

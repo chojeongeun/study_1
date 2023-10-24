@@ -115,6 +115,10 @@ footer {
 
 			.footer-icons__img {
 				width: 30px;
+
+				&:hover {
+					animation: 2s icons-moving;
+				}
 			}
 
 			.footer-icons__desc {
@@ -191,5 +195,20 @@ main {
 		&:hover {
 			background-color: rgba(254, 111, 15, 0.8);
 		}
+	}
+}
+
+@keyframes icons-moving {
+	0% {
+		transform: translateY(0px);
+	}
+	30% {
+		transform: translateY(-10px);
+	}
+	70% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0px);
 	}
 }
