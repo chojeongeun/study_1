@@ -22,9 +22,9 @@ body {
   background-color: salmon;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 500px) {
   .media-info-msg {
-    opacity: 0;
+    display: none;
   }
 }
 /* 헤더바 */
@@ -155,7 +155,7 @@ main .item-list .item-list__info .item-list_info-price {
 }
 main .write-btn {
   position: fixed;
-  background-color: #fe6f0f;
+  background-color: rgb(254, 111, 15);
   bottom: 120px;
   right: 20px;
   color: #fff;
