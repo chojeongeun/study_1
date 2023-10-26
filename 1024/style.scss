@@ -9,6 +9,11 @@ body {
 		'Segoe UI Symbol', sans-serif;
 }
 
+:root {
+	--button-primary: rgb(254, 111, 15);
+	--button-hover: rgba(254, 111, 15, 0.8);
+}
+
 .media-info-msg {
 	position: fixed;
 	top: 0;
@@ -182,7 +187,7 @@ main {
 
 	.write-btn {
 		position: fixed;
-		background-color: rgb(254, 111, 15);
+		background-color: var(--button-primary);
 		bottom: 120px;
 		right: 20px;
 		color: #fff;
@@ -195,7 +200,7 @@ main {
 		transition: all 0.2s ease-in-out;
 
 		&:hover {
-			background-color: rgba(254, 111, 15, 0.8);
+			background-color: var(--button-hover);
 		}
 	}
 }
