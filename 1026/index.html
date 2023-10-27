@@ -14,28 +14,24 @@
     //계산기 만들기
     const calculator = {
       더하기: function (a, b) {
-        console.log('가격은', a + b, '만원입니다.');
+        return a + b;
       },
       빼기: function (a, b) {
-        console.log('가격은', a - b, '만원입니다.')
+        return a - b;
       },
       곱하기: function (a, b) {
-        console.log('가격은', a * b, '만원입니다.')
+        return a * b;
       },
       나누기: function (a, b) {
-        console.log('가격은', a / b, '만원입니다.')
+        return a / b;
       }
     };
 
-    console.log('애플워치랑 맥북 얼마에요?');
-    calculator.더하기(200, 50);
-
-    calculator.나누기(20, 2);
-    calculator.곱하기(50, 2);
-    calculator.빼기(10, 3);
+    console.log(calculator.더하기(1, 1));
 
 
-
+    const 나누기_된_값 = calculator.나누기(20, 2);
+    console.log(나누기_된_값)
 
 
 
