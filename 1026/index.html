@@ -26,22 +26,14 @@
       }
     };
 
-    //가격이라는 변수가 들어왔을때 어떤 값을 return할까?
-    const 할인된_가격 = (기기이름, price) => {
-      if (기기이름 === '맥북') {
-        return price * 0.8;
-      } else if (기기이름 === '아이폰') {
-        return price * 0.5;
-      } else {
-        return price * 0.9;
-      }
-      return price * 0.9;
+
+    function 할인된_가격(price) {
+      if (price > 10000) return price - 1000;
+      else return price;
     }
 
-    console.log(할인된_가격('맥북', 10000));
-    console.log(할인된_가격('애플워치', 10000));
-    console.log(할인된_가격('아이폰', 10000));
-
+    console.log(할인된_가격(15000));
+    console.log(할인된_가격(4000));
 
 
   </script>
