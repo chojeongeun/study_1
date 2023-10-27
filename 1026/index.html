@@ -10,7 +10,6 @@
 
 <body>
   <script>
-
     //계산기 만들기
     const calculator = {
       더하기: function (a, b) {
@@ -27,12 +26,21 @@
       }
     };
 
-    console.log(calculator.더하기(1, 1));
+    //가격이라는 변수가 들어왔을때 어떤 값을 return할까?
+    const 할인된_가격 = (기기이름, price) => {
+      if (기기이름 === '맥북') {
+        return price * 0.8;
+      } else if (기기이름 === '아이폰') {
+        return price * 0.5;
+      } else {
+        return price * 0.9;
+      }
+      return price * 0.9;
+    }
 
-
-    const 나누기_된_값 = calculator.나누기(20, 2);
-    console.log(나누기_된_값)
-
+    console.log(할인된_가격('맥북', 10000));
+    console.log(할인된_가격('애플워치', 10000));
+    console.log(할인된_가격('아이폰', 10000));
 
 
 
