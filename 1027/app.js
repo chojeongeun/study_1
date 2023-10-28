@@ -1,9 +1,12 @@
-function sayHello() {
+function setTime() {
 	console.log('안녕하세요!!');
 }
 
-//1회성
-//setTimeout(sayHello, 1000);
+//setInterval(setTime, 1000);
 
-//주기성
-setInterval(sayHello, 1000);
+console.log(new Date());
+console.log(new Date().getFullYear());
+console.log(new Date().getDate());
+console.log(new Date().getDay());
+console.log(new Date().getHours());
+console.log(new Date().getMinutes());
