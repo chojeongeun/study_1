@@ -16,3 +16,8 @@ function 숫자를_바꿔주는_함수() {
 timeElement.addEventListener('click', 숫자를_바꿔주는_함수);
 //너가 클릭했을때 실행될 함수는 이거야! 라고 이름만 쓰기
 //()를 넣어버리면 그 자리에서 실행되므로 안됨!
+
+timeElement.addEventListener('mouseover', 실행될_함수);
+
+//윈도우 자체에도 이벤트 줄수있음
+window.addEventListener('resize', 실행될_함수);
