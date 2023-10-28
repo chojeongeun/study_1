@@ -1,7 +1,12 @@
 const timeElement = document.querySelector('.time');
-function 클릭시_실행될_함수() {
-	timeElement.style.color = 'orange';
-	timeElement.style.background = 'lightgreen';
-	timeElement.innerText = '12:00';
+function 실행될_함수() {
+	timeElement.style.color = 'red';
 }
-timeElement.addEventListener('click', 클릭시_실행될_함수);
+function 색깔_바꿔주는_함수() {
+	if (timeElement.style.color === 'orange') {
+		timeElement.style.color = 'blue';
+	} else {
+		timeElement.style.color = 'orange';
+	}
+}
+timeElement.addEventListener('click', 색깔_바꿔주는_함수);
