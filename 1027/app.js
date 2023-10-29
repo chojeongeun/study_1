@@ -1,12 +1,9 @@
 function setTime() {
-	console.log('안녕하세요!!');
+	const time = new Date();
+	const 분 = time.getMinutes();
+	const 초 = time.getSeconds();
+	const timeH1 = document.querySelector('.time');
+	timeH1.innerText = `${분}:${초}`;
 }
 
-//setInterval(setTime, 1000);
-
-console.log(new Date());
-console.log(new Date().getFullYear());
-console.log(new Date().getDate());
-console.log(new Date().getDay());
-console.log(new Date().getHours());
-console.log(new Date().getMinutes());
+setInterval(setTime, 1000);
