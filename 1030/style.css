@@ -92,3 +92,22 @@ header {
 		font-size: 45px;
 	}
 }
+
+@media screen and (max-width: 639px) {
+	.inner {
+		width: 100%;
+	}
+
+	.left-icon img {
+		width: 25px;
+		height: 25px;
+	}
+
+	.right-icons img {
+		display: none;
+	}
+
+	.inner h1 {
+		font-size: 30px;
+	}
+}
