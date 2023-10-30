@@ -1,0 +1,68 @@
+/* main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	flex-direction: column;
+}
+
+.board-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.board-block {
+	width: 100px;
+	height: 100px;
+	border: 2px solid #d3d6da;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.keyboard-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+.keyboard-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 80px;
+	background: #ddd;
+}
+
+.enter,
+.delete {
+	width: 80px;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+
+.inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.left-icon img {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.right-icons img {
+	width: 30px;
+	cursor: pointer;
+	height: 30px;
+}
+
+h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 50px;
+}
