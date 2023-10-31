@@ -11,11 +11,12 @@
 */
 // addeventlistener안에 있는 함수는 이벤트가 암묵적으로 전달된다(event)
 // 조건문1: 알파벳이 필요하기 때문에 keyCode에서 65~90까지의 값만 갖도록
+// 대문자로 바꾸는 함수 : toUpperCase()
 
 function appStart() {
 	const handleKeydown = (e) => {
 		// 특정 키를 뽑아서 그 키를 현재 위치에다가 업데이트
-		const key = e.key;
+		const key = e.key.toUpperCase();
 		const keyCode = e.keyCode;
 		const thisBlock = document.querySelector('.board-column[data-index="00"]');
 
