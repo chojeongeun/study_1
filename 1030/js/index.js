@@ -10,6 +10,7 @@
 (선택)키보드 클릭으로도 입력
 */
 // addeventlistener안에 있는 함수는 이벤트가 암묵적으로 전달된다(event)
+// 조건문1: 알파벳이 필요하기 때문에 keyCode에서 65~90까지의 값만 갖도록
 
 function appStart() {
 	const handleKeydown = (e) => {
@@ -17,7 +18,10 @@ function appStart() {
 		const key = e.key;
 		const keyCode = e.keyCode;
 		const thisBlock = document.querySelector('.board-column[data-index="00"]');
-		thisBlock.innerText = key;
+
+		if (65 <= keyCode && keyCode <= 90) {
+			thisBlock.innerText = key;
+		}
 	};
 	window.addEventListener('keydown', handleKeydown);
 }
