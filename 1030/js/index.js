@@ -52,15 +52,20 @@ let attempts = 0;
 let index = 0;
 
 function appStart() {
-	const handleKeydown = (e) => {
-		if (index === 5) return;
-		console.log('키가 입력!!!', e.key);
+	const handleEnterkey = () => {
+		console.log('엔터키!!!');
+	};
 
+	const handleKeydown = (e) => {
 		const key = e.key.toUpperCase();
 		const keyCode = e.keyCode;
 		const thisBlock = document.querySelector(`.board-column[data-index="${attempts}${index}"]`);
 
-		if (65 <= keyCode && keyCode <= 90) {
+		// console.log(e.key);
+		if (e.key === 'Enter') {
+			handleEnterkey();
+		} else if (index === 5) return;
+		else if (65 <= keyCode && keyCode <= 90) {
 			thisBlock.innerText = key;
 			index += 1;
 		}
