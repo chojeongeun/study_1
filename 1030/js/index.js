@@ -4,6 +4,11 @@ let attempts = 0;
 let index = 0;
 
 function appStart() {
+	// 다음 줄로 넘기는 함수
+	const nextLine = () => {
+		attempts += 1; //첫번째 시도, 두번째 시도 이런 줄을 나타내는 단
+		index = 0; //초기화
+	};
 	const handleEnterkey = () => {
 		//입력된 단어 확인
 		for (let i = 0; i < 5; i++) {
@@ -16,6 +21,7 @@ function appStart() {
 			else block.style.background = '#787c7e';
 			block.style.color = 'white';
 		}
+		nextLine();
 	};
 
 	const handleKeydown = (e) => {
