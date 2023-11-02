@@ -6,6 +6,7 @@ let index = 0;
 function appStart() {
 	// 다음 줄로 넘기는 함수
 	const nextLine = () => {
+		if (attempts === 6) return;
 		attempts += 1;
 		index = 0;
 	};
