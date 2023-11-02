@@ -4,15 +4,22 @@ let attempts = 0;
 let index = 0;
 
 function appStart() {
+	const displayGameover = () => {
+		const div = document.createElement('div');
+		div.innerText = '게임이 종료됐습니다.';
+		document.body.appendChild(div);
+	};
+
 	// 다음 줄로 넘기는 함수
 	const nextLine = () => {
-		if (attempts === 6) return;
+		if (attempts === 6) return gameover();
 		attempts += 1;
 		index = 0;
 	};
 
 	const gameover = () => {
 		window.removeEventListener('keydown', handleKeydown);
+		displayGameover();
 	};
 
 	const handleEnterkey = () => {
