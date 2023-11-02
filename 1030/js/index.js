@@ -6,22 +6,33 @@ let index = 0;
 function appStart() {
 	// 다음 줄로 넘기는 함수
 	const nextLine = () => {
-		attempts += 1; //첫번째 시도, 두번째 시도 이런 줄을 나타내는 단
-		index = 0; //초기화
+		attempts += 1;
+		index = 0;
 	};
+
+	const gameover = () => {
+		window.removeEventListener('keydown', handleKeydown);
+	};
+
 	const handleEnterkey = () => {
+		let 맞은_갯수 = 0;
 		//입력된 단어 확인
 		for (let i = 0; i < 5; i++) {
 			const block = document.querySelector(`.board-column[data-index="${attempts}${i}"]`);
 			const 입력한_글자 = block.innerText;
 			const 정답_글자 = 정답[i];
-			// console.log('입력한_글자', 입력한_글자, '정답_글자', 정답_글자);
-			if (입력한_글자 === 정답_글자) block.style.background = '#6aaa64';
-			else if (정답.includes(입력한_글자)) block.style.background = '#c9b458';
+			//console.log('입력한_글자', 입력한_글자, '정답_글자', 정답_글자);
+			if (입력한_글자 === 정답_글자) {
+				맞은_갯수 += 1;
+				block.style.background = '#6aaa64';
+			} else if (정답.includes(입력한_글자)) block.style.background = '#c9b458';
 			else block.style.background = '#787c7e';
+
 			block.style.color = 'white';
 		}
-		nextLine();
+
+		if (맞은_갯수 === 5) gameover();
+		else nextLine();
 	};
 
 	const handleKeydown = (e) => {
