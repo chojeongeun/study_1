@@ -44,8 +44,11 @@ function appStart() {
 		else nextLine();
 	};
 
-	const handleBackSpace = (thisBlock) => {
-		thisBlock.innerText = '';
+	const handleBackSpace = () => {
+		if (index > 0) {
+			const preBlock = document.querySelector(`.board-column[data-index="${attempts}${index - 1}"]`);
+			preBlock.innerText = '';
+		}
 		if (index !== 0) index -= 1;
 	};
 
@@ -54,7 +57,7 @@ function appStart() {
 		const keyCode = e.keyCode;
 		const thisBlock = document.querySelector(`.board-column[data-index="${attempts}${index}"]`);
 
-		if (e.key === 'Backspace') handleBackSpace(thisBlock);
+		if (e.key === 'Backspace') handleBackSpace();
 		//단어가 다 입력됐을때
 		else if (index === 5) {
 			if (e.key === 'Enter') handleEnterkey();
