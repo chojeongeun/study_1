@@ -7,7 +7,7 @@ function appStart() {
 	const displayGameover = () => {
 		const div = document.createElement('div');
 		div.innerText = '게임이 종료됐습니다.';
-		div.style = 'display:flex; justify-content:center; align-items:center;position:absolute; top:50%; left:50%; transform:translate(-50%);background-color:white; width:200px; height:100px;';
+		div.style = 'display:flex; justify-content:center; align-items:center;position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);background-color:white; width:200px; height:100px;';
 		document.body.appendChild(div);
 	};
 
@@ -44,13 +44,19 @@ function appStart() {
 		else nextLine();
 	};
 
+	const handleBackSpace = (thisBlock) => {
+		thisBlock.innerText = '';
+		if (index !== 0) index -= 1;
+	};
+
 	const handleKeydown = (e) => {
 		const key = e.key.toUpperCase();
 		const keyCode = e.keyCode;
 		const thisBlock = document.querySelector(`.board-column[data-index="${attempts}${index}"]`);
 
+		if (e.key === 'Backspace') handleBackSpace(thisBlock);
 		//단어가 다 입력됐을때
-		if (index === 5) {
+		else if (index === 5) {
 			if (e.key === 'Enter') handleEnterkey();
 			else return;
 		} else if (65 <= keyCode && keyCode <= 90) {
