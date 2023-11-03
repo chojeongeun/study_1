@@ -7,6 +7,7 @@ function appStart() {
 	const displayGameover = () => {
 		const div = document.createElement('div');
 		div.innerText = '게임이 종료됐습니다.';
+		div.style = 'display:flex; justify-content:center; align-items:center;position:absolute; top:50%; left:50%; transform:translate(-50%);background-color:white; width:200px; height:100px;';
 		document.body.appendChild(div);
 	};
 
