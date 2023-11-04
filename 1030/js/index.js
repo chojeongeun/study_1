@@ -2,6 +2,7 @@ const 정답 = 'APPLE';
 
 let attempts = 0;
 let index = 0;
+let timer;
 
 function appStart() {
 	const displayGameover = () => {
@@ -21,6 +22,7 @@ function appStart() {
 	const gameover = () => {
 		window.removeEventListener('keydown', handleKeydown);
 		displayGameover();
+		clearInterval(timer);
 	};
 
 	const handleEnterkey = () => {
@@ -80,7 +82,7 @@ function appStart() {
 			timeDiv.innerText = `${분}:${초}`;
 		}
 
-		setInterval(setTime, 1000);
+		timer = setInterval(setTime, 1000); //setInterval의 아이디(몇번째 인터벌이 돌고있는지 컨트롤 가능)
 	};
 
 	startTimer();
