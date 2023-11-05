@@ -47,6 +47,11 @@ a {
 	padding: 8px 12px;
 }
 
+.navbar__menu li:hover {
+	background-color: #d49466;
+	border-radius: 4px;
+}
+
 .navbar__icons {
 	color: #fff;
 	display: flex;
