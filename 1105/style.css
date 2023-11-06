@@ -76,6 +76,7 @@ a {
 		padding: 8px 24px;
 	}
 	.navbar__menu {
+		display: none;
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
@@ -85,10 +86,25 @@ a {
 		text-align: center;
 	}
 	.navbar__icons {
+		display: none;
 		justify-content: center;
 		width: 100%;
 	}
 	.navbar__toggleBtn {
 		display: block;
 	}
+
+	.navbar__menu.active,
+	.navbar_icons.active {
+		display: flex;
+	}
 }
+
+/*
+:root{
+  --text-color: #f0f3f5;
+  --background-color: #263343;
+  --accent-color: #d49466;
+}
+var(--text-color);
+*/
