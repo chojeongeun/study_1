@@ -79,3 +79,39 @@ header .icons .fa-magnifying-glass {
 	height: 100%;
 	max-width: 600px;
 }
+
+.info {
+	padding: var(--padding);
+}
+
+.info .metadata .hashtags {
+	display: flex;
+	font-size: var(--font-small);
+	color: var(--blue-color);
+}
+
+.info .metadata .hashtags li {
+	margin-right: var(--padding);
+}
+
+.info .metadata .titileAndBuuton {
+	display: flex;
+}
+
+.info .metadata .titileAndBuuton .title {
+	font-size: var(--font-medium);
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	margin-right: var(--padding);
+}
+
+.info .metadata .titileAndBuuton .moreBtn {
+	height: 100%;
+}
+
+.info .views {
+	font-size: var(--font-small);
+	color: var(--grey-dark-color);
+}
