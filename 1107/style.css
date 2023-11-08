@@ -115,3 +115,27 @@ header .icons .fa-magnifying-glass {
 	font-size: var(--font-small);
 	color: var(--grey-dark-color);
 }
+
+/* Action Buttons */
+.actions {
+	display: flex;
+	justify-content: space-around;
+	margin: var(--padding) 0;
+}
+
+.actions button {
+	display: flex;
+	flex-direction: column;
+	font-size: var(--font-small);
+	color: var(--grey-dark-color);
+}
+
+.actions button i {
+	margin: 0 auto;
+	margin-bottom: calc(var(--padding) / 2);
+	font-size: 16px;
+}
+
+.actions button i.active {
+	color: var(--blue-color);
+}
