@@ -112,6 +112,7 @@ body > .info {
 
 .info .metadata .titileAndBuuton .moreBtn {
 	height: 100%;
+	transition: transform 300ms ease-in-out;
 }
 
 .info .metadata .titileAndBuuton .moreBtn.clicked {
