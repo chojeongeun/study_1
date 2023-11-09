@@ -114,6 +114,10 @@ body > .info {
 	height: 100%;
 }
 
+.info .metadata .titileAndBuuton .moreBtn.clicked {
+	transform: rotate(180deg);
+}
+
 .info .views {
 	font-size: var(--font-small);
 	color: var(--grey-dark-color);
