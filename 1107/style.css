@@ -100,11 +100,14 @@ body > .info {
 
 .info .metadata .titileAndBuuton .title {
 	font-size: var(--font-medium);
+	margin-right: var(--padding);
+}
+
+.info .metadata .titileAndBuuton .title.clamp {
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 2;
 	overflow: hidden;
-	margin-right: var(--padding);
 }
 
 .info .metadata .titileAndBuuton .moreBtn {
