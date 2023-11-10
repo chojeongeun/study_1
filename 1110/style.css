@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -14,11 +15,133 @@ a {
   text-decoration: none;
 }
 
+/*
+#box0 {
+	width: 100%;
+	padding: 180px 0px 150px;
+	background: #fff;
+	transition: 0.5s;
+	.inner {
+		width: 1180px;
+		margin: 0px auto;
+		position: relative;
+		h1 {
+			font: bold 24px/1 'arial';
+			color: #555;
+			text-align: center;
+			margin-bottom: 50px;
+		}
+
+		.wrap {
+			article {
+				width: 380px; //컴럼 3개니까
+				margin-right: 20px;
+				position: relative;
+				float: left;
+
+				&:last-child {
+					margin-right: 0px;
+				}
+
+				.pic {
+					width: 110px;
+					height: 70px;
+					background: #555;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+				h2 {
+					font: bold 16px/1 'arial';
+					color: #666;
+					margin-left: 120px;
+					margin-right: 45px;
+					margin-bottom: 5px;
+					padding-top: 10px;
+				}
+				p {
+					font: 14px/1.2 'arial';
+					color: #888;
+					margin-left: 120px;
+					margin-right: 45px;
+				}
+				.icon {
+					display: block;
+					width: 40px;
+					height: 40px;
+					border-radius: 50%;
+					background: #ddd;
+					position: absolute;
+					top: 50%;
+					right: 0px;
+					margin-top: -20px;
+					font-size: 20px;
+					color: #fff;
+					text-align: center;
+					line-height: 40px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1179px) {
+	#box0 {
+		padding: 120px 20px 100px;
+
+		.inner {
+			width: 100%;
+			.wrap {
+				article {
+					width: 32%;
+					margin-right: 2%;
+
+					.pic {
+						width: 100%;
+						height: 120px;
+						position: relative;
+						margin-bottom: 15px;
+					}
+					h2 {
+						margin-left: 0px;
+						margin-right: 0px;
+					}
+					p {
+						margin-left: 0px;
+						margin-right: 0px;
+					}
+					.icon {
+						position: relative;
+						top: 0%;
+						right: 0px;
+						margin-top: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 639px) {
+	#box0 {
+		padding: 80px 20px 60px;
+
+		.inner {
+			.wrap {
+				article {
+					width: 100%;
+					margin-right: 0%;
+					margin-bottom: 50px;
+				}
+			}
+		}
+	}
+}
+*/
 #box0 {
   width: 100%;
   padding: 180px 0px 150px;
   background: #fff;
-  transition: 0.5s;
 }
 #box0 .inner {
   width: 1180px;
@@ -26,16 +149,23 @@ a {
   position: relative;
 }
 #box0 .inner h1 {
-  font: bold 24px/1 "arial";
+  font: bold 22px/1 "arial";
   color: #555;
+  margin-bottom: 30px;
   text-align: center;
-  margin-bottom: 50px;
+}
+#box0 .inner .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 #box0 .inner .wrap article {
   width: 380px;
   margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  float: left;
 }
 #box0 .inner .wrap article:last-child {
   margin-right: 0px;
@@ -43,82 +173,41 @@ a {
 #box0 .inner .wrap article .pic {
   width: 110px;
   height: 70px;
-  background: #555;
+  background: #ddd;
   position: absolute;
   top: 0;
   left: 0;
 }
-#box0 .inner .wrap article h2 {
-  font: bold 16px/1 "arial";
-  color: #666;
+#box0 .inner .wrap article .txtBox {
   margin-left: 120px;
   margin-right: 45px;
-  margin-bottom: 5px;
   padding-top: 10px;
 }
-#box0 .inner .wrap article p {
+#box0 .inner .wrap article .txtBox h2 {
+  font: bold 16px/1 "arial";
+  color: #666;
+  margin-bottom: 5px;
+}
+#box0 .inner .wrap article .txtBox p {
   font: 14px/1.2 "arial";
   color: #888;
-  margin-left: 120px;
-  margin-right: 45px;
 }
 #box0 .inner .wrap article .icon {
-  display: block;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background: #ddd;
   position: absolute;
   top: 50%;
-  right: 0px;
+  right: 0;
   margin-top: -20px;
-  font-size: 20px;
-  color: #fff;
-  text-align: center;
+}
+#box0 .inner .wrap article .icon i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
   line-height: 40px;
-}
-
-@media screen and (max-width: 1179px) {
-  #box0 {
-    padding: 120px 20px 100px;
-  }
-  #box0 .inner {
-    width: 100%;
-  }
-  #box0 .inner .wrap article {
-    width: 32%;
-    margin-right: 2%;
-  }
-  #box0 .inner .wrap article .pic {
-    width: 100%;
-    height: 120px;
-    position: relative;
-    margin-bottom: 15px;
-  }
-  #box0 .inner .wrap article h2 {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  #box0 .inner .wrap article p {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  #box0 .inner .wrap article .icon {
-    position: relative;
-    top: 0%;
-    right: 0px;
-    margin-top: 10px;
-  }
-}
-@media screen and (max-width: 639px) {
-  #box0 {
-    padding: 80px 20px 60px;
-  }
-  #box0 .inner .wrap article {
-    width: 100%;
-    margin-right: 0%;
-    margin-bottom: 50px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
