@@ -27,6 +27,7 @@ a {
 	width: 100%;
 	padding: 100px 0px 0px;
 	background: #fff;
+	transition: 0.5s;
 	.inner {
 		width: 1180px;
 		margin: 0px auto;
@@ -98,6 +99,31 @@ a {
 						position: absolute;
 						right: 40px;
 						top: -30px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	#box4 {
+		padding: 70px 20px 0px;
+		.inner {
+			width: 100%;
+			.wrap {
+				article {
+					width: 49%;
+					&:nth-of-type(2) {
+						.pic {
+							width: 100%;
+							height: 120px;
+							position: relative; //아래로 내려가게 해서 쌓이도록 바꿈
+							right: 0px;
+							top: 0px;
+							margin-top: 20px;
+							margin-bottom: 20px;
+						}
 					}
 				}
 			}
