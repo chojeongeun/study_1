@@ -18,6 +18,7 @@ a {
 	width: 100%;
 	padding: 180px 0px 150px;
 	background: #fff;
+	transition: 0.5s;
 
 	.inner {
 		width: 1180px;
@@ -83,6 +84,30 @@ a {
 						box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 						border-radius: 20px;
 						margin: 0px auto;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	#box3 {
+		padding: 120px 20px 100px;
+
+		.inner {
+			width: 100%;
+			.wrap {
+				article {
+					width: 49%;
+					height: 430px;
+					margin-right: 2%;
+					margin-bottom: 20px;
+					.pic {
+						height: 30vw; //타블릿구간:50안넘는게 좋음(가로폭이 세로폭보다 큼, 모바일구간:50보다 크게주긴
+					}
+					&:nth-of-type(2n) {
+						margin-right: 0px;
 					}
 				}
 			}
