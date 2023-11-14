@@ -50,15 +50,18 @@ a {
 				&:nth-of-type(2) {
 					padding: 40px 0px;
 					float: right;
+					position: relative;
 					h2 {
 						font: bold 18px/1 'arial';
 						color: #555;
 						margin-bottom: 10px;
+						position: relative;
 					}
 					p {
 						font: 14px/1.2 'arial';
 						color: #888;
 						margin-bottom: 20px;
+						position: relative;
 					}
 					.btn {
 						display: block;
@@ -69,9 +72,15 @@ a {
 						text-align: center;
 						font: 12px/30px 'arial';
 						color: #888;
+						position: relative;
 					}
 
 					// 1. &::before이용해서 배경에 은은한 회색박스 생성
+					/* 2. 회색박스 덮어버리는 현상 해결
+            (h2,p,a태그에 다 relative해서 z-index:2)
+            - z-index 안줘도 before라서 맨앞에 있으니 안줘도 괜찮음
+            - 겹쳐있으려면, 두 요소 다 포지션값이 있어야함
+ 				 */
 					&::before {
 						content: '';
 						display: block;
