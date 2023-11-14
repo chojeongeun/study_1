@@ -72,5 +72,15 @@ a {
   font: 12px/30px "arial";
   color: #888;
 }
+#box4 .inner .wrap article:nth-of-type(2)::before {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 100%;
+  background: #eee;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
 
 /*# sourceMappingURL=style.css.map */

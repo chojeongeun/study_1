@@ -70,6 +70,18 @@ a {
 						font: 12px/30px 'arial';
 						color: #888;
 					}
+
+					// 1. &::before이용해서 배경에 은은한 회색박스 생성
+					&::before {
+						content: '';
+						display: block;
+						width: 70%;
+						height: 100%;
+						background: #eee;
+						position: absolute;
+						bottom: 0px;
+						right: 0px;
+					}
 				}
 			}
 		}
