@@ -103,5 +103,18 @@ a {
     margin-right: 0px;
   }
 }
+@media screen and (max-width: 639px) {
+  #box3 {
+    padding: 80px 20px 60px;
+  }
+  #box3 .inner .wrap article {
+    width: 100%;
+    margin-right: 0%;
+    height: auto;
+  }
+  #box3 .inner .wrap article .pic {
+    height: 60vw;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

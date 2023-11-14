@@ -112,3 +112,22 @@ a {
 		}
 	}
 }
+
+@media screen and (max-width: 639px) {
+	#box3 {
+		padding: 80px 20px 60px;
+
+		.inner {
+			.wrap {
+				article {
+					width: 100%;
+					margin-right: 0%;
+					height: auto;
+					.pic {
+						height: 60vw; //타블릿구간:50안넘는게 좋음(가로폭이 세로폭보다 큼, 모바일구간:50보다 크게주긴
+					}
+				}
+			}
+		}
+	}
+}
