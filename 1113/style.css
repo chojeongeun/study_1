@@ -44,7 +44,6 @@ a {
 }
 #box3 .inner .wrap article {
   width: 280px;
-  height: 400px;
   margin-right: 20px;
   border: 1px solid #ddd;
   border-bottom: 3px solid #999;
@@ -94,7 +93,6 @@ a {
   }
   #box3 .inner .wrap article {
     width: 49%;
-    height: 430px;
     margin-right: 2%;
     margin-bottom: 20px;
   }
