@@ -122,5 +122,10 @@ a {
     margin-bottom: 20px;
   }
 }
+@media screen and (max-width: 639px) {
+  #box4 .inner .wrap article {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

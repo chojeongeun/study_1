@@ -130,3 +130,15 @@ a {
 		}
 	}
 }
+
+@media screen and (max-width: 639px) {
+	#box4 {
+		.inner {
+			.wrap {
+				article {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
