@@ -17,7 +17,8 @@ a {
 #box5 {
   width: 100%;
   padding: 180px 0px 150px;
-  background: #efefef;
+  background: #ddd;
+  transition: 0.5s;
 }
 #box5 .inner {
   width: 1180px;
@@ -34,15 +35,18 @@ a {
   font: 16px/1 "arial";
   color: #777;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 #box5 .inner .wrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 #box5 .inner .wrap article {
   width: 280px;
-  margin-right: 20px;
+  margin-right: 40px;
+}
+#box5 .inner .wrap article:last-child {
+  margin-right: 0px;
 }
 #box5 .inner .wrap article .pic {
   width: 100%;
@@ -56,11 +60,8 @@ a {
   margin-bottom: 15px;
 }
 #box5 .inner .wrap article p {
-  font: 15px/1 "arial";
+  font: 15px/1.2 "arial";
   color: #777;
-  margin-bottom: 10px;
-}
-#box5 .inner .wrap article p:last-of-type {
   margin-bottom: 20px;
 }
 #box5 .inner .wrap article .btn {
@@ -71,6 +72,29 @@ a {
   color: #555;
   border: 1px solid #555;
   text-align: center;
+}
+
+@media screen and (max-width: 1180px) {
+  #box5 {
+    padding: 120px 20px 100px;
+  }
+  #box5 .inner {
+    width: 100%;
+  }
+  #box5 .inner .wrap {
+    flex-wrap: wrap;
+  }
+  #box5 .inner .wrap article {
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 30px;
+  }
+  #box5 .inner .wrap article:nth-of-type(2n) {
+    margin-right: 0px;
+  }
+  #box5 .inner .wrap article .pic {
+    height: 15vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
