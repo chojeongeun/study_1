@@ -102,3 +102,21 @@ a {
 		}
 	}
 }
+
+@media screen and (max-width: 639px) {
+	#box5 {
+		padding: 100px 20px 80px;
+
+		.inner {
+			.wrap {
+				article {
+					width: 100%;
+					margin-right: 0%;
+					.pic {
+						height: 50vw;
+					}
+				}
+			}
+		}
+	}
+}

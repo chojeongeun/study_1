@@ -96,5 +96,17 @@ a {
     height: 15vw;
   }
 }
+@media screen and (max-width: 639px) {
+  #box5 {
+    padding: 100px 20px 80px;
+  }
+  #box5 .inner .wrap article {
+    width: 100%;
+    margin-right: 0%;
+  }
+  #box5 .inner .wrap article .pic {
+    height: 50vw;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
