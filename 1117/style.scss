@@ -114,3 +114,30 @@ a {
 		}
 	}
 }
+
+@media screen and (max-width: 639px) {
+	#box6 {
+		padding: 80px 20px 60px;
+		.inner {
+			> .btn {
+				margin: 20px auto 40px;
+			}
+
+			ul {
+				li {
+					display: block;
+					article {
+						width: 100%;
+					}
+					.article_btn {
+						width: 100%;
+						height: 30px;
+						line-height: 30px;
+						font-size: 12px;
+						margin: 20px auto;
+					}
+				}
+			}
+		}
+	}
+}
