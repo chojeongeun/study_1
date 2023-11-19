@@ -105,3 +105,20 @@ a {
 		}
 	}
 }
+
+@media screen and (max-width: 639px) {
+	#box7 {
+		padding: 80px 20px 60px;
+		.inner {
+			.wrap {
+				article {
+					width: 100%;
+					margin-right: 0%;
+					.pic {
+						height: 40vw;
+					}
+				}
+			}
+		}
+	}
+}
