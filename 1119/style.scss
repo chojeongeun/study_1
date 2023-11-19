@@ -17,6 +17,7 @@ a {
 #box8 {
 	width: 100%;
 	padding: 180px 0px 150px;
+	transition: 0.5s;
 	.inner {
 		width: 1180px;
 		margin: 0px auto;
@@ -61,6 +62,27 @@ a {
 				.btn {
 					font: bold 12px/1 'arial';
 					color: #333;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	#box8 {
+		padding: 120px 20px 100px;
+		.inner {
+			width: 100%;
+			h1 {
+				margin-bottom: 40px;
+			}
+			.wrap {
+				article {
+					width: 32%;
+					margin-right: 2%;
+					.pic {
+						height: 20vw;
+					}
 				}
 			}
 		}
