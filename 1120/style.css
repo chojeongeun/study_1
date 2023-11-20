@@ -27,12 +27,14 @@ a {
   height: 400px;
   background: #888;
   float: left;
+  transition: 0.5s;
 }
 #box9 .right {
   width: 50%;
   height: 400px;
   background: #222;
   float: left;
+  transition: 0.5s;
 }
 #box9 .right .inner {
   width: 590px;
@@ -69,6 +71,22 @@ a {
   background: #666;
   text-align: center;
   border-radius: 15px;
+}
+
+@media screen and (max-width: 1180px) {
+  #box9 .left {
+    width: 30%;
+  }
+  #box9 .right {
+    width: 70%;
+  }
+  #box9 .right .inner {
+    width: 100%;
+    padding: 30px;
+  }
+  #box9 .right .inner article {
+    margin-bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
