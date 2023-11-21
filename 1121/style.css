@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#icon1 {
+  width: 100%;
+  padding: 180px 0px 150px;
+}
+#icon1 .inner {
+  width: 1180px;
+  margin: 0px auto;
+  position: relative;
+}
+#icon1 .inner h1 {
+  font: bold 22px/1 "arial";
+  color: #555;
+  margin-bottom: 80px;
+  text-align: center;
+}
+#icon1 .inner .wrap::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+#icon1 .inner .wrap article {
+  float: left;
+  text-align: center;
+  width: 16.6666666667%;
+  margin-bottom: 60px;
+  padding: 0px 20px;
+}
+#icon1 .inner .wrap article .ico i {
+  font-size: 25px;
+  color: #777;
+  margin-bottom: 20px;
+}
+#icon1 .inner .wrap article p {
+  color: #777;
+  font: 16px/1 "arial";
+}
+
+/*# sourceMappingURL=style.css.map */
