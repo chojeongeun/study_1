@@ -17,6 +17,7 @@ a {
 #icon1 {
   width: 100%;
   padding: 180px 0px 150px;
+  transition: 0.5s;
 }
 #icon1 .inner {
   width: 1180px;
@@ -47,8 +48,23 @@ a {
   margin-bottom: 20px;
 }
 #icon1 .inner .wrap article p {
-  color: #777;
+  color: #888;
   font: 16px/1 "arial";
+}
+
+@media screen and (max-width: 1180px) {
+  #icon1 {
+    padding: 120px 20px 100px;
+  }
+  #icon1 .inner {
+    width: 100%;
+  }
+  #icon1 .inner h1 {
+    margin-bottom: 40px;
+  }
+  #icon1 .inner .wrap article {
+    width: 33.3333333333%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

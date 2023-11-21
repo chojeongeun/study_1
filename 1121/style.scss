@@ -17,6 +17,7 @@ a {
 #icon1 {
 	width: 100%;
 	padding: 180px 0px 150px;
+	transition: 0.5s;
 	.inner {
 		width: 1180px;
 		margin: 0px auto;
@@ -47,8 +48,25 @@ a {
 					}
 				}
 				p {
-					color: #777;
+					color: #888;
 					font: 16px/1 'arial';
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	#icon1 {
+		padding: 120px 20px 100px;
+		.inner {
+			width: 100%;
+			h1 {
+				margin-bottom: 40px;
+			}
+			.wrap {
+				article {
+					width: calc(100% / 3);
 				}
 			}
 		}
