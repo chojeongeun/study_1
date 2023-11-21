@@ -72,3 +72,16 @@ a {
 		}
 	}
 }
+
+@media screen and (max-width: 639px) {
+	#icon1 {
+		padding: 100px 20px 80px;
+		.inner {
+			.wrap {
+				article {
+					width: calc(100% / 2);
+				}
+			}
+		}
+	}
+}
