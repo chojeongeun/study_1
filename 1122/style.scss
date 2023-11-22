@@ -121,6 +121,7 @@ a {
 	width: 100%;
 	padding: 180px 0px 150px;
 	background: #444;
+	transition: 0.5s;
 	.inner {
 		width: 1180px;
 		margin: 0px auto;
@@ -142,7 +143,7 @@ a {
 				width: 280px;
 				margin-right: 20px;
 				float: left;
-				&:last-child {
+				&:nth-last-of-type(1) {
 					margin-right: 0px;
 				}
 				.pic {
@@ -176,6 +177,63 @@ a {
 							font: 12px/1 'arial';
 							color: #999;
 						}
+					}
+				}
+			}
+
+			@media screen and (max-width: 1180px) {
+				#banner1 {
+					padding: 120px 20px 100px;
+					.inner {
+						width: 100%;
+						h1 {
+							margin-bottom: 60px;
+						}
+						.wrap {
+							article {
+								width: 49%;
+								margin-right: 2%;
+								margin-bottom: 20px;
+								&:nth-last-of-type(2n-1) {
+									margin-right: 0px;
+								}
+								.pic {
+									height: 20vw;
+								}
+								.txtBox {
+									height: auto;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 1180px) {
+	#banner1 {
+		padding: 120px 20px 100px;
+		.inner {
+			width: 100%;
+			h1 {
+				margin-bottom: 60px;
+			}
+			.wrap {
+				article {
+					width: 49%;
+					margin-right: 2%;
+					margin-bottom: 20px;
+					&:nth-last-of-type(2n-1) {
+						margin-right: 0px;
+					}
+					.pic {
+						height: 20vw;
+					}
+					.txtBox {
+						height: auto;
 					}
 				}
 			}

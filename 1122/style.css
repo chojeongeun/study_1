@@ -109,6 +109,7 @@ a {
   width: 100%;
   padding: 180px 0px 150px;
   background: #444;
+  transition: 0.5s;
 }
 #banner1 .inner {
   width: 1180px;
@@ -134,7 +135,7 @@ a {
   margin-right: 20px;
   float: left;
 }
-#banner1 .inner .wrap article:last-child {
+#banner1 .inner .wrap article:nth-last-of-type(1) {
   margin-right: 0px;
 }
 #banner1 .inner .wrap article .pic {
@@ -166,6 +167,57 @@ a {
 #banner1 .inner .wrap article .txtBox p span {
   font: 12px/1 "arial";
   color: #999;
+}
+@media screen and (max-width: 1180px) {
+  #banner1 .inner .wrap #banner1 {
+    padding: 120px 20px 100px;
+  }
+  #banner1 .inner .wrap #banner1 .inner {
+    width: 100%;
+  }
+  #banner1 .inner .wrap #banner1 .inner h1 {
+    margin-bottom: 60px;
+  }
+  #banner1 .inner .wrap #banner1 .inner .wrap article {
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+  }
+  #banner1 .inner .wrap #banner1 .inner .wrap article:nth-last-of-type(2n-1) {
+    margin-right: 0px;
+  }
+  #banner1 .inner .wrap #banner1 .inner .wrap article .pic {
+    height: 20vw;
+  }
+  #banner1 .inner .wrap #banner1 .inner .wrap article .txtBox {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  #banner1 {
+    padding: 120px 20px 100px;
+  }
+  #banner1 .inner {
+    width: 100%;
+  }
+  #banner1 .inner h1 {
+    margin-bottom: 60px;
+  }
+  #banner1 .inner .wrap article {
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+  }
+  #banner1 .inner .wrap article:nth-last-of-type(2n-1) {
+    margin-right: 0px;
+  }
+  #banner1 .inner .wrap article .pic {
+    height: 20vw;
+  }
+  #banner1 .inner .wrap article .txtBox {
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
