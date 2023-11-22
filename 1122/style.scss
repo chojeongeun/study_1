@@ -18,6 +18,8 @@ a {
 	width: 100%;
 	padding: 100px 0px;
 	background: #555;
+	transition: 0.5s;
+	// 높이값 변경할때 높낮이가 줄어들면서 모션
 	.inner {
 		width: 1180px;
 		margin: 0px auto;
@@ -81,6 +83,34 @@ a {
 				p {
 					font: bold 14px/1 'arial';
 					color: #ddd;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	#icon2 {
+		padding: 80px 20px;
+		.inner {
+			width: 100%;
+
+			.btn {
+				margin: 0px auto 40px;
+			}
+			.wrap {
+				article {
+					width: calc(100% / 2);
+					margin-bottom: 50px;
+					&:nth-last-of-type(2n-1)::after {
+						display: none;
+					}
+
+					.ico {
+						i {
+							font-size: 40px;
+						}
+					}
 				}
 			}
 		}

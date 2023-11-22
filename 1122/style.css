@@ -18,6 +18,7 @@ a {
   width: 100%;
   padding: 100px 0px;
   background: #555;
+  transition: 0.5s;
 }
 #icon2 .inner {
   width: 1180px;
@@ -81,6 +82,28 @@ a {
 #icon2 .inner .wrap article p {
   font: bold 14px/1 "arial";
   color: #ddd;
+}
+
+@media screen and (max-width: 1180px) {
+  #icon2 {
+    padding: 80px 20px;
+  }
+  #icon2 .inner {
+    width: 100%;
+  }
+  #icon2 .inner .btn {
+    margin: 0px auto 40px;
+  }
+  #icon2 .inner .wrap article {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  #icon2 .inner .wrap article:nth-last-of-type(2n-1)::after {
+    display: none;
+  }
+  #icon2 .inner .wrap article .ico i {
+    font-size: 40px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
