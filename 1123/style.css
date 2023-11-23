@@ -109,5 +109,13 @@ a {
     width: 100%;
   }
 }
+@media screen and (max-width: 639px) {
+  #tab {
+    padding: 80px 20px 60px;
+  }
+  #tab .inner .wrap .picBox {
+    height: 70vw;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
