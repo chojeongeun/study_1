@@ -47,5 +47,53 @@ body header ul li a {
 body header ul li a:hover {
   text-decoration: underline double;
 }
+body div {
+  width: 1240px;
+  margin: 0px auto 50px;
+  display: flex;
+  justify-content: space-between;
+}
+body div main {
+  flex-basis: 920px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 62px 72px 32px 72px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
+}
+body div aside {
+  flex-basis: 284px;
+}
+body div aside nav {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
+  padding: 24px 28px;
+  margin-bottom: 24px;
+}
+body div aside nav h2 {
+  margin-bottom: 18px;
+  font: bold 22px/1 "arial";
+  color: #7c5d48;
+}
+body div aside nav ul {
+  font-size: 14px;
+}
+body div aside nav ul li {
+  list-style-type: square;
+  color: #7c5d48;
+  margin: 0 0 16px 20px;
+}
+body div aside nav ul li a {
+  color: #333;
+}
+body div aside .recentNav ul {
+  height: 240px;
+  overflow: hidden scroll;
+}
+body div aside .recentNav ul li {
+  border-bottom: 1px solid #7c5d48;
+  padding-bottom: 10px;
+  margin-bottom: 22px;
+}
 
 /*# sourceMappingURL=style.css.map */
