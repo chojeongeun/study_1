@@ -58,6 +58,41 @@ body {
 			border-radius: 16px;
 			padding: 62px 72px 32px 72px;
 			box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
+			article {
+				h2 {
+					font: bold 40px/1 'arial';
+					margin-bottom: 8px;
+				}
+				.date {
+					background: #91c777;
+					border-radius: 0px 22px 22px 22px;
+					font: bold 18px/1 'arial';
+					color: #fff;
+					padding: 11px 23px 10px 18px;
+					display: inline-block;
+					margin-bottom: 26px;
+				}
+				.pic_eyecatch {
+					margin-bottom: 26px;
+				}
+				h3 {
+					border-bottom: 2px solid #6ab547;
+					margin-bottom: 20px;
+					font-size: 28px;
+					font-weight: 600;
+					background-image: url(images/h2_icon.png);
+					background-repeat: no-repeat;
+					background-position: left bottom;
+					padding: 20px 10px 10px 48px;
+				}
+				section {
+					margin-bottom: 50px;
+					p {
+						line-height: 1.6;
+						margin-bottom: 24px;
+					}
+				}
+			}
 		}
 		aside {
 			flex-basis: 284px;

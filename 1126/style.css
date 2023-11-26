@@ -60,6 +60,39 @@ body div main {
   padding: 62px 72px 32px 72px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
 }
+body div main article h2 {
+  font: bold 40px/1 "arial";
+  margin-bottom: 8px;
+}
+body div main article .date {
+  background: #91c777;
+  border-radius: 0px 22px 22px 22px;
+  font: bold 18px/1 "arial";
+  color: #fff;
+  padding: 11px 23px 10px 18px;
+  display: inline-block;
+  margin-bottom: 26px;
+}
+body div main article .pic_eyecatch {
+  margin-bottom: 26px;
+}
+body div main article h3 {
+  border-bottom: 2px solid #6ab547;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  background-image: url(images/h2_icon.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding: 20px 10px 10px 48px;
+}
+body div main article section {
+  margin-bottom: 50px;
+}
+body div main article section p {
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
 body div aside {
   flex-basis: 284px;
 }
