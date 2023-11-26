@@ -128,5 +128,11 @@ body div aside .recentNav ul li {
   padding-bottom: 10px;
   margin-bottom: 22px;
 }
+body footer {
+  background: #523f2e;
+  color: #fff;
+  text-align: center;
+  padding: 14px 10px 20px;
+}
 
 /*# sourceMappingURL=style.css.map */
