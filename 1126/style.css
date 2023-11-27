@@ -197,6 +197,12 @@ header .btn {
   .content main article section figure img {
     width: 60vw;
   }
+  .content aside {
+    width: 100%;
+  }
+  .content aside p a img {
+    width: 60vw;
+  }
 }
 footer {
   background: #523f2e;
