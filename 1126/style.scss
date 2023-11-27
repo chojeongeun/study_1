@@ -91,7 +91,7 @@ header {
 	}
 }
 
-div {
+.content {
 	width: 1240px;
 	margin: 0px auto 50px;
 	display: flex;
@@ -176,6 +176,45 @@ div {
 		}
 	}
 }
+
+@media screen and (max-width: 1180px) {
+	.content {
+		width: 100%;
+		padding: 0 5vw;
+		display: block;
+		main {
+			width: 100%;
+			padding: 30px 28px;
+			margin-bottom: 30px;
+			article {
+				h2 {
+					font: bold 30px/1 'arial';
+				}
+				.date {
+					font: bold 14px/1 'arial';
+					margin-bottom: 20px;
+				}
+				.pic_eyecatch {
+					img {
+						width: 60vw;
+					}
+				}
+				h3 {
+					font-size: 20px;
+				}
+				section {
+					margin-bottom: 40px;
+					figure {
+						img {
+							width: 60vw;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 footer {
 	background: #523f2e;
 	color: #fff;

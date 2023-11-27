@@ -85,24 +85,24 @@ header .btn {
     font-size: 20px;
   }
 }
-div {
+.content {
   width: 1240px;
   margin: 0px auto 50px;
   display: flex;
   justify-content: space-between;
 }
-div main {
+.content main {
   flex-basis: 920px;
   background: #fff;
   border-radius: 16px;
   padding: 62px 72px 32px 72px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
 }
-div main article h2 {
+.content main article h2 {
   font: bold 40px/1 "arial";
   margin-bottom: 8px;
 }
-div main article .date {
+.content main article .date {
   background: #91c777;
   border-radius: 0px 22px 22px 22px;
   font: bold 18px/1 "arial";
@@ -111,10 +111,10 @@ div main article .date {
   display: inline-block;
   margin-bottom: 26px;
 }
-div main article .pic_eyecatch {
+.content main article .pic_eyecatch {
   margin-bottom: 26px;
 }
-div main article h3 {
+.content main article h3 {
   border-bottom: 2px solid #6ab547;
   margin-bottom: 20px;
   font-size: 28px;
@@ -124,49 +124,80 @@ div main article h3 {
   background-position: left bottom;
   padding: 20px 10px 10px 48px;
 }
-div main article section {
+.content main article section {
   margin-bottom: 50px;
 }
-div main article section p {
+.content main article section p {
   line-height: 1.6;
   margin-bottom: 24px;
 }
-div aside {
+.content aside {
   flex-basis: 284px;
 }
-div aside nav {
+.content aside nav {
   background: #fff;
   border-radius: 16px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
   padding: 24px 28px;
   margin-bottom: 24px;
 }
-div aside nav h2 {
+.content aside nav h2 {
   margin-bottom: 18px;
   font: bold 22px/1 "arial";
   color: #7c5d48;
 }
-div aside nav ul {
+.content aside nav ul {
   font-size: 14px;
 }
-div aside nav ul li {
+.content aside nav ul li {
   list-style-type: square;
   color: #7c5d48;
   margin: 0 0 16px 20px;
 }
-div aside nav ul li a {
+.content aside nav ul li a {
   color: #333;
 }
-div aside .recentNav ul {
+.content aside .recentNav ul {
   height: 240px;
   overflow: hidden scroll;
 }
-div aside .recentNav ul li {
+.content aside .recentNav ul li {
   border-bottom: 1px solid #7c5d48;
   padding-bottom: 10px;
   margin-bottom: 22px;
 }
 
+@media screen and (max-width: 1180px) {
+  .content {
+    width: 100%;
+    padding: 0 5vw;
+    display: block;
+  }
+  .content main {
+    width: 100%;
+    padding: 30px 28px;
+    margin-bottom: 30px;
+  }
+  .content main article h2 {
+    font: bold 30px/1 "arial";
+  }
+  .content main article .date {
+    font: bold 14px/1 "arial";
+    margin-bottom: 20px;
+  }
+  .content main article .pic_eyecatch img {
+    width: 60vw;
+  }
+  .content main article h3 {
+    font-size: 20px;
+  }
+  .content main article section {
+    margin-bottom: 40px;
+  }
+  .content main article section figure img {
+    width: 60vw;
+  }
+}
 footer {
   background: #523f2e;
   color: #fff;
