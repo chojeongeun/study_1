@@ -63,6 +63,28 @@ header .btn {
     font-size: 15px;
   }
 }
+@media screen and (max-width: 639px) {
+  header {
+    position: relative;
+  }
+  header h1 img {
+    width: 70vw;
+    padding-top: 20px;
+  }
+  header ul {
+    display: none;
+  }
+  header .btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  header .btn i {
+    color: #523f2e;
+    font-size: 20px;
+  }
+}
 div {
   width: 1240px;
   margin: 0px auto 50px;
