@@ -20,15 +20,16 @@ body {
   font-family: "arial";
   color: #333;
 }
-body header {
+
+header {
   width: 1240px;
   margin: 0px auto 44px;
 }
-body header h1 {
+header h1 {
   text-align: center;
   padding: 20px 0px 16px;
 }
-body header ul {
+header ul {
   display: flex;
   justify-content: center;
   border-top: 2px solid #7c5d48;
@@ -36,35 +37,50 @@ body header ul {
   background-color: rgba(255, 255, 255, 0.42);
   padding: 12px 0px 12px;
 }
-body header ul li {
+header ul li {
   margin: 0px 20px;
 }
-body header ul li a {
+header ul li a {
   font-size: 22px;
   font-weight: bold;
   color: #7c5d48;
 }
-body header ul li a:hover {
+header ul li a:hover {
   text-decoration: underline double;
 }
-body div {
+header .btn {
+  display: none;
+}
+
+@media screen and (max-width: 1180px) {
+  header {
+    width: 100%;
+  }
+  header ul li {
+    margin: 0px 15px;
+  }
+  header ul li a {
+    font-size: 15px;
+  }
+}
+div {
   width: 1240px;
   margin: 0px auto 50px;
   display: flex;
   justify-content: space-between;
 }
-body div main {
+div main {
   flex-basis: 920px;
   background: #fff;
   border-radius: 16px;
   padding: 62px 72px 32px 72px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
 }
-body div main article h2 {
+div main article h2 {
   font: bold 40px/1 "arial";
   margin-bottom: 8px;
 }
-body div main article .date {
+div main article .date {
   background: #91c777;
   border-radius: 0px 22px 22px 22px;
   font: bold 18px/1 "arial";
@@ -73,10 +89,10 @@ body div main article .date {
   display: inline-block;
   margin-bottom: 26px;
 }
-body div main article .pic_eyecatch {
+div main article .pic_eyecatch {
   margin-bottom: 26px;
 }
-body div main article h3 {
+div main article h3 {
   border-bottom: 2px solid #6ab547;
   margin-bottom: 20px;
   font-size: 28px;
@@ -86,49 +102,50 @@ body div main article h3 {
   background-position: left bottom;
   padding: 20px 10px 10px 48px;
 }
-body div main article section {
+div main article section {
   margin-bottom: 50px;
 }
-body div main article section p {
+div main article section p {
   line-height: 1.6;
   margin-bottom: 24px;
 }
-body div aside {
+div aside {
   flex-basis: 284px;
 }
-body div aside nav {
+div aside nav {
   background: #fff;
   border-radius: 16px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
   padding: 24px 28px;
   margin-bottom: 24px;
 }
-body div aside nav h2 {
+div aside nav h2 {
   margin-bottom: 18px;
   font: bold 22px/1 "arial";
   color: #7c5d48;
 }
-body div aside nav ul {
+div aside nav ul {
   font-size: 14px;
 }
-body div aside nav ul li {
+div aside nav ul li {
   list-style-type: square;
   color: #7c5d48;
   margin: 0 0 16px 20px;
 }
-body div aside nav ul li a {
+div aside nav ul li a {
   color: #333;
 }
-body div aside .recentNav ul {
+div aside .recentNav ul {
   height: 240px;
   overflow: hidden scroll;
 }
-body div aside .recentNav ul li {
+div aside .recentNav ul li {
   border-bottom: 1px solid #7c5d48;
   padding-bottom: 10px;
   margin-bottom: 22px;
 }
-body footer {
+
+footer {
   background: #523f2e;
   color: #fff;
   text-align: center;
