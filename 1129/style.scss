@@ -123,3 +123,27 @@ a {
 		}
 	}
 }
+
+@media screen and (max-width: 639px) {
+	#header2 {
+		.inner {
+			height: 80px;
+			#gnb {
+				display: none;
+			}
+			#util {
+				display: none;
+			}
+			.btn {
+				display: block;
+				position: absolute;
+				bottom: 25px;
+				right: 0px;
+				i {
+					font-size: 18px;
+					color: #777;
+				}
+			}
+		}
+	}
+}

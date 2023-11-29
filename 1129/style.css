@@ -110,5 +110,26 @@ a {
     font: 11px/1 "arial";
   }
 }
+@media screen and (max-width: 639px) {
+  #header2 .inner {
+    height: 80px;
+  }
+  #header2 .inner #gnb {
+    display: none;
+  }
+  #header2 .inner #util {
+    display: none;
+  }
+  #header2 .inner .btn {
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    right: 0px;
+  }
+  #header2 .inner .btn i {
+    font-size: 18px;
+    color: #777;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
