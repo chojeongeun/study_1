@@ -87,4 +87,28 @@ a {
   display: none;
 }
 
+@media screen and (max-width: 1180px) {
+  #header2 {
+    padding: 0 5vw;
+  }
+  #header2 .inner {
+    width: 100%;
+    height: 120px;
+  }
+  #header2 .inner h1 a {
+    font: bold 20px/1 "arial";
+  }
+  #header2 .inner #gnb > li {
+    height: 40px;
+  }
+  #header2 .inner #gnb > li > a {
+    font: bold 11px/40px "arial";
+    letter-spacing: 1px;
+  }
+  #header2 .inner #util li a {
+    padding: 10px 20px;
+    font: 11px/1 "arial";
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
