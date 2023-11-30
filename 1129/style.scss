@@ -285,3 +285,39 @@ a {
 	}
 }
 
+@media screen and (max-width: 639px) {
+	#header3 {
+		padding: 0 5vw;
+		.inner {
+			width: 100%;
+			height: 100px;
+
+			h1 {
+				a {
+					font: bold 22px/1 'arial';
+				}
+			}
+
+			#gnb {
+				display: none;
+			}
+
+			#util1 {
+				display: none;
+			}
+			#util2 {
+				display: none;
+			}
+			.btn {
+				display: block;
+				position: absolute;
+				bottom: 35px;
+				left: 0px;
+				i {
+					font-size: 18px;
+					color: #ddd;
+				}
+			}
+		}
+	}
+}
