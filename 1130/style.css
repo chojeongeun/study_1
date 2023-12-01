@@ -17,6 +17,7 @@ a {
 #footer {
   width: 100%;
   background: #555;
+  transition: 0.5s;
 }
 #footer .inner {
   width: 1180px;
@@ -113,6 +114,34 @@ a {
   }
   #footer .inner .lower p {
     font: 12px/1 "arial";
+  }
+}
+@media screen and (max-width: 639px) {
+  #footer .inner .upper .terms {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #footer .inner .upper .sns {
+    width: 100%;
+    float: left;
+  }
+  #footer .inner .upper .sns li {
+    margin-left: 0px;
+    margin-right: 20px;
+  }
+  #footer .inner .lower h1 {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  #footer .inner .lower address {
+    width: 100%;
+    float: left;
+    text-align: left;
+  }
+  #footer .inner .lower p {
+    width: 100%;
+    float: left;
+    text-align: left;
   }
 }
 
