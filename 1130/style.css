@@ -86,4 +86,34 @@ a {
   text-align: right;
 }
 
+@media screen and (max-width: 1180px) {
+  #footer .inner {
+    width: 100%;
+  }
+  #footer .inner .upper {
+    padding: 40px 5vw 20px;
+  }
+  #footer .inner .upper .terms {
+    float: left;
+  }
+  #footer .inner .upper .terms li a {
+    font: bold 12px/1 "arial";
+  }
+  #footer .inner .upper .sns li a {
+    font: 15px/1 "arial";
+  }
+  #footer .inner .lower {
+    padding: 30px 5vw 45px;
+  }
+  #footer .inner .lower h1 {
+    font: bold 22px/1 "arial";
+  }
+  #footer .inner .lower address {
+    font: 12px/1.2 "arial";
+  }
+  #footer .inner .lower p {
+    font: 12px/1 "arial";
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

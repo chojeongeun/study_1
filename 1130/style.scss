@@ -86,3 +86,43 @@ a {
 		}
 	}
 }
+
+@media screen and (max-width: 1180px) {
+	#footer {
+		.inner {
+			width: 100%;
+			.upper {
+				padding: 40px 5vw 20px;
+
+				.terms {
+					float: left;
+
+					li {
+						a {
+							font: bold 12px/1 'arial';
+						}
+					}
+				}
+				.sns {
+					li {
+						a {
+							font: 15px/1 'arial';
+						}
+					}
+				}
+			}
+			.lower {
+				padding: 30px 5vw 45px;
+				h1 {
+					font: bold 22px/1 'arial';
+				}
+				address {
+					font: 12px/1.2 'arial';
+				}
+				p {
+					font: 12px/1 'arial';
+				}
+			}
+		}
+	}
+}
