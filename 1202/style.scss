@@ -95,6 +95,10 @@ a {
 							background: rgba(0, 0, 0, 0.03);
 							border: 1px solid #aaa;
 							transition: 0.5s;
+							&:hover,
+							&:focus {
+								background: lightcyan;
+							}
 						}
 					}
 				}

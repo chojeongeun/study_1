@@ -94,5 +94,12 @@ a {
   border: 1px solid #aaa;
   transition: 0.5s;
 }
+.members .inner form fieldset table td input[type=text]:hover, .members .inner form fieldset table td input[type=text]:focus,
+.members .inner form fieldset table td input[type=password]:hover,
+.members .inner form fieldset table td input[type=password]:focus,
+.members .inner form fieldset table td select:hover,
+.members .inner form fieldset table td select:focus {
+  background: lightcyan;
+}
 
 /*# sourceMappingURL=style.css.map */
