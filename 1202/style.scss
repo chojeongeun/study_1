@@ -99,6 +99,9 @@ a {
 							&:focus {
 								background: lightcyan;
 							}
+							&::-webkit-input-placeholder {
+								color: #aaa;
+							}
 						}
 					}
 				}

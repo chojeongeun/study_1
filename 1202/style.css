@@ -101,5 +101,10 @@ a {
 .members .inner form fieldset table td select:focus {
   background: lightcyan;
 }
+.members .inner form fieldset table td input[type=text]::-webkit-input-placeholder,
+.members .inner form fieldset table td input[type=password]::-webkit-input-placeholder,
+.members .inner form fieldset table td select::-webkit-input-placeholder {
+  color: #aaa;
+}
 
 /*# sourceMappingURL=style.css.map */
