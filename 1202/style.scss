@@ -59,6 +59,45 @@ a {
 						color: #888;
 					}
 				}
+				table {
+					width: 100%;
+					border-top: 2px solid #000;
+
+					tr {
+						&:last-child {
+							td {
+								border-bottom: 2px solid #000;
+								text-align: center;
+							}
+						}
+					}
+
+					th {
+						width: 20%;
+						border-bottom: 1px solid #ddd;
+						padding: 20px 40px;
+						text-align: left;
+						color: #666;
+						border-right: 1px solid #ddd;
+					}
+					td {
+						width: 80%;
+						border-bottom: 1px solid #ddd;
+						padding: 20px 40px;
+						text-align: left;
+						input[type='text'],
+						input[type='password'],
+						select {
+							width: 30%;
+							height: 30px;
+							padding: 0px 20px;
+							padding-right: 0px;
+							background: rgba(0, 0, 0, 0.03);
+							border: 1px solid #aaa;
+							transition: 0.5s;
+						}
+					}
+				}
 			}
 		}
 	}

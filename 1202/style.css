@@ -61,5 +61,38 @@ a {
   font-size: 11px;
   color: #888;
 }
+.members .inner form fieldset table {
+  width: 100%;
+  border-top: 2px solid #000;
+}
+.members .inner form fieldset table tr:last-child td {
+  border-bottom: 2px solid #000;
+  text-align: center;
+}
+.members .inner form fieldset table th {
+  width: 20%;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 40px;
+  text-align: left;
+  color: #666;
+  border-right: 1px solid #ddd;
+}
+.members .inner form fieldset table td {
+  width: 80%;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 40px;
+  text-align: left;
+}
+.members .inner form fieldset table td input[type=text],
+.members .inner form fieldset table td input[type=password],
+.members .inner form fieldset table td select {
+  width: 30%;
+  height: 30px;
+  padding: 0px 20px;
+  padding-right: 0px;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid #aaa;
+  transition: 0.5s;
+}
 
 /*# sourceMappingURL=style.css.map */
