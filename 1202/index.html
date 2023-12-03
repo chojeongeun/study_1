@@ -9,24 +9,23 @@
 </head>
 
 <body>
-  <div class="inner">
-    <h1>Members <span>회원가입</span></h1>
+  <section class="members">
+    <div class="inner">
+      <h1>Members <span>회원가입</span></h1>
 
-    <form action="/" method="post">
-      <fieldset>
-        <legend class="hidden">회원가입</legend>
-        <h2>Notice & Terms</h2>
+      <form action="/" method="post">
+        <fieldset>
+          <legend class="hidden">회원가입</legend>
+          <h2>Notice & Terms</h2>
+          <div class="agreement">
+            <textarea>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque tempore eveniet, cupiditate doloribus suscipit laudantium earum quisquam ab et sequi repellat amet distinctio accusantium molestiae similique iste aut voluptas consectetur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque tempore eveniet, cupiditate doloribus suscipit laudantium earum quisquam ab et sequi repellat amet distinctio accusantium molestiae similique iste aut voluptas consectetur?</textarea>
 
-        <div class="agreement">
-          <textarea>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque tempore eveniet, cupiditate doloribus suscipit laudantium earum quisquam ab et sequi repellat amet distinctio accusantium molestiae similique iste aut voluptas consectetur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque tempore eveniet, cupiditate doloribus suscipit laudantium earum quisquam ab et sequi repellat amet distinctio accusantium molestiae similique iste aut voluptas consectetur?
-          </textarea>
-
-          <input type="checkbox" id="terms" name="terms">
-          <label for="terms">위의 내용을 읽어보았으며 동의합니다.</label>
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">위의 내용을 읽어보았으며 동의합니다.</label>
+          </div>
 
           <h2>Member Information</h2>
-          <table border="1">
+          <table>
             <caption class="hidden">회원정보</caption>
             <tr>
               <th>
@@ -106,10 +105,12 @@
               </td>
             </tr>
           </table>
-        </div>
-      </fieldset>
-    </form>
-  </div>
+        </fieldset>
+      </form>
+    </div>
+
+  </section>
+
 </body>
 
 </html>

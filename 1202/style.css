@@ -14,4 +14,10 @@ a {
   text-decoration: none;
 }
 
+.hidden {
+  position: absolute;
+  top: -999999px;
+  opacity: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
