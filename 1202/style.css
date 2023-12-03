@@ -20,4 +20,46 @@ a {
   opacity: 0;
 }
 
+.members {
+  width: 100%;
+  padding: 150px 0px 130px;
+}
+.members .inner {
+  width: 1180px;
+  margin: 0px auto;
+  position: relative;
+}
+.members .inner h1 {
+  font: bold 25px/1 "arial";
+  color: #333;
+  margin-bottom: 50px;
+}
+.members .inner form fieldset {
+  border: none;
+}
+.members .inner form fieldset h2 {
+  font: bold 18px/1 "arial";
+  color: #555;
+  margin-bottom: 20px;
+}
+.members .inner form fieldset .agreement {
+  margin-bottom: 60px;
+}
+.members .inner form fieldset .agreement textarea {
+  width: 100%;
+  height: 160px;
+  padding: 20px;
+  margin-bottom: 10px;
+  font: 15px/1.8 "arial";
+  color: #777;
+  background: rgba(0, 0, 0, 0.05);
+}
+.members .inner form fieldset .agreement input {
+  margin-left: 10px;
+}
+.members .inner form fieldset .agreement label {
+  font-size: 11px;
+  color: #888;
+}
+
 /*# sourceMappingURL=style.css.map */
