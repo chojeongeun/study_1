@@ -136,6 +136,11 @@ a {
   background: rgba(0, 0, 0, 0.03);
   border: 1px solid #aaa;
   padding: 20px;
+  transition: 0.5s;
+}
+.members .inner form fieldset table td textarea:hover, .members .inner form fieldset table td textarea:focus {
+  background: lightcyan;
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */
