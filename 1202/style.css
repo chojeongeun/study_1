@@ -100,11 +100,24 @@ a {
 .members .inner form fieldset table td select:hover,
 .members .inner form fieldset table td select:focus {
   background: lightcyan;
+  outline: none;
 }
 .members .inner form fieldset table td input[type=text]::-webkit-input-placeholder,
 .members .inner form fieldset table td input[type=password]::-webkit-input-placeholder,
 .members .inner form fieldset table td select::-webkit-input-placeholder {
   color: #aaa;
+}
+.members .inner form fieldset table td input[type=submit],
+.members .inner form fieldset table td input[type=reset] {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #888;
+  background: transparent;
+  font: bold 12px/40px "arial";
+  color: #666;
+  margin: 0 10px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
