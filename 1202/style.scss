@@ -50,6 +50,7 @@ a {
 						font: 15px/1.8 'arial';
 						color: #777;
 						background: rgba(0, 0, 0, 0.05);
+						resize: none;
 					}
 					input {
 						margin-left: 10px;
@@ -133,6 +134,7 @@ a {
 							border: 1px solid #aaa;
 							padding: 20px;
 							transition: 0.5s;
+							resize: none;
 							&:hover,
 							&:focus {
 								background: lightcyan;
