@@ -23,6 +23,7 @@ a {
 .members {
   width: 100%;
   padding: 150px 0px 130px;
+  transition: 0.5s;
 }
 .members .inner {
   width: 1180px;
@@ -165,6 +166,19 @@ a {
   .members .inner form fieldset table td input[type=password],
   .members .inner form fieldset table td select {
     width: 100%;
+  }
+}
+@media screen and (max-width: 639px) {
+  .members {
+    padding: 80px 5vw 60px;
+  }
+  .members .inner form fieldset table td input[type=submit],
+  .members .inner form fieldset table td input[type=reset] {
+    width: 80px;
+    margin: 0 5px;
+  }
+  .members .inner form fieldset table td label {
+    margin-right: 7px;
   }
 }
 
