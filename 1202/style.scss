@@ -147,3 +147,33 @@ a {
 		}
 	}
 }
+
+// tablet
+@media screen and (max-width: 1179px) {
+	.members {
+		padding: 100px 5vw 80px;
+		.inner {
+			width: 100%;
+			form {
+				fieldset {
+					.agreement {
+						margin-bottom: 40px;
+					}
+					table {
+						th {
+							display: none;
+						}
+						td {
+							width: 100%;
+							input[type='text'],
+							input[type='password'],
+							select {
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

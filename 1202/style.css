@@ -145,4 +145,27 @@ a {
   outline: none;
 }
 
+@media screen and (max-width: 1179px) {
+  .members {
+    padding: 100px 5vw 80px;
+  }
+  .members .inner {
+    width: 100%;
+  }
+  .members .inner form fieldset .agreement {
+    margin-bottom: 40px;
+  }
+  .members .inner form fieldset table th {
+    display: none;
+  }
+  .members .inner form fieldset table td {
+    width: 100%;
+  }
+  .members .inner form fieldset table td input[type=text],
+  .members .inner form fieldset table td input[type=password],
+  .members .inner form fieldset table td select {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
