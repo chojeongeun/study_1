@@ -9,32 +9,42 @@
 </head>
 
 <body>
+  <section>
+    <article>box1</article>
+    <article>box2</article>
+    <article>box3</article>
+    <ul>
+      <li>button1</li>
+      <li class="btn">button2</li>
+      <li>button3</li>
+    </ul>
+  </section>
+
   <script>
-    const colors = ['red', 'green', 'blue'];
-    // 노가다. 수많은 데이터가 있으면 일일이 값을 뽑아내기 힘드므로 반복 처리 해주는 배열 전용 내장함수를 사용한다.
-    //console.log(colors[0]);
-    //console.log(colors[1]);
-    //console.log(colors[2]);
+    //dom요소 선택하기
+    const section = document.querySelector('section');
+    console.log(section);
 
-    /*
-    1) forEach - 순서값, 데이터값 모두 필요할 때 주료 사용
-    배열명.forEach((data,index)=>{});
-    */
+    const articles = section.querySelectorAll('article'); //복수개
+    console.log(articles);
 
-    colors.forEach((data, index) => {
-      // console.log(data);
-      console.log(colors[index])
-    })
+    const btn = section.querySelector('.btn');
+    console.log(btn);
 
+    const childEl = section.children; //자식요소
+    console.log(childEl);
 
-    /*
-    2) for of - 배열의 값만 뽑아내고 싶을때
-    for(const data of 배열명){}
-    */
+    const parentEl = btn.parentElement; //부모요소
+    console.log(parentEl);
 
-    //기능은 간소화하지만 구문은 간단하게 가능함.
-    //실행구문이 한줄이면 코드블럭 생략 가능함.
-    for (const data of colors) console.log(data);
+    const grandParentEl = btn.closest('section'); //조상요소 
+    console.log(grandParentEl);
+
+    const prevEl = btn.previousElementSibling; //이전 형제요소
+    console.log(prevEl);
+
+    const nextEl = btn.nextElementSibling; //다음 형제요소
+    console.log(nextEl);
 
   </script>
 </body>
