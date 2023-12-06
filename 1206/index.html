@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <script>
+    const colors = ['red', 'green', 'blue'];
+    // 노가다. 수많은 데이터가 있으면 일일이 값을 뽑아내기 힘드므로 반복 처리 해주는 배열 전용 내장함수를 사용한다.
+    //console.log(colors[0]);
+    //console.log(colors[1]);
+    //console.log(colors[2]);
+
+    /*
+    1) forEach - 순서값, 데이터값 모두 필요할 때 주료 사용
+    배열명.forEach((data,index)=>{});
+    */
+
+    colors.forEach((data, index) => {
+      // console.log(data);
+      console.log(colors[index])
+    })
+
+
+    /*
+    2) for of - 배열의 값만 뽑아내고 싶을때
+    for(const data of 배열명){}
+    */
+
+    //기능은 간소화하지만 구문은 간단하게 가능함.
+    //실행구문이 한줄이면 코드블럭 생략 가능함.
+    for (const data of colors) console.log(data);
+
+  </script>
+</body>
+
+</html>
