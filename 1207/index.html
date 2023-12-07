@@ -9,20 +9,53 @@
 </head>
 
 <body>
-  <article></article>
+  <ul>
+    <li>button1</li>
+    <li>button2</li>
+    <li>button3</li>
+  </ul>
 
   <script>
-    const box = document.querySelector('article');
-    box.style.width = '300px';
-    box.style.backgroundColor = 'pink';
-    box.style['height'] = '300px'; //연관배열
+    const btns = document.querySelectorAll('li');
 
-    //함수 호출
-    //내가 스타일 값을 구하고 싶은 요소를 인수값으로 넣기
-    const boxWidth = getComputedStyle(box).width;
-    const boxBackground = getComputedStyle(box)['backgroundColor'];
-    console.log(boxWidth);
-    console.log(boxBackground)
+    /*
+    btns[0].addEventListener('click', (e) => {
+      console.log(0);
+      console.log(e.currentTarget);
+
+    })
+    btns[1].addEventListener('click', (e) => {
+      console.log(1);
+      console.log(e.currentTarget);
+
+    })
+    btns[2].addEventListener('click', (e) => {
+      console.log(2);
+      console.log(e.currentTarget);
+    })
+    */
+
+    /*
+    btns.forEach((btn, idx) => {
+      btns[idx].addEventListener('click', (e) => {
+        console.log(idx);
+        console.log(btns[idx]);
+        //console.log(btn);
+        //console.log(e.currentTarget);
+      })
+    })
+    순서값 구하려면 forEach
+    */
+
+    for (const el of btns) {
+      el.addEventListener('click', () => {
+        console.log(el);
+
+      })
+    }
+
+
+
   </script>
 </body>
 
