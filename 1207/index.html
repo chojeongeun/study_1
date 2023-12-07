@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <article></article>
+
+  <script>
+    const box = document.querySelector('article');
+    box.style.width = '300px';
+    box.style.backgroundColor = 'pink';
+    box.style['height'] = '300px'; //연관배열
+
+    //함수 호출
+    //내가 스타일 값을 구하고 싶은 요소를 인수값으로 넣기
+    const boxWidth = getComputedStyle(box).width;
+    const boxBackground = getComputedStyle(box)['backgroundColor'];
+    console.log(boxWidth);
+    console.log(boxBackground)
+  </script>
+</body>
+
+</html>
