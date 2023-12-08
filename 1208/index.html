@@ -26,12 +26,21 @@
       box.classList.remove('on');
     })
 
+    /*
     btns[2].addEventListener('click', () => {
       let isOn = box.classList.contains('on');
       if (isOn) box.classList.remove('on');
       else box.classList.add('on');
     }
     )
+    */
+
+    btns[2].addEventListener('click', () => {
+      box.classList.toggle('on');
+    })
+    // 있는지 없는지를 확인해서 true,false값을 내보냄. on이 포함-true, 포함x-false
+    // let isOn = box.classList.contains('on');
+    // console.log(isOn);
   </script>
 </body>
 
