@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 비구조화할당, 구조분해할당, destructuring assignment
+    // 기존의 구조를 파괴해서 다시 재할당한다.
+    // 어떤 배열이나 객체에 있는 값들을 바로 변수화해서 뽑아내는 방법
+
+    const colors = ['red', 'green', 'blue'];
+    // const color1 = colors[0];
+    // const color2 = colors[1];
+    // const color3 = colors[2];
+    // console.log(color2);
+
+    const [color1, color2, color3] = colors;
+    // colors라는 배열로부터 각각의 순서에 맞게 첫번째값은 color1, color2, color3라는 변수로 뽑아낼거다.
+    console.log(color1);
+
+    // 객체값도 똑같이 가능하다
+    const student = {
+      name: 'David',
+      age: 20,
+    }
+    // 만약, 객체안에 있는 david, 20이라는 정보값을 뽑아내고 싶다면
+    // const name = student.name;
+    // const age=student1.age;
+    // console.log(age);
+
+    // 객체는 무조건 프로퍼티 키값으로만 뽑아낼 수 있음
+    const { name, age } = student;
+    console.log(age);
+
+  </script>
+</body>
+
+</html>
