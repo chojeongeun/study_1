@@ -8,7 +8,9 @@
 </head>
 
 <body>
-  <section id="wrap"></section>
+  <section id="wrap">
+    <p>중요한 내용</p>
+  </section>
 
   <script>
     const wrap = document.querySelector('#wrap');
@@ -18,8 +20,17 @@
       <a href=${url}>LOGO</a>
     </h1>
     `
-    wrap.innerHTML = htmls;
+    // innerHTML은 기존 선택자 안쪽의 내용을 지우면서 새로운 태그 내용으로 덮어쓰기함
+    //wrap.innerHTML = htmls;
 
+    // append는 기존 선택자의 자식내용을 유지하면서 추가로 동적돔을 생성
+    // 이때 주의할 점은 append의 인수값으로는 문자가 아닌 엘리먼트 노드형태로 삽입되어야 하기 때문에
+    // 삽입할 요소 중 최상의 wrapping요소를 document.createElement('태그명')으로 생성해야됨
+
+    const h1 = document.createElement('h1');
+    h1.innerHTML = `<a href=${url}>LOGO</a>`;
+
+    wrap.append(h1);
   </script>
 </body>
 
