@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <a href="https://www.naver.com" title="네이버로 이동" target="_blank">네이버</a>
+
+  <script>
+    const link = document.querySelector('a');
+    const value = link.getAttribute('href');
+    const title = link.getAttribute('title');
+    const target = link.getAttribute('target');
+    console.log(value);
+    console.log(title);
+    console.log(target);
+
+  </script>
+</body>
+
+</html>
