@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="anime.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <button>button</button>
+  <section>
+    <article></article>
+  </section>
+
+  <script>
+    const btn = document.querySelector('button');
+    const box = document.querySelector('article');
+
+    btn.addEventListener('click', () => {
+      new Anime(box, {
+        prop: 'width',
+        value: 500,
+        duration: 500
+      })
+    })
+  </script>
+</body>
+
+</html>
