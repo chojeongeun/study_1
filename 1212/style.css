@@ -1,3 +1,8 @@
+body {
+	height: 5000px;
+	background: linear-gradient(to bottom, red, blue, green);
+}
+
 section {
 	width: 1000px;
 	height: 600px;

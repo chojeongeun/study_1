@@ -20,9 +20,9 @@
     const box = document.querySelector('article');
 
     btn.addEventListener('click', () => {
-      new Anime(box, {
-        prop: 'width',
-        value: 500,
+      new Anime(window, {
+        prop: 'scroll',
+        value: 2000,
         duration: 500
       })
     })
