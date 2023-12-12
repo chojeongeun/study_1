@@ -22,8 +22,15 @@
     btn.addEventListener('click', () => {
       new Anime(window, {
         prop: 'scroll',
-        value: 2000,
-        duration: 500
+        value: 3000,
+        duration: 500,
+        callback: () => {
+          new Anime(window, {
+            prop: 'scroll',
+            value: 0,
+            duration: 300
+          })
+        }
       })
     })
   </script>
