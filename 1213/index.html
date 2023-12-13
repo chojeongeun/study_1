@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, saepe!</h1>
+  <p>members:Andy, David, Julia, Paul, Emma, Mechael</p>
+  <span>2023-12-13 / 18:51</span>
+
+  <script>
+    // 문자열 자르기
+    const h1 = document.querySelector('h1').innerText;
+    console.log(h1)
+
+    const h1_cut = h1.substr(0, 10);
+    console.log(h1_cut)
+
+    // 전체 문자열에서 특정 문자의 위치값 알아보기
+    const p = document.querySelector('p').innerText;
+    console.log(p.indexOf('Andy'));
+    console.log(p.indexOf('Sara')); // -1로 나오는 경우 특정 문자 x
+
+  </script>
+</body>
+
+</html>
