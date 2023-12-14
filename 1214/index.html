@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const now = new Date();
+    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+
+    // 전세게 표준 시간대
+    console.log(now.toUTCString())
+
+    // 년도
+    console.log(now.getFullYear());
+
+    // 월(순서)
+    console.log(months[now.getMonth()]);
+
+    // 일
+    console.log(now.getDate());
+
+    // 요일(순서 - 일요일부터 시작)
+    console.log(days[now.getDay()])
+
+    // 시
+    console.log(now.getHours())
+
+    // 분
+    console.log(now.getMinutes())
+
+    // 초
+    console.log(now.getSeconds())
+
+  </script>
+
+</body>
+
+</html>
