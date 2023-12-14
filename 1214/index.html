@@ -8,6 +8,14 @@
 </head>
 
 <body>
+
+  <ul>
+    <li>list1</li>
+    <li>list2</li>
+    <li>list3</li>
+    <li>list4</li>
+  </ul>
+
   <script>
     const now = new Date();
     const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
@@ -36,6 +44,18 @@
 
     // 초
     console.log(now.getSeconds())
+
+
+
+    const ul = document.querySelector('ul');
+    // 첫번째 자식요소를 부모요소 안쪽에서 제일 뒤로 배치 (append)
+    //ul.append(ul.firstElementChild);
+    //ul.append(ul.firstElementChild);
+
+    // 마지막 자식요소를 부모요소 안쪽에서 제일 앞에 위치 (prepend)
+    ul.prepend(ul.lastElementChild);
+
+
 
   </script>
 
