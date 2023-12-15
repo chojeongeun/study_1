@@ -37,6 +37,10 @@ a {
   cursor: pointer;
   text-align: center;
 }
+#tab ul li.on {
+  background: #fff;
+  color: #333;
+}
 #tab section {
   width: 100%;
 }
@@ -46,8 +50,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
   font: bold 30px/1 "arial";
   color: #555;
+}
+#tab section article.on {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
