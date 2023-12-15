@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+#tab {
+	width: 600px;
+	margin: 100px auto;
+	border: 1px solid #888;
+
+	ul {
+		width: 100%;
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+		li {
+			float: left;
+			width: calc(100% / 3); //부모 프레임이 고정값이면 자식요소는 가로폭을 되도록이면 %로
+			height: 40px;
+			font: bold 14px/40px 'arial';
+			color: #999;
+			background: #333;
+			cursor: pointer;
+			text-align: center;
+		}
+	}
+
+	section {
+		width: 100%;
+		article {
+			width: 100%;
+			height: 300px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font: bold 30px/1 'arial';
+			color: #555;
+		}
+	}
+}
