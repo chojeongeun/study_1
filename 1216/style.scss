@@ -69,6 +69,7 @@ a {
 			margin-right: 10px;
 			float: left;
 			cursor: pointer;
+			transition: 0.5s;
 
 			&.on {
 				width: 80px;
