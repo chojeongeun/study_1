@@ -15,6 +15,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  margin: 30px;
+}
+
 #pop {
   width: 320px;
   height: 200px;
