@@ -15,3 +15,8 @@ setCookie('today', 'done', 1);
 btnShowCookie.addEventListener('click', () => {
 	console.log(document.cookie);
 });
+
+btnDelCookie.addEventListener('click', () => {
+	setCookie('today', 'done', 0);
+	alert('쿠키가 삭제되었습니다');
+});
