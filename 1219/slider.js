@@ -2,6 +2,8 @@ const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 const panel = document.querySelector('.panel');
 
+panel.prepend(panel.lastElementChild);
+
 next.addEventListener('click', () => {
 	new Anime(panel, {
 		prop: 'margin-left',
