@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+#slider {
+	width: 400px;
+	height: 250px;
+	border: 1px solid #000;
+	margin: 100px auto;
+	position: relative;
+
+	.panel {
+		width: 300%;
+		height: 100%;
+		margin-left: -100%;
+
+		li {
+			width: calc(100% / 3);
+			height: 100%;
+			font-size: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #fff;
+			float: left;
+
+			&.p1 {
+				background: pink;
+			}
+			&.p2 {
+				background: lightgreen;
+			}
+			&.p3 {
+				background: orange;
+			}
+		}
+	}
+
+	.prev {
+		position: absolute;
+		top: 50%;
+		left: 50px;
+	}
+	.next {
+		position: absolute;
+		top: 50%;
+		right: 50px;
+	}
+}
