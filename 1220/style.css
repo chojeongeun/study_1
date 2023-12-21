@@ -76,11 +76,21 @@ table td input[type=password],
 table td select,
 table td textarea {
   width: 70%;
-  padding: 5px 8px;
+  padding: 6px 8px;
   background: #f4ffff;
   border: 1px solid #888;
   resize: none;
   font: 12px/1 "arial";
+}
+table td input[type=text]:focus,
+table td input[type=password]:focus,
+table td select:focus,
+table td textarea:focus {
+  outline: 1px solid #333;
+}
+table td input[type=checkbox],
+table td input[type=radio] {
+  margin-right: 20px;
 }
 table td .err {
   font: 11px/1.5 "돋움";
