@@ -1,0 +1,85 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+fieldset {
+  border: none;
+}
+
+.h {
+  position: absolute;
+  top: -9999999px;
+  opacity: 0;
+}
+
+table {
+  width: 800px;
+  margin: 100px auto;
+  border: none;
+  border-top: 2px solid #111;
+  border-bottom: 2px solid #111;
+}
+table td,
+table th {
+  border: none;
+  border-bottom: 1px solid #bbb;
+  padding: 15px 30px;
+  text-align: left;
+}
+table th {
+  width: 30%;
+  text-align: center;
+  font: bold 13px/1 "arial";
+  letter-spacing: 1px;
+}
+table th:last-child {
+  text-align: center;
+}
+table th input {
+  width: 150px;
+  height: 30px;
+  background: #fff;
+  color: #555;
+  border: 1px solid #555;
+  cursor: pointer;
+  margin: 0px 20px;
+}
+table td {
+  border-left: 1px solid #bbb;
+}
+table td input[type=text],
+table td input[type=password],
+table td select,
+table td textarea {
+  width: 70%;
+  padding: 5px 8px;
+  background: #f4ffff;
+  border: 1px solid #888;
+  resize: none;
+  font: 12px/1 "arial";
+}
+table td .err {
+  font: 11px/1.5 "돋움";
+  color: hotpink;
+  margin-top: 4px;
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
