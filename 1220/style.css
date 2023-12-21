@@ -91,6 +91,8 @@ table td textarea:focus {
 table td input[type=checkbox],
 table td input[type=radio] {
   margin-right: 20px;
+  position: relative;
+  top: 1.5px;
 }
 table td .err {
   font: 11px/1.5 "돋움";
