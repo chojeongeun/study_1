@@ -59,7 +59,14 @@ table th input {
   color: #555;
   border: 1px solid #555;
   cursor: pointer;
-  margin: 0px 20px;
+  margin: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+table th input:hover {
+  background: #333;
+  color: #fff;
 }
 table td {
   border-left: 1px solid #bbb;
