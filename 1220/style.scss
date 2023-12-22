@@ -107,3 +107,32 @@ table {
 		}
 	}
 }
+
+@media screen and (max-width: 639px) {
+	form {
+		padding: 80px 5vw 60px;
+		table {
+			th {
+				display: none;
+				&:last-child {
+					display: flex;
+					width: 100%;
+					margin: 0px auto;
+					input {
+						width: 49%;
+						margin-right: 2%;
+					}
+				}
+			}
+			td {
+				border-left: 0px;
+				input[type='text'],
+				input[type='password'],
+				select,
+				textarea {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
