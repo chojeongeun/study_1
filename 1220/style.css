@@ -101,4 +101,41 @@ table td .err {
   display: none;
 }
 
+@media screen and (max-width: 1180px) {
+  form {
+    width: 100%;
+    padding: 100px 5vw 80px;
+  }
+  form table {
+    width: 100%;
+    margin: 0px auto;
+  }
+}
+@media screen and (max-width: 639px) {
+  form {
+    padding: 80px 5vw 60px;
+  }
+  form table th {
+    display: none;
+  }
+  form table th:last-child {
+    display: flex;
+    width: 100%;
+    margin: 0px auto;
+  }
+  form table th:last-child input {
+    width: 49%;
+    margin-right: 2%;
+  }
+  form table td {
+    border-left: 0px;
+  }
+  form table td input[type=text],
+  form table td input[type=password],
+  form table td select,
+  form table td textarea {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
