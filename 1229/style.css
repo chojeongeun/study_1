@@ -26,13 +26,24 @@ body {
 	outline: none;
 }
 
-.btn::before {
+.btn::before,
+.btn::after {
 	position: absolute;
 	content: '';
-	background: red;
 	width: 25%;
 	height: 100%;
+}
+
+.btn::before {
+	background: red;
 	top: 0;
 	left: 0;
 	transform: translateY(-100%);
+}
+
+.btn::after {
+	background: orange;
+	top: 0;
+	left: 25%;
+	transform: translateY(100%);
 }
