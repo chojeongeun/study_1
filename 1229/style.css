@@ -21,6 +21,7 @@ body {
 	letter-spacing: 4px;
 	position: relative;
 	color: #fff;
+	overflow: hidden;
 }
 
 .btn:focus {
