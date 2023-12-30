@@ -56,6 +56,7 @@ body {
 	width: 100%;
 	height: 100%;
 	background: #000;
+	z-index: -1;
 }
 
 .shape::before,
@@ -80,4 +81,11 @@ body {
 	left: 75%;
 	background: purple;
 	transform: translateY(100%);
+}
+
+.btn:hover::before,
+.btn:hover::after,
+.btn:hover .shape::before,
+.btn:hover .shape::after {
+	transform: translateY(0%);
 }
