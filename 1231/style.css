@@ -4,27 +4,16 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	background: #000;
 }
 
-div {
-	height: 200px;
-	width: 200px;
-	background: powderblue;
-	margin: 10px;
-}
-
-.arrow {
-	clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
-}
-
-.message {
-	clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-}
-
-.star {
+.shape {
+	height: 300px;
+	width: 300px;
+	background: orange;
 	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	transition: clip-path 0.5s;
 }
-
-.make {
-	clip-path: polygon(16% 23%, 6% 54%, 31% 76%, 45% 51%, 63% 68%, 60% 82%, 88% 71%, 88% 42%);
+.shape:hover {
+	clip-path: polygon(50% 0%, 74% 18%, 98% 35%, 90% 59%, 79% 91%, 47% 91%, 21% 91%, 13% 66%, 2% 35%, 27% 17%);
 }
