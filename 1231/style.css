@@ -1,0 +1,30 @@
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+div {
+	height: 200px;
+	width: 200px;
+	background: powderblue;
+	margin: 10px;
+}
+
+.arrow {
+	clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+}
+
+.message {
+	clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+
+.star {
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.make {
+	clip-path: polygon(16% 23%, 6% 54%, 31% 76%, 45% 51%, 63% 68%, 60% 82%, 88% 71%, 88% 42%);
+}
