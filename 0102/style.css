@@ -12,4 +12,6 @@ body {
 	height: 300px;
 	background: #fff;
 	border-radius: 50%;
+	box-shadow: 
+  /* 공 바깥쪽 그림자 */ 0 0 20px #fff, 10px 10px 20px 10px purple, -10px -10px 20px 0 cyan;
 }
