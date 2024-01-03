@@ -1,0 +1,11 @@
+.desc {
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #f3be00 50%);
+	background-size: 200%;
+	transition: 0.35s;
+	font-size: 11px;
+	color: #666;
+}
+
+.desc:hover {
+	background-position: -100% 0;
+}
